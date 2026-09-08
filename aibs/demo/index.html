@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo Environment Factory &middot; Frontier Consultancy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07080a;
+  --bg-card:rgba(255,255,255,.03);
+  --bg-elevated:rgba(255,255,255,.05);
+  --fg:#f0f1f3;
+  --fg-soft:rgba(240,241,243,.78);
+  --fg-weak:rgba(240,241,243,.55);
+  --fg-faint:rgba(240,241,243,.35);
+  --line:rgba(255,255,255,.08);
+  --line-strong:rgba(255,255,255,.14);
+  --aurora-cyan:#22d3ee;
+  --aurora-purple:#a78bfa;
+  --aurora-pink:#f472b6;
+  --aurora:linear-gradient(135deg,var(--aurora-cyan) 0%,var(--aurora-purple) 50%,var(--aurora-pink) 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  background:var(--bg);color:var(--fg);
+  line-height:1.55;min-height:100vh;
+  overflow-x:hidden;position:relative;
+}
+body::before,body::after{
+  content:'';position:fixed;width:55vw;height:55vw;border-radius:50%;
+  filter:blur(140px);opacity:.18;pointer-events:none;z-index:0;
+}
+body::before{background:var(--aurora-cyan);top:-20vw;right:-15vw}
+body::after{background:var(--aurora-pink);bottom:-25vw;left:-15vw}
+main{position:relative;z-index:1}
+.container{max-width:1180px;margin:0 auto;padding:0 clamp(24px,5vw,56px)}
+.topnav{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:24px clamp(24px,5vw,56px);max-width:1180px;margin:0 auto;position:relative;z-index:2;
+}
+.topnav-brand{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;letter-spacing:-.01em}
+.topnav-brand span{background:var(--aurora);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.topnav-back{font-size:13px;font-weight:600;color:var(--fg-weak);text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.topnav-back:hover{color:var(--fg)}
+.hero{padding:48px 0 24px}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--fg-weak);margin-bottom:14px;}
+.hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(30px,4vw,48px);line-height:1.12;font-weight:900;letter-spacing:-.02em;margin-bottom:16px;}
+.hero h1 span{background:var(--aurora);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.hero p{font-size:17px;color:var(--fg-soft);max-width:66ch;text-wrap:pretty}
+.section{padding:40px 0}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.section-head h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(22px,2.4vw,30px);font-weight:800;letter-spacing:-.015em;}
+.section-eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--fg-weak);margin-bottom:8px;}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:9px;font-size:13px;font-weight:600;text-decoration:none;transition:all .15s;border:1px solid var(--line-strong);}
+.btn-secondary{background:var(--bg-elevated);color:var(--fg)}
+.btn-secondary:hover{background:rgba(255,255,255,.08);border-color:var(--fg-weak)}
+.frame{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:16px;
+  overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35);
+}
+/* deck is a fixed 1280x828 layout; scaled to fit the frame so it embeds seamlessly with no scrollbars */
+.deck-frame{position:relative;width:100%;aspect-ratio:1280/828;overflow:hidden;background:#dde1ea}
+.deck-frame iframe{position:absolute;top:0;left:0;width:1280px;height:828px;border:0;transform-origin:top left}
+.note{font-size:13px;color:var(--fg-weak);margin-top:12px}
+footer{padding:48px 0 60px;color:var(--fg-faint);font-size:13px}
+footer a{color:var(--fg-weak);text-decoration:none}
+footer a:hover{color:var(--fg)}
+</style>
+</head>
+<body>
+<nav class="topnav">
+  <div class="topnav-brand">Frontier <span>Consultancy</span></div>
+  <a class="topnav-back" href="../">&larr; Back to AIBS Workshop</a>
+</nav>
+
+<main>
+  <header class="container hero">
+    <div class="eyebrow">Demo &middot; AI-Supported Environment Setup</div>
+    <h1><span>Demo Environment Factory</span></h1>
+    <p>How Frontier Application Consultancy uses Microsoft Learn MCP and the Dataverse MCP to research, ground, and build repeatable Dynamics&nbsp;365 demo environments &mdash; walked through slide by slide.</p>
+  </header>
+
+  <section class="container section" id="deck">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Slide deck</div>
+        <h2>AI-Supported Automation for D365 Demos</h2>
+      </div>
+      <a class="btn btn-secondary" href="deck.html" target="_blank" rel="noopener">Open full deck &#8599;</a>
+    </div>
+    <div class="frame deck-frame">
+      <iframe src="deck.html" title="AI-Supported Automation for Dynamics 365 Demos slide deck" loading="lazy" scrolling="no"></iframe>
+    </div>
+    <p class="note">Ten slides. Navigate inside the deck with the on-screen arrows, the &larr;/&rarr; keys, or the dots. Use &ldquo;Open full deck&rdquo; for a full-screen view.</p>
+  </section>
+
+  <footer class="container">
+    <p>Frontier Application Consultancy &middot; <a href="../">AIBS Workshop</a> &middot; <a href="https://github.com/JW-Sthlm/frontier-consultancy-kit/blob/main/aibs/exercise/demo-environment-factory.md">Start the exercise</a></p>
+  </footer>
+</main>
+<script>
+  // Scale the fixed-size deck (1280x828) to fit its frame so it embeds without scrollbars.
+  (function(){
+    var frame = document.querySelector('.deck-frame');
+    var iframe = frame && frame.querySelector('iframe');
+    if(!frame || !iframe) return;
+    var BASE_W = 1280;
+    function fit(){
+      var scale = frame.clientWidth / BASE_W;
+      iframe.style.transform = 'scale(' + scale + ')';
+    }
+    fit();
+    window.addEventListener('resize', fit);
+    if(window.ResizeObserver){ new ResizeObserver(fit).observe(frame); }
+  })();
+</script>
+</body>
+</html>

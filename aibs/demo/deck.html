@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI-Supported Demo Environment Setup for Dynamics 365</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink:       #0f0f1a;
+    --ink-soft:  #2a2a3a;
+    --muted:     #5a5a6e;
+    --line:      #e3e6ee;
+    --bg:        #dde1ea;
+    --grad:      linear-gradient(90deg, #1a86e0 0%, #6a3cc7 50%, #c850c0 100%);
+    --grad-soft: linear-gradient(135deg, #eef1f8 0%, #e8edf8 100%);
+    --grad-warm: linear-gradient(135deg, #fdf2e7 0%, #f5e6f5 60%, #e7eefb 100%);
+    --shadow:    0 12px 48px rgba(0,0,0,0.18);
+  }
+
+  html, body {
+    width: 100%; min-height: 100vh;
+    font-family: "Segoe UI", "Segoe UI Variable", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 0 80px;
+  }
+
+  /* ── Slide deck container ─────────────────────────── */
+  .deck {
+    position: relative;
+    width: 1280px;
+    max-width: 100%;
+  }
+
+  .slide {
+    width: 1280px;
+    height: 720px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    position: relative;
+  }
+  .slide.active { display: flex; }
+
+  /* Slide chrome */
+  .slide-num {
+    position: absolute;
+    bottom: 18px; right: 28px;
+    font-size: 0.78rem;
+    color: var(--muted);
+    letter-spacing: 0.3px;
+    z-index: 5;
+  }
+  .slide-brand {
+    position: absolute;
+    bottom: 18px; left: 28px;
+    font-size: 0.78rem;
+    color: var(--muted);
+    letter-spacing: 0.4px;
+    z-index: 5;
+  }
+
+  /* ── Title text styles ────────────────────────────── */
+  h1.slide-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: var(--ink);
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+    color: var(--muted);
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+
+  .accent-text {
+    background: var(--grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  code {
+    font-family: "Cascadia Code", "Consolas", monospace;
+    font-size: 0.9em;
+    background: rgba(106,60,199,0.09);
+    color: #6a3cc7;
+    padding: 1px 6px;
+    border-radius: 5px;
+  }
+
+  /* ─────────────────────────────────────────────────────
+     SLIDE 1 — TITLE
+  ───────────────────────────────────────────────────── */
+  .s-title {
+    background:
+      radial-gradient(circle at 18% 25%, rgba(26,134,224,0.18), transparent 55%),
+      radial-gradient(circle at 82% 80%, rgba(200,80,192,0.18), transparent 55%),
+      linear-gradient(140deg, #f5f7fc 0%, #eef0f8 60%, #f4ecf7 100%);
+    padding: 80px 90px;
+    justify-content: center;
+  }
+  .s-title .eyebrow {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #6a3cc7;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  .s-title h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+    background: var(--grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding-bottom: 0.12em;
+    margin-bottom: 14px;
+  }
+  .s-title .lede {
+    font-size: 1.65rem;
+    color: var(--ink-soft);
+    font-weight: 400;
+    line-height: 1.35;
+    max-width: 940px;
+    margin-bottom: 60px;
+  }
+  .s-title .meta {
+    border-top: 2px solid rgba(106,60,199,0.25);
+    padding-top: 20px;
+    max-width: 720px;
+  }
+  .s-title .meta-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .s-title .meta-role {
+    font-size: 1.05rem;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  /* ─────────────────────────────────────────────────────
+     SLIDE 2 — THE CHALLENGE
+  ───────────────────────────────────────────────────── */
+  .s-challenge {
+    padding: 56px 70px 70px;
+    background: var(--grad-soft);
+  }
+  .s-challenge .header {
+    margin-bottom: 36px;
+  }
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-bottom: 32px;
+  }
+  .stat-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px 26px;
+    box-shadow: 0 4px 22px rgba(20,30,80,0.08);
+    border-top-width: 4px;
+    border-top-style: solid;
+    border-image: var(--grad) 1;
+    border-image-slice: 1;
+  }
+  .stat-card .stat-num {
+    font-size: 3.4rem;
+    font-weight: 800;
+    line-height: 1;
+    background: var(--grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -1px;
+  }
+  .stat-card .stat-label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-top: 12px;
+  }
+  .stat-card .stat-desc {
+    font-size: 0.86rem;
+    color: var(--muted);
+    margin-top: 6px;
+    line-height: 1.45;
+  }
+
+  .pain-points { margin-top: 4px; }
+  .pain-points h3 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #6a3cc7;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .pain-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  .pain-item {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 16px 18px;
+    box-shadow: 0 4px 18px rgba(20,30,80,0.08);
+    border-top: 3px solid;
+    border-image: var(--grad) 1;
+    font-size: 0.86rem;
+    color: var(--ink-soft);
+    line-height: 1.45;
+    position: relative;
+  }
+
+  /* ─────────────────────────────────────────────────────
+     SLIDE 3 — THE SOLUTION
+  ───────────────────────────────────────────────────── */
+  .s-solution {
+    padding: 56px 70px 70px;
+    background: #ffffff;
+  }
+  .s-solution .header { margin-bottom: 26px; }
+
+  .framework {
+    background: var(--grad-soft);
+    border-radius: 16px;
+    padding: 22px;
+    margin-bottom: 22px;
+  }
+  .framework-title {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    background: var(--grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .lifecycle {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 14px;
+  }
+  .lc-block {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 14px 18px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(20,30,80,0.06);
+    border-top: 3px solid;
+  }
+  .lc-presales { border-color: #1a86e0; }
+  .lc-delivery { border-color: #8b2fc9; }
+  .lc-block .lc-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--muted);
+  }
+  .lc-block .lc-content {
+    margin-top: 6px;
+    font-size: 0.94rem;
+    color: var(--ink-soft);
+    line-height: 1.4;
+  }
+
+  .pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+  .pillar {
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 22px 22px 20px;
+    box-shadow: 0 2px 14px rgba(20,30,80,0.04);
+    position: relative;
+    overflow: hidden;
+  }
+  .pillar::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--grad);
+  }
+  .pillar-icon {
+    width: 42px; height: 42px;
+    border-radius: 10px;
+    background: var(--grad);
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-size: 22px; font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .pillar h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .pillar p {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .pillar .pillar-tag {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #6a3cc7;
+    background: rgba(106,60,199,0.08);
+    padding: 3px 9px;
+    border-radius: 10px;
+    letter-spacing: 0.4px;
+  }
+
+  /* ─────────────────────────────────────────────────────
+     SLIDE 4 — THE PIPELINE
+  ───────────────────────────────────────────────────── */
+  .s-pipeline {
+    padding: 56px 70px 70px;
+    background: var(--grad-soft);
+  }
+  .s-pipeline .header { margin-bottom: 34px; }
+
+  .pipe-flow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-bottom: 30px;
+    align-items: stretch;
+  }
+  .pipe-step {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px 18px 22px;
+    box-shadow: 0 4px 18px rgba(20,30,80,0.08);
+    border-top: 4px solid;
+    border-image: var(--grad) 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .pipe-step .pipe-num {
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background: var(--grad);
+    color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+  .pipe-step .pipe-icon {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  .pipe-step h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 6px;
+    line-height: 1.2;
+  }
+  .pipe-step p {
+    font-size: 0.8rem;
+    color: var(--muted);
+    line-height: 1.45;
+  }
+  .pipe-step .pipe-tool {
+    margin-top: auto;
+    padding-top: 10px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: #6a3cc7;
+    letter-spacing: 0.2px;
+  }
+  .pipe-step::after {
+    content: "▶";
+    position: absolute;
+    right: -11px; top: 50%;
+    transform: translateY(-50%);
+    color: #b48fe0;
+    font-size: 0.8rem;
+    z-index: 6;
+  }
+  .pipe-step:last-child::after { content: none; }
+
+  .pipe-foot {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 18px 26px;
+    box-shadow: 0 4px 18px rgba(20,30,80,0.07);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border-left: 4px solid #6a3cc7;
+  }
+  .pipe-foot .pf-icon { font-size: 1.6rem; flex-shrink: 0; }
+  .pipe-foot .pf-body {
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+  .pipe-foot .pf-body b { color: var(--ink); }
+  .pipe-foot .pf-body strong {
+    background: var(--grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* ─────────────────────────────────────────────────────
+     SLIDE 5 — LLM-WIKI
+  ───────────────────────────────────────────────────── */
+  .s-wiki {
+    padding: 56px 70px 70px;
+    background: #ffffff;
+  }
+  .s-wiki .header { margin-bottom: 26px; }
+
+  .wiki-banner {
+    background: #12122a;
+    border-radius: 14px;
+    padding: 18px 24px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 6px 22px rgba(20,30,80,0.14);
+    border-left: 4px solid #6a3cc7;
+  }
+  .wiki-banner .wb-file {
+    font-family: "Cascadia Code", "Consolas", monospace;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: rgba(255,255,255,0.08);
+    padding: 8px 14px;
+    border-radius: 8px;
+    white-space: nowrap;
+  }
+  .wiki-banner .wb-file .dot { color: #c850c0; }
+  .wiki-banner .wb-desc {
+    font-size: 0.92rem;
+    color: rgba(255,255,255,0.82);
+    line-height: 1.5;
+  }
+  .wiki-banner .wb-desc b { color: #ffffff; }
+
+  .wiki-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+  .wiki-card {
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 22px 18px 20px;
+    box-shadow: 0 2px 14px rgba(20,30,80,0.05);
+    position: relative;
+    overflow: hidden;
+  }
+  .wiki-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--grad);
+  }
+  .wiki-card .wc-icon {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+  }
+  .wiki-card h4 {
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 6px;
+    line-height: 1.2;
+  }
+  .wiki-card p {
+    font-size: 0.8rem;
+    color: var(--muted);
+    line-height: 1.45;
+  }
+
+  /* ─────────────────────────────────────────────────────
+     SLIDE 6 — BUSINESS IMPACT
+  ───────────────────────────────────────────────────── */
+  .s-impact {
+    padding: 56px 70px 70px;
+    background: var(--grad-warm);
+  }
+  .s-impact .header { margin-bottom: 32px; }
+
+  .impact-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 26px;
+  }
+  .impact-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .impact-stat {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 22px 26px;
+    box-shadow: 0 4px 18px rgba(20,30,80,0.07);
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+  .impact-stat .num {
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1;
+    background: var(--grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    flex-shrink: 0;
+    min-width: 150px;
+  }
+  .impact-stat .desc {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    line-height: 1.45;
+  }
+  .impact-stat .desc b { color: var(--ink); }
+
+  .impact-bar {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 26px;
+    box-shadow: 0 4px 18px rgba(20,30,80,0.07);
+  }
+  .impact-bar h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 12px;
+  }
+  .timeline-row { margin-bottom: 22px; }
+  .timeline-row:last-child { margin-bottom: 0; }
+  .timeline-row .tl-label {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .timeline-row .tl-label b { color: var(--ink); }
+  .tl-bar {
+    height: 36px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #1a86e0, #c850c0);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 14px;
+    color: white;
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+  .tl-bar.short {
+    width: 30%;
+    background: linear-gradient(90deg, #22c55e, #1a86e0);
+  }
+  .tl-source {
+    font-size: 0.7rem;
+    color: var(--muted);
+    margin-top: 14px;
+    font-style: italic;
+  }
+
+  /* ─────────────────────────────────────────────────────
+     SLIDE 6 — CALL TO ACTION
+  ───────────────────────────────────────────────────── */
+  .s-cta {
+    padding: 70px 80px;
+    background:
+      radial-gradient(circle at 85% 15%, rgba(200,80,192,0.18), transparent 55%),
+      radial-gradient(circle at 15% 85%, rgba(26,134,224,0.18), transparent 55%),
+      linear-gradient(135deg, #0f1a3a 0%, #1a1a4a 50%, #2a1a4a 100%);
+    color: #ffffff;
+    justify-content: space-between;
+  }
+  .s-cta .header h1 { color: white; font-size: 2.6rem; }
+  .s-cta .header .subtitle {
+    color: rgba(255,255,255,0.75);
+    font-size: 1.15rem;
+  }
+  .next-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 28px;
+  }
+  .step {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 14px;
+    padding: 22px 22px 24px;
+    backdrop-filter: blur(6px);
+  }
+  .step-num {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--grad);
+    color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-bottom: 14px;
+  }
+  .step h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: white;
+  }
+  .step p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.78);
+    line-height: 1.5;
+  }
+  .closing-stripe {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.92rem;
+  }
+  .closing-stripe .pledge {
+    font-size: 1.05rem;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  .closing-stripe .pledge span {
+    background: var(--grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .s-cta .slide-num,
+  .s-cta .slide-brand { color: rgba(255,255,255,0.5); }
+
+  /* ── Navigation controls ──────────────────────────── */
+  .nav {
+    position: fixed;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(15,15,35,0.85);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 999px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    z-index: 100;
+    font-family: inherit;
+  }
+  .nav button {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: background 0.15s;
+  }
+  .nav button:hover { background: rgba(255,255,255,0.22); }
+  .nav button:disabled { opacity: 0.35; cursor: not-allowed; }
+  .nav .counter {
+    font-size: 0.85rem;
+    min-width: 56px;
+    text-align: center;
+    color: rgba(255,255,255,0.85);
+  }
+  .nav .dots { display: flex; gap: 6px; margin: 0 4px; }
+  .nav .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.25);
+    cursor: pointer;
+    transition: background 0.15s, transform 0.15s;
+  }
+  .nav .dot.active {
+    background: linear-gradient(90deg, #1a86e0, #c850c0);
+    transform: scale(1.3);
+  }
+
+  /* ─────────────────────────────────────────────────────
+     INTRO SLIDE — BORING WORK (ported from Frontier deck)
+  ───────────────────────────────────────────────────── */
+  .s-boring-slide {
+    background: #f5f7fc;
+    padding: 32px 56px 50px;
+    gap: 12px;
+  }
+  .s-boring-slide .slide-brand,
+  .s-boring-slide .slide-num { bottom: 12px; }
+  .s-boring-slide .header { margin-bottom: 0; }
+  .s-boring-slide .slide-title { font-size: 2.1rem; }
+  .s-boring-slide .subtitle { font-size: 0.95rem; margin-top: 4px; }
+  .s-boring-slide h1 {
+    font-size: 1.95rem; font-weight: 800; color: #0f0f1a;
+    letter-spacing: -0.4px; line-height: 1.15;
+  }
+  .s-boring-slide h1 .hl {
+    background: linear-gradient(90deg, #e53935, #c62828);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  }
+  .s-boring-slide .bw-subtitle {
+    font-size: 0.82rem; color: #666; margin-top: 4px; font-style: italic;
+  }
+  .s-boring-slide .bw-state-label {
+    font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.8px; margin-bottom: 6px; display: flex; align-items: center; gap: 7px;
+  }
+  .s-boring-slide .bw-bar {
+    display: flex; height: 58px; border-radius: 10px;
+    overflow: hidden; box-shadow: 0 3px 14px rgba(0,0,0,0.12); flex-shrink: 0;
+  }
+  .s-boring-slide .bw-seg {
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column; gap: 1px; position: relative; overflow: hidden;
+  }
+  .s-boring-slide .bw-seg-lbl {
+    font-size: 0.66rem; font-weight: 700; color: white;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.4); letter-spacing: 0.3px;
+  }
+  .s-boring-slide .bw-seg-pct {
+    font-size: 1.05rem; font-weight: 800; color: white; text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  }
+  .s-boring-slide .bw-seg-delta {
+    font-size: 0.58rem; font-weight: 700; color: rgba(255,255,255,0.85);
+  }
+  .s-boring-slide .bw-strategic { background: linear-gradient(135deg, #0060c7, #1a8fe0); }
+  .s-boring-slide .bw-delivery  { background: linear-gradient(135deg, #00897b, #26a69a); }
+  .s-boring-slide .bw-boring {
+    background: repeating-linear-gradient(-45deg, #757575 0px, #757575 7px, #9e9e9e 7px, #9e9e9e 14px);
+  }
+  .s-boring-slide .bw-boring-small { background: linear-gradient(135deg, #bdbdbd, #9e9e9e); }
+  .s-boring-slide .bw-bar-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 5px; }
+  .s-boring-slide .bw-chip {
+    font-size: 0.6rem; border-radius: 20px; padding: 2px 8px;
+    border: 1px solid; white-space: nowrap; font-weight: 500;
+  }
+  .s-boring-slide .bw-chip-blue { color: #0060c7; background: #e3f2fd; border-color: #90c8f8; }
+  .s-boring-slide .bw-chip-teal { color: #00695c; background: #e0f5f3; border-color: #80cbc4; }
+  .s-boring-slide .bw-chip-grey { color: #616161; background: #f5f5f5; border-color: #bdbdbd; }
+  .s-boring-slide .bw-middle { display: flex; align-items: stretch; gap: 16px; flex: 1; min-height: 0; }
+  .s-boring-slide .bw-side-col { flex: 1; display: flex; flex-direction: column; gap: 7px; }
+  .s-boring-slide .bw-col-label {
+    font-size: 0.68rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.7px; padding: 3px 0;
+  }
+  .s-boring-slide .bw-col-label-grey  { color: #757575; border-bottom: 2px solid #e0e0e0; padding-bottom: 4px; }
+  .s-boring-slide .bw-col-label-green { color: #2e7d32; border-bottom: 2px solid #a5d6a7; padding-bottom: 4px; }
+  .s-boring-slide .bw-tags { display: flex; flex-wrap: wrap; gap: 6px; align-content: flex-start; }
+  .s-boring-slide .bw-tag {
+    display: flex; align-items: center; gap: 5px;
+    border-radius: 20px; padding: 5px 12px;
+    font-size: 0.71rem; border: 1.5px solid;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06); white-space: nowrap;
+  }
+  .s-boring-slide .bw-tag-boring { background: white; color: #424242; border-color: #e0e0e0; }
+  .s-boring-slide .bw-tag-freed  { background: #e8f5e9; color: #1b5e20; border-color: #a5d6a7; }
+  .s-boring-slide .bw-ai-box {
+    flex: 0 0 200px;
+    background: linear-gradient(160deg, #0060c7 0%, #7b3fbe 55%, #c850c0 100%);
+    border-radius: 14px;
+    padding: 18px 16px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 9px; text-align: center;
+    box-shadow: 0 6px 26px rgba(100,60,200,0.35);
+  }
+  .s-boring-slide .bw-ai-icon  { font-size: 2.2rem; }
+  .s-boring-slide .bw-ai-title { font-size: 1rem; font-weight: 800; color: white; line-height: 1.2; }
+  .s-boring-slide .bw-ai-sub   { font-size: 0.66rem; color: rgba(255,255,255,0.82); line-height: 1.5; }
+  .s-boring-slide .bw-ai-arrow { font-size: 1.4rem; color: white; opacity: 0.7; }
+  .s-boring-slide .bw-takeaway {
+    flex-shrink: 0;
+    background: linear-gradient(90deg, #e3f0ff 0%, #f0e8ff 100%);
+    border: 1.5px solid #c8a8e8;
+    border-radius: 12px;
+    padding: 13px 22px;
+    display: flex; align-items: center; gap: 16px;
+  }
+  .s-boring-slide .bw-takeaway-icon { font-size: 1.5rem; flex-shrink: 0; }
+  .s-boring-slide .bw-takeaway-body { font-size: 0.79rem; color: #1a1a2e; line-height: 1.55; flex: 1; }
+  .s-boring-slide .bw-takeaway-body strong {
+    background: linear-gradient(90deg, #0060c7, #7b3fbe);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  }
+  .s-boring-slide .bw-takeaway-stat {
+    flex-shrink: 0; text-align: center;
+    border-left: 2px solid #c8a8e8; padding-left: 18px;
+  }
+  .s-boring-slide .bw-stat-big   { font-size: 2.2rem; font-weight: 800; color: #7b3fbe; line-height: 1; }
+  .s-boring-slide .bw-stat-small { font-size: 0.65rem; color: #666; line-height: 1.4; margin-top: 3px; }
+
+  /* ─────────────────────────────────────────────────────
+     INTRO SLIDE — APPROACH (ported from Frontier deck)
+  ───────────────────────────────────────────────────── */
+  .s-approach {
+    padding: 30px 50px 50px;
+    background:
+      radial-gradient(ellipse 600px 400px at 18% 78%, rgba(180,150,210,0.18), transparent 60%),
+      linear-gradient(135deg, #faf7fc 0%, #f5f0fa 100%);
+    gap: 0;
+  }
+  .s-approach .ap-title {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.4px;
+  }
+  .s-approach .ap-title .gr {
+    background: linear-gradient(90deg, #1a86e0 0%, #c850c0 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  }
+  .s-approach .ap-title .sep { color: #c850c0; font-weight: 300; margin: 0 8px; }
+  .s-approach .ap-subtitle {
+    font-size: 0.88rem; color: var(--ink-soft);
+    margin-top: 6px; line-height: 1.4;
+    white-space: nowrap;
+  }
+  .s-approach .ap-subtitle b { color: var(--ink); }
+  .s-approach .ap-note {
+    position: absolute;
+    top: 38px; right: 50px;
+    font-size: 0.78rem; color: var(--muted);
+    font-style: italic; line-height: 1.35; text-align: right;
+    max-width: 230px;
+    z-index: 5;
+  }
+  .s-approach .ap-phases {
+    display: grid;
+    grid-template-columns: 1fr 4.2fr;
+    gap: 8px;
+    margin-top: 14px;
+    position: relative;
+  }
+  .s-approach .ap-phase-head {
+    border-radius: 999px;
+    padding: 7px 18px;
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    border: 1.5px solid;
+    background: white;
+  }
+  .s-approach .ap-presales-head { border-color: #d8b3ec; color: #6a3cc7; }
+  .s-approach .ap-delivery-head { border-color: #b9c6f0; color: #1a4f8c; }
+  .s-approach .ap-arrow {
+    position: absolute;
+    left: calc(19% - 6px); top: 50%;
+    transform: translateY(-50%);
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #6a3cc7;
+    display: flex; align-items: center; justify-content: center;
+    color: #6a3cc7; font-size: 0.65rem;
+    z-index: 5;
+  }
+  .s-approach .ap-canvas {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    margin-top: 6px;
+  }
+  .s-approach .ap-divider {
+    position: absolute;
+    top: 0; bottom: 80px;
+    border-left: 1.5px dashed rgba(106,60,199,0.4);
+  }
+  .s-approach .div-presales { left: 19%; }
+  .s-approach .div-initiate { left: 36%; }
+  .s-approach .div-implement { left: 65%; }
+  .s-approach .div-prepare { left: 85%; }
+  .s-approach .ap-col-head {
+    position: absolute;
+    text-align: center;
+    width: 130px;
+    transform: translateX(-50%);
+  }
+  .s-approach .ap-col-head .ic {
+    font-size: 1.5rem;
+    color: #6a3cc7;
+    margin-bottom: 2px;
+  }
+  .s-approach .ap-col-head .tt {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--ink);
+    line-height: 1.1;
+  }
+  .s-approach .ap-col-head .sb {
+    font-size: 0.74rem;
+    color: var(--muted);
+    margin-top: 1px;
+  }
+  .s-approach .head-initiate  { left: 27.5%; top: 4px; }
+  .s-approach .head-implement { left: 50%;   top: 4px; }
+  .s-approach .head-prepare   { left: 75%;   top: 4px; }
+  .s-approach .head-operate   { left: 92.5%; top: 4px; }
+  .s-approach .head-design    { left: 45%; top: 96px; font-size: 0.85rem; font-weight: 700; color: var(--ink-soft); }
+  .s-approach .head-build     { left: 60%; top: 96px; font-size: 0.85rem; font-weight: 700; color: var(--ink-soft); }
+  .s-approach .ap-item {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 260px;
+  }
+  .s-approach .ap-bubble {
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle at 32% 28%, #9656e0 0%, #6a2bb8 55%, #4a1a8a 100%);
+    box-shadow: 0 4px 12px rgba(74,26,138,0.4);
+  }
+  .s-approach .b-12 { width: 12px; height: 12px; }
+  .s-approach .b-16 { width: 16px; height: 16px; }
+  .s-approach .b-22 { width: 22px; height: 22px; }
+  .s-approach .b-30 { width: 30px; height: 30px; }
+  .s-approach .b-40 { width: 40px; height: 40px; }
+  .s-approach .b-55 { width: 55px; height: 55px; }
+  .s-approach .b-75 { width: 75px; height: 75px; }
+  .s-approach .ap-label {
+    line-height: 1.2;
+  }
+  .s-approach .ap-label .lt {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .s-approach .ap-label .ld {
+    font-size: 0.68rem;
+    color: var(--muted);
+    margin-top: 1px;
+    line-height: 1.3;
+  }
+  .s-approach .ap-label.right { text-align: left; }
+  .s-approach .ap-item:has(.ap-label.left) {
+    flex-direction: row-reverse;
+    transform: translateX(calc(-100% + 30px));
+  }
+  .s-approach .ap-label.left { text-align: right; }
+  .s-approach .ap-stadium {
+    position: absolute;
+    border: 1px solid rgba(150,120,180,0.4);
+    border-radius: 60px;
+    background: rgba(255,255,255,0.65);
+    padding: 10px 18px 14px;
+    text-align: center;
+  }
+  .s-approach .ap-stadium-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.25;
+    margin-top: 2px;
+  }
+  .s-approach .ap-stadium-sub {
+    font-size: 0.7rem;
+    color: var(--muted);
+  }
+  .s-approach .ap-stadium-bubbles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  .s-approach .ap-foundation {
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    background: rgba(255,255,255,0.85);
+    border-radius: 14px;
+    padding: 10px 22px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    border: 1px solid rgba(106,60,199,0.18);
+    box-shadow: 0 4px 14px rgba(20,30,80,0.06);
+  }
+  .s-approach .ap-found-item {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    line-height: 1.3;
+    white-space: nowrap;
+  }
+  .s-approach .ap-found-item b {
+    color: #6a3cc7; font-weight: 800; margin-right: 4px;
+  }
+  .s-approach .ap-found-icon {
+    color: #6a3cc7;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+  .s-approach .ap-found-arrow {
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1a86e0, #c850c0);
+    color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+
+  /* ─────────────────────────────────────────────────────
+     INTRO SLIDE — AI-FIRST TOOLBELT (styled like The Solution)
+  ───────────────────────────────────────────────────── */
+  .s-toolbelt {
+    padding: 56px 70px 70px;
+    background: #ffffff;
+  }
+  .s-toolbelt .header { margin-bottom: 26px; }
+  .s-toolbelt .enabled-row {
+    margin-top: 26px;
+    background: linear-gradient(90deg,#eef2fb 0%,#edf0fb 100%);
+    border: 1.5px solid #d7e0f3;
+    border-radius: 14px;
+    padding: 16px 26px;
+    display: grid;
+    grid-template-columns: auto repeat(3,1fr);
+    align-items: center;
+    column-gap: 10px;
+    box-shadow: 0 2px 12px rgba(20,30,80,0.06);
+  }
+  .s-toolbelt .enabled-label { font-size:1.05rem; font-weight:800; color:#1c5fc4; padding-right:20px; border-right:1.5px solid #d7e0f3; }
+  .s-toolbelt .enabled-item { display:flex; align-items:center; gap:14px; padding-left:26px; }
+  .s-toolbelt .enabled-item .ei-logo { width:34px; height:34px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .s-toolbelt .enabled-item .ei-name { font-size:1rem; color:#555; font-weight:500; }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .nav { display: none; }
+    .deck { width: 100%; }
+    .slide {
+      display: flex !important;
+      page-break-after: always;
+      box-shadow: none;
+      border-radius: 0;
+      margin: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="deck">
+
+  <!-- ─── SLIDE 1: TITLE ─────────────────────────────── -->
+  <section class="slide s-title active" id="slide-1">
+    <div class="eyebrow">Partner Enablement Workshop</div>
+    <h1>AI-Supported Automation<br/>for Dynamics 365 Demos</h1>
+    <p class="lede">Combine <b>Microsoft Learn MCP</b> and <b>Dataverse MCP</b> to research, ground, and build repeatable D365 demo environments — proven on Customer Service &amp; Contact Center.</p>
+    <div class="meta">
+      <div class="meta-name">Marvin Heilemann &amp; Joris Kalz</div>
+      <div class="meta-role">Frontier Application Consultancy · Enterprise Partner Solution Architects</div>
+    </div>
+    <div class="slide-brand">FRONTIER · DEMO AUTOMATION</div>
+    <div class="slide-num">01 / 10</div>
+  </section>
+
+  <!-- ─── SLIDE 2: INTRO · BORING WORK (Frontier initiative) ─── -->
+  <section class="slide s-boring-slide" id="intro-boring">
+    <div class="header">
+      <h1 class="slide-title">Your best people deserve better than <span class="accent-text">boring work</span></h1>
+      <p class="subtitle">On a typical delivery project, 25% of expert time disappears into tasks that AI + MCP can handle &mdash; starting today.</p>
+    </div>
+
+    <div>
+      <div class="bw-state-label" style="color:#424242;">&#128197; Today &mdash; where your team&rsquo;s time actually goes</div>
+      <div class="bw-bar">
+        <div class="bw-seg bw-strategic" style="width:35%">
+          <div class="bw-seg-lbl">Strategic</div>
+          <div class="bw-seg-pct">35%</div>
+        </div>
+        <div class="bw-seg bw-delivery" style="width:40%">
+          <div class="bw-seg-lbl">Delivery</div>
+          <div class="bw-seg-pct">40%</div>
+        </div>
+        <div class="bw-seg bw-boring" style="width:25%">
+          <div class="bw-seg-lbl">&#128564; Boring Work</div>
+          <div class="bw-seg-pct">25%</div>
+        </div>
+      </div>
+      <div class="bw-bar-chips">
+        <div class="bw-chip bw-chip-blue">Architecture &amp; Design</div>
+        <div class="bw-chip bw-chip-blue">Fit-Gap Analysis</div>
+        <div class="bw-chip bw-chip-blue">Stakeholder Alignment</div>
+        <div class="bw-chip bw-chip-blue">Sprint Planning</div>
+        <div class="bw-chip bw-chip-teal">Configuration &amp; Dev</div>
+        <div class="bw-chip bw-chip-teal">Integrations</div>
+        <div class="bw-chip bw-chip-teal">Testing &amp; UAT</div>
+        <div class="bw-chip bw-chip-grey">Status Reports</div>
+        <div class="bw-chip bw-chip-grey">ADO Updates</div>
+        <div class="bw-chip bw-chip-grey">Meeting Notes</div>
+        <div class="bw-chip bw-chip-grey">Deployment Logs</div>
+        <div class="bw-chip bw-chip-grey">Backlog Grooming</div>
+      </div>
+    </div>
+
+    <div class="bw-middle">
+      <div class="bw-side-col">
+        <div class="bw-col-label bw-col-label-grey">&#128564; The boring work nobody wants&hellip;</div>
+        <div class="bw-tags">
+          <div class="bw-tag bw-tag-boring">&#128202; Status reports &amp; slide decks</div>
+          <div class="bw-tag bw-tag-boring">&#128203; ADO work item updates</div>
+          <div class="bw-tag bw-tag-boring">&#128221; Meeting notes &amp; minutes</div>
+          <div class="bw-tag bw-tag-boring">&#128196; Release &amp; handover docs</div>
+          <div class="bw-tag bw-tag-boring">&#128260; Sprint board maintenance</div>
+          <div class="bw-tag bw-tag-boring">&#128194; Backlog triaging</div>
+          <div class="bw-tag bw-tag-boring">&#128230; Deployment coordination logs</div>
+          <div class="bw-tag bw-tag-boring">&#128269; Tracking blockers across tickets</div>
+        </div>
+      </div>
+
+      <div class="bw-ai-box">
+        <div class="bw-ai-icon">&#129302;</div>
+        <div class="bw-ai-title">AI + MCP<br/>handles this</div>
+        <div class="bw-ai-sub">GitHub Copilot<br/>ADO MCP Server<br/>D365 CRM MCP<br/>Copilot Studio</div>
+        <div class="bw-ai-arrow">&#8659;</div>
+      </div>
+
+      <div class="bw-side-col">
+        <div class="bw-col-label bw-col-label-green">&#128640; Time flows back to real work&hellip;</div>
+        <div class="bw-tags">
+          <div class="bw-tag bw-tag-freed">&#128161; Deeper solution architecture</div>
+          <div class="bw-tag bw-tag-freed">&#127919; More client workshop facilitation</div>
+          <div class="bw-tag bw-tag-freed">&#9889; Faster feature delivery</div>
+          <div class="bw-tag bw-tag-freed">&#128295; More integration testing depth</div>
+          <div class="bw-tag bw-tag-freed">&#129513; Better fit-gap &amp; process design</div>
+          <div class="bw-tag bw-tag-freed">&#128200; Higher sprint velocity</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="bw-state-label" style="color:#2e7d32;">&#9989; With AI + MCP &mdash; where your team&rsquo;s time should go</div>
+      <div class="bw-bar">
+        <div class="bw-seg bw-strategic" style="width:45%">
+          <div class="bw-seg-lbl">Strategic</div>
+          <div class="bw-seg-pct">45% <span class="bw-seg-delta">&#9650; +10%</span></div>
+        </div>
+        <div class="bw-seg bw-delivery" style="width:50%">
+          <div class="bw-seg-lbl">Delivery</div>
+          <div class="bw-seg-pct">50% <span class="bw-seg-delta">&#9650; +10%</span></div>
+        </div>
+        <div class="bw-seg bw-boring-small" style="width:5%">
+          <div class="bw-seg-lbl" style="font-size:0.58rem;">&#128564; 5%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bw-takeaway">
+      <div class="bw-takeaway-icon">&#128161;</div>
+      <div class="bw-takeaway-body">
+        <strong>On a 10-person D365 team, 25% boring work = 2.5 FTEs spending their day on tasks AI can do.</strong><br/>
+        With Azure DevOps MCP, D365 CRM MCP &amp; GitHub Copilot, that time flows back to what your consultants love &mdash; and what your clients are actually paying for.
+      </div>
+      <div class="bw-takeaway-stat">
+        <div class="bw-stat-big">~12%</div>
+        <div class="bw-stat-small">of total project effort<br/>reclaimed per engagement</div>
+      </div>
+    </div>
+
+    <div class="slide-brand">FRONTIER · BORING WORK</div>
+    <div class="slide-num">02 / 10</div>
+  </section>
+
+  <!-- ─── SLIDE 3: INTRO · AI-FIRST TOOLBELT (Frontier initiative) ─── -->
+  <section class="slide s-toolbelt" id="intro-toolbelt">
+    <div class="header">
+      <h1 class="slide-title"><span class="accent-text">AI-first toolbelt</span> opportunities</h1>
+      <p class="subtitle">AI-First Consulting integrates AI across every process and engagement — from presales to delivery — for faster, outcome-based delivery and greater efficiency.</p>
+    </div>
+
+    <div class="framework">
+      <div class="framework-title">Across the engagement lifecycle</div>
+      <div class="lifecycle">
+        <div class="lc-block lc-presales">
+          <div class="lc-label">🤝 Pre-Sales</div>
+          <div class="lc-content">Solution scoping, rapid prototyping, personalized demos &amp; quality checks</div>
+        </div>
+        <div class="lc-block lc-delivery">
+          <div class="lc-label">🚗 Delivery</div>
+          <div class="lc-content">Configuration, coding, testing &amp; delivery-management automation</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-icon">🗄️</div>
+        <h4>Dataverse MCP</h4>
+        <p>Rapid data-model exploration for scoping; entity &amp; field configuration assistance directly from the IDE.</p>
+        <span class="pillar-tag">Pre-Sales · Delivery</span>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🛠️</div>
+        <h4>Development MCP</h4>
+        <p>Rapid prototyping &amp; solution scoping; accelerated plugin, PCF &amp; Power Automate scaffolding.</p>
+        <span class="pillar-tag">Pre-Sales · Delivery</span>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🧪</div>
+        <h4>Playwright Test MCP</h4>
+        <p>Demo-environment quality checks; auto-generated E2E tests for model-driven &amp; canvas apps.</p>
+        <span class="pillar-tag">Pre-Sales · Delivery</span>
+      </div>
+    </div>
+
+    <!-- Enabled by ribbon -->
+    <div class="enabled-row">
+      <div class="enabled-label">Enabled by</div>
+      <div class="enabled-item">
+        <div class="ei-logo">
+          <img src="images/microsoft-scout-logo.png" alt="Microsoft Scout" width="34" height="34" style="border-radius:50%;display:block;" />
+        </div>
+        <div class="ei-name">Microsoft Scout</div>
+      </div>
+      <div class="enabled-item">
+        <div class="ei-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512" aria-hidden="true">
+            <radialGradient id="cop-a" cx="-821.065" cy="-114.135" r="11.637" gradientTransform="rotate(230.696 -6403.153 -4285.167)scale(17.3033 16.2706)" gradientUnits="userSpaceOnUse"><stop offset=".096" stop-color="#00aeff"/><stop offset=".773" stop-color="#2253ce"/><stop offset="1" stop-color="#0736c4"/></radialGradient>
+            <path fill="url(#cop-a)" d="M374 62c-6.7-22.9-27.8-38.7-51.7-38.7h-15.7c-26 0-48.3 18.6-53 44.2l-26.9 146.8l6.7-22.9c6.7-23 27.8-38.8 51.7-38.8h91.4l38.3 14.9l36.9-14.9H441c-23.9 0-45-15.8-51.7-38.7z"/>
+            <radialGradient id="cop-b" cx="-682.504" cy="-157.15" r="11.637" gradientTransform="rotate(51.84 -8280.8 10297.983)scale(15.9912 15.5119)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffb657"/><stop offset=".634" stop-color="#ff5f3d"/><stop offset=".923" stop-color="#c02b3c"/></radialGradient>
+            <path fill="url(#cop-b)" d="M143.5 449.8c6.7 23 27.8 38.9 51.8 38.9h33.4c29.2 0 53.1-23.3 53.9-52.5l3.6-141.5l-7.6 26c-6.7 23-27.8 38.7-51.7 38.7h-92.2l-32.9-17.8l-35.6 17.8h10.6c24 0 45.1 15.9 51.8 38.9z"/>
+            <linearGradient id="cop-c" x1="151.469" x2="178.099" y1="339.458" y2="647.55" gradientTransform="translate(0 -278)" gradientUnits="userSpaceOnUse"><stop offset=".156" stop-color="#0d91e1"/><stop offset=".487" stop-color="#52b471"/><stop offset=".652" stop-color="#98bd42"/><stop offset=".937" stop-color="#ffc800"/></linearGradient>
+            <path fill="url(#cop-c)" d="M320 23.3H133.4C80 23.3 48 93.7 26.7 164.2C1.4 247.7-31.6 359.4 64 359.4h80.6c24.1 0 45.2-15.9 51.8-39.1c14-49 38.6-134.5 57.9-199.6c9.8-33.1 18-61.5 30.5-79.2c7.1-9.9 18.8-18.2 35.2-18.2"/>
+            <linearGradient id="cop-d" x1="154.122" x2="168.661" y1="300.884" y2="636.947" gradientTransform="translate(0 -278)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3dcbff"/><stop offset=".247" stop-color="#0588f7" stop-opacity="0"/></linearGradient>
+            <path fill="url(#cop-d)" d="M320 23.3H133.4C80 23.3 48 93.7 26.7 164.2C1.4 247.7-31.6 359.4 64 359.4h80.6c24.1 0 45.2-15.9 51.8-39.1c14-49 38.6-134.5 57.9-199.6c9.8-33.1 18-61.5 30.5-79.2c7.1-9.9 18.8-18.2 35.2-18.2"/>
+            <radialGradient id="cop-e" cx="-749.029" cy="-171.779" r="11.637" gradientTransform="rotate(109.274 -16993.399 6475.348)scale(38.3873 45.9867)" gradientUnits="userSpaceOnUse"><stop offset=".066" stop-color="#8c48ff"/><stop offset=".5" stop-color="#f2598a"/><stop offset=".896" stop-color="#ffb152"/></radialGradient>
+            <path fill="url(#cop-e)" d="M192 488.7h186.7c53.3 0 85.3-70.5 106.7-141c25.3-83.5 58.3-195.2-37.3-195.2h-80.6c-24.1 0-45.2 15.9-51.8 39.1c-14 49-38.6 134.6-57.9 199.7c-9.8 33.1-18 61.5-30.5 79.2c-7.2 9.9-18.9 18.2-35.3 18.2"/>
+            <linearGradient id="cop-f" x1="352.516" x2="352.325" y1="409.769" y2="501.338" gradientTransform="translate(0 -278)" gradientUnits="userSpaceOnUse"><stop offset=".058" stop-color="#f8adfa"/><stop offset=".708" stop-color="#a86edd" stop-opacity="0"/></linearGradient>
+            <path fill="url(#cop-f)" d="M192 488.7h186.7c53.3 0 85.3-70.5 106.7-141c25.3-83.5 58.3-195.2-37.3-195.2h-80.6c-24.1 0-45.2 15.9-51.8 39.1c-14 49-38.6 134.6-57.9 199.7c-9.8 33.1-18 61.5-30.5 79.2c-7.2 9.9-18.9 18.2-35.3 18.2"/>
+          </svg>
+        </div>
+        <div class="ei-name">Copilot Studio</div>
+      </div>
+      <div class="enabled-item">
+        <div class="ei-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 254" aria-hidden="true">
+            <defs>
+              <linearGradient id="vsc-a" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#fff" stop-opacity="0"/></linearGradient>
+              <path id="vsc-b" d="M180.828 252.605a15.87 15.87 0 0 0 12.65-.486l52.501-25.262a15.94 15.94 0 0 0 9.025-14.364V41.197a15.94 15.94 0 0 0-9.025-14.363l-52.5-25.263a15.88 15.88 0 0 0-18.115 3.084L74.857 96.35l-43.78-33.232a10.614 10.614 0 0 0-13.56.603L3.476 76.494c-4.63 4.211-4.635 11.495-.012 15.713l37.967 34.638l-37.967 34.637c-4.623 4.219-4.618 11.502.012 15.714l14.041 12.772a10.614 10.614 0 0 0 13.56.604l43.78-33.233l100.507 91.695a15.85 15.85 0 0 0 5.464 3.571m10.464-183.649l-76.262 57.889l76.262 57.888z"/>
+            </defs>
+            <mask id="vsc-c" fill="#fff"><use href="#vsc-b"/></mask>
+            <path fill="#0065a9" d="M246.135 26.873L193.593 1.575a15.885 15.885 0 0 0-18.123 3.08L3.466 161.482c-4.626 4.219-4.62 11.502.012 15.714l14.05 12.772a10.625 10.625 0 0 0 13.569.604L238.229 33.436c6.949-5.271 16.93-.315 16.93 8.407v-.61a15.94 15.94 0 0 0-9.024-14.36" mask="url(#vsc-c)"/>
+            <path fill="#007acc" d="m246.135 226.816l-52.542 25.298a15.89 15.89 0 0 1-18.123-3.08L3.466 92.207c-4.626-4.218-4.62-11.502.012-15.713l14.05-12.773a10.625 10.625 0 0 1 13.569-.603l207.132 157.135c6.949 5.271 16.93.315 16.93-8.408v.611a15.94 15.94 0 0 1-9.024 14.36" mask="url(#vsc-c)"/>
+            <path fill="#1f9cf0" d="M193.428 252.134a15.89 15.89 0 0 1-18.125-3.083c5.881 5.88 15.938 1.715 15.938-6.603V11.273c0-8.318-10.057-12.483-15.938-6.602a15.89 15.89 0 0 1 18.125-3.084l52.533 25.263a15.94 15.94 0 0 1 9.03 14.363V212.51c0 6.125-3.51 11.709-9.03 14.363z" mask="url(#vsc-c)"/>
+            <path fill="url(#vsc-a)" fill-opacity=".25" d="M180.828 252.605a15.87 15.87 0 0 0 12.65-.486l52.5-25.263a15.94 15.94 0 0 0 9.026-14.363V41.197a15.94 15.94 0 0 0-9.025-14.363L193.477 1.57a15.88 15.88 0 0 0-18.114 3.084L74.857 96.35l-43.78-33.232a10.614 10.614 0 0 0-13.56.603L3.476 76.494c-4.63 4.211-4.635 11.495-.012 15.713l37.967 34.638l-37.967 34.637c-4.623 4.219-4.618 11.502.012 15.714l14.041 12.772a10.614 10.614 0 0 0 13.56.604l43.78-33.233l100.506 91.695a15.9 15.9 0 0 0 5.465 3.571m10.464-183.65l-76.262 57.89l76.262 57.888z" mask="url(#vsc-c)"/>
+          </svg>
+        </div>
+        <div class="ei-name">Visual Studio Code</div>
+      </div>
+    </div>
+
+    <div class="slide-brand">FRONTIER · AI-FIRST TOOLBELT</div>
+    <div class="slide-num">03 / 10</div>
+  </section>
+
+  <!-- ─── SLIDE 4: INTRO · APPROACH (Frontier initiative) ─── -->
+  <section class="slide s-approach" id="intro-approach">
+    <h1 class="ap-title"><span class="gr">Frontier Application Consultancy</span><span class="sep">|</span>Approach</h1>
+    <p class="ap-subtitle">Taking an AI-first approach to Application Consultancy revolves around a data-driven approach using <b>Clients</b>, <b>Tools</b> and <b>Knowledge</b>.</p>
+    <div class="ap-note">Scenarios below are potential use cases, not productized capabilities.</div>
+
+    <div class="ap-phases">
+      <div class="ap-phase-head ap-presales-head">🤝 Pre-Sales</div>
+      <div class="ap-phase-head ap-delivery-head">🚗 Delivery (Success By Design)</div>
+      <div class="ap-arrow">▶</div>
+    </div>
+
+    <div class="ap-canvas">
+      <!-- Phase dividers -->
+      <div class="ap-divider div-presales"></div>
+      <div class="ap-divider div-initiate"></div>
+      <div class="ap-divider div-implement"></div>
+      <div class="ap-divider div-prepare"></div>
+
+      <!-- Phase column heads -->
+      <div class="ap-col-head head-initiate">
+        <div class="ic">↗️</div>
+        <div class="tt">Initiate</div>
+        <div class="sb">Get ready to start</div>
+      </div>
+      <div class="ap-col-head head-implement">
+        <div class="ic">🛠️</div>
+        <div class="tt">Implement</div>
+      </div>
+      <div class="ap-col-head head-prepare">
+        <div class="ic">👥</div>
+        <div class="tt">Prepare</div>
+        <div class="sb">Deploy</div>
+      </div>
+      <div class="ap-col-head head-operate">
+        <div class="ic">⚙️</div>
+        <div class="tt">Operate</div>
+        <div class="sb">Live</div>
+      </div>
+      <div class="ap-col-head head-design">Design</div>
+      <div class="ap-col-head head-build">Build</div>
+
+      <!-- ============ PRE-SALES bubbles ============ -->
+      <div class="ap-item" style="top:60px; left:0;">
+        <div class="ap-bubble b-30"></div>
+        <div class="ap-label right">
+          <div class="lt">RFP agent</div>
+          <div class="ld">Draft RFP / RFI responses</div>
+        </div>
+      </div>
+      <div class="ap-item" style="top:230px; left:0;">
+        <div class="ap-bubble b-75"></div>
+        <div class="ap-label right" style="margin-left:4px;">
+          <div class="lt">Personalized customer demo</div>
+          <div class="ld">Based on customer data &amp; public info</div>
+        </div>
+      </div>
+      <div class="ap-item" style="top:390px; left:6px;">
+        <div class="ap-bubble b-22"></div>
+        <div class="ap-label right">
+          <div class="lt">Fit gap analysis</div>
+          <div class="ld">Match customer processes with Process Repository</div>
+        </div>
+      </div>
+
+      <!-- ============ INITIATE bubbles ============ -->
+      <div class="ap-item" style="top:135px; left:24%;">
+        <div class="ap-bubble b-40"></div>
+        <div class="ap-label right">
+          <div class="lt">Customer Kickoff</div>
+          <div class="ld">Including Copilot training</div>
+        </div>
+      </div>
+      <div class="ap-item" style="top:255px; left:24%;">
+        <div class="ap-bubble b-55"></div>
+        <div class="ap-label right">
+          <div class="lt">Solution Blueprint</div>
+          <div class="ld">Draft, review, evaluate</div>
+        </div>
+      </div>
+      <div class="ap-item" style="top:340px; left:24%;">
+        <div class="ap-bubble b-22"></div>
+        <div class="ap-label right">
+          <div class="lt">Task initiation</div>
+          <div class="ld">Populate DevOps from Blueprint</div>
+        </div>
+      </div>
+
+      <!-- ============ IMPLEMENT bubbles ============ -->
+      <div class="ap-item" style="top:135px; left:42%;">
+        <div class="ap-bubble b-40"></div>
+        <div class="ap-label right">
+          <div class="lt">Generate FDD, TDD, IDD</div>
+          <div class="ld">Using workshops &amp; ADO as input</div>
+        </div>
+      </div>
+      <div class="ap-item" style="top:200px; left:57%;">
+        <div class="ap-bubble b-55"></div>
+        <div class="ap-label right">
+          <div class="lt">AI-assisted coding</div>
+        </div>
+      </div>
+      <div class="ap-item" style="top:215px; left:42%;">
+        <div class="ap-bubble b-30"></div>
+        <div class="ap-label left">
+          <div class="lt">AI-assisted configuration</div>
+          <div class="ld">Using knowledge and MCP</div>
+        </div>
+      </div>
+      <div class="ap-item" style="top:275px; left:57%;">
+        <div class="ap-bubble b-22"></div>
+        <div class="ap-label right">
+          <div class="lt">Test plan</div>
+          <div class="ld">With evals defined</div>
+        </div>
+      </div>
+
+      <!-- Configuration documentation -->
+      <div class="ap-item" style="top:330px; left:42%;">
+        <div class="ap-bubble b-22"></div>
+        <div class="ap-label right">
+          <div class="lt">Configuration documentation</div>
+          <div class="ld">Generated from application</div>
+        </div>
+      </div>
+
+      <!-- ============ PREPARE bubbles ============ -->
+      <div class="ap-item" style="top:130px; left:70%;">
+        <div class="ap-bubble b-40"></div>
+        <div class="ap-label right">
+          <div class="lt">Data migration</div>
+          <div class="ld">Using Fabric IQ and MCP</div>
+        </div>
+      </div>
+      <div class="ap-item" style="top:240px; left:70%;">
+        <div class="ap-bubble b-55"></div>
+        <div class="ap-label right">
+          <div class="lt">Training documentation</div>
+          <div class="ld">Generated from application</div>
+        </div>
+      </div>
+      <div class="ap-item" style="top:370px; left:70%;">
+        <div class="ap-bubble b-30"></div>
+        <div class="ap-label right">
+          <div class="lt">Go-Live</div>
+          <div class="ld">Planning &amp; readiness assessment</div>
+        </div>
+      </div>
+
+      <!-- ============ OPERATE bubbles ============ -->
+      <div class="ap-item" style="top:170px; left:88%;">
+        <div class="ap-bubble b-22"></div>
+        <div class="ap-label right">
+          <div class="lt">Ops measurement</div>
+          <div class="ld">Agent that measures batch actions and transactions</div>
+        </div>
+      </div>
+
+      <!-- Foundation bar -->
+      <div class="ap-foundation">
+        <div class="ap-found-item">
+          <div class="ap-found-arrow">⇅</div>
+          <div class="ap-found-icon">★</div>
+          <div><b>Tools</b> | MCP servers</div>
+        </div>
+        <div class="ap-found-item">
+          <div class="ap-found-icon">★</div>
+          <div><b>Knowledge</b> | Work IQ · Fabric IQ · Foundry IQ</div>
+        </div>
+        <div class="ap-found-item">
+          <div class="ap-found-icon">★</div>
+          <div><b>Clients</b> | M365 Copilot · GHCP · Copilot Studio</div>
+          <div class="ap-found-arrow" style="margin-left:auto;">⇅</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-brand">FRONTIER · APPROACH</div>
+    <div class="slide-num">04 / 10</div>
+  </section>
+
+  <!-- ─── SLIDE 5: THE CHALLENGE ─────────────────────── -->
+  <section class="slide s-challenge" id="slide-2">
+    <div class="header">
+      <h1 class="slide-title">Why great D365 demos are <span class="accent-text">hard to build</span></h1>
+      <p class="subtitle">Setting up a credible demo environment is slow, manual, and rarely tailored to the customer in the room.</p>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat-card">
+        <div class="stat-num">1–2 wks</div>
+        <div class="stat-label">To provision &amp; seed a demo</div>
+        <div class="stat-desc">Environment provisioning, sample data, security roles and configuration eat days of specialist time per opportunity.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">Generic</div>
+        <div class="stat-label">Off-the-shelf demo data</div>
+        <div class="stat-desc">Contoso-style datasets rarely reflect the prospect's industry, terminology or processes — so the story doesn't land.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">Scarce</div>
+        <div class="stat-label">Skilled resources</div>
+        <div class="stat-desc">Pre-sales consultants spend on setup the time they should spend crafting a compelling, customer-specific narrative.</div>
+      </div>
+    </div>
+
+    <div class="pain-points">
+      <h3>What pre-sales teams are telling us</h3>
+      <div class="pain-grid">
+        <div class="pain-item">Rebuilding demo data by hand for every prospect and industry vertical.</div>
+        <div class="pain-item">Environments drift and break between demos — constant re-work before each meeting.</div>
+        <div class="pain-item">Hard to reflect a customer's real processes without deep configuration effort.</div>
+        <div class="pain-item">No easy way to reset, clone or share a known-good demo baseline.</div>
+      </div>
+    </div>
+
+    <div class="slide-brand">FRONTIER · THE CHALLENGE</div>
+    <div class="slide-num">05 / 10</div>
+  </section>
+
+  <!-- ─── SLIDE 3: THE SOLUTION ──────────────────────── -->
+  <section class="slide s-solution" id="slide-3">
+    <div class="header">
+      <h1 class="slide-title">An <span class="accent-text">AI-first way</span> to build demo environments</h1>
+      <p class="subtitle">Agents plus MCP tooling automate provisioning, data generation and configuration — grounded in the customer's context.</p>
+    </div>
+
+    <div class="framework">
+      <div class="framework-title">Learn · Ground · Build</div>
+      <div class="lifecycle">
+        <div class="lc-block lc-presales">
+          <div class="lc-label">🎯 Use Case In</div>
+          <div class="lc-content">Product capabilities researched &amp; a customer scenario described</div>
+        </div>
+        <div class="lc-block lc-delivery">
+          <div class="lc-label">🚀 Repeatable Demo Out</div>
+          <div class="lc-content">Grounded story, configuration steps &amp; demo data — captured for reuse</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-icon">📚</div>
+        <h4>Microsoft Learn MCP</h4>
+        <p>Researches product capabilities, best practices and documentation — building knowledge for a concrete demo or customer use case.</p>
+        <span class="pillar-tag">Learn &amp; understand features</span>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🗄️</div>
+        <h4>Dataverse MCP</h4>
+        <p>Analyzes the real environment — which features are enabled, plus the tables, fields and relationships that already exist.</p>
+        <span class="pillar-tag">Ground truth from the tenant</span>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🧠</div>
+        <h4>LLM-Wiki &amp; agents</h4>
+        <p>An <code>agents.md</code>-driven knowledge base keeps use cases, config and demo data structured — so agents can execute repeatably.</p>
+        <span class="pillar-tag">Structured, reusable knowledge</span>
+      </div>
+    </div>
+
+    <div class="slide-brand">FRONTIER · THE SOLUTION</div>
+    <div class="slide-num">06 / 10</div>
+  </section>
+
+  <!-- ─── SLIDE 4: THE PIPELINE ──────────────────────── -->
+  <section class="slide s-pipeline" id="slide-4">
+    <div class="header">
+      <h1 class="slide-title">Five building blocks, <span class="accent-text">one workflow</span></h1>
+      <p class="subtitle">Research the capability, ground it in the real environment, build the story, structure the knowledge, then automate.</p>
+    </div>
+
+    <div class="pipe-flow">
+      <div class="pipe-step">
+        <div class="pipe-num">1</div>
+        <div class="pipe-icon">📚</div>
+        <h4>Research &amp; learn</h4>
+        <p>Explore product capabilities, best practices &amp; docs before building a new use case.</p>
+        <div class="pipe-tool">Microsoft Learn MCP</div>
+      </div>
+      <div class="pipe-step">
+        <div class="pipe-num">2</div>
+        <div class="pipe-icon">🗄️</div>
+        <h4>Ground in Dataverse</h4>
+        <p>Analyze enabled features and the existing tables, fields &amp; relationships in the tenant.</p>
+        <div class="pipe-tool">Dataverse MCP</div>
+      </div>
+      <div class="pipe-step">
+        <div class="pipe-num">3</div>
+        <div class="pipe-icon">🎭</div>
+        <h4>Build the demo story</h4>
+        <p>Personas, business value, storyline, config steps, naming conventions &amp; demo data.</p>
+        <div class="pipe-tool">Copilot authoring</div>
+      </div>
+      <div class="pipe-step">
+        <div class="pipe-num">4</div>
+        <div class="pipe-icon">🧠</div>
+        <h4>Structure the knowledge</h4>
+        <p>Capture it in an LLM-Wiki guided by <code>agents.md</code> so it stays consistent &amp; reusable.</p>
+        <div class="pipe-tool">LLM-Wiki · agents.md</div>
+      </div>
+      <div class="pipe-step">
+        <div class="pipe-num">5</div>
+        <div class="pipe-icon">⚙️</div>
+        <h4>Automate execution</h4>
+        <p>Agent skills + MCP servers apply the configuration and seed the demo environment.</p>
+        <div class="pipe-tool">Agent skills · MCP</div>
+      </div>
+    </div>
+
+    <div class="pipe-foot">
+      <div class="pf-icon">🔁</div>
+      <div class="pf-body">
+        <b>Repeatable by design.</b> Once the LLM-Wiki structure exists, multiple use cases build on it — so demo environments for presales become <strong>faster to create and repeatable</strong>, not one-off manual work.
+      </div>
+    </div>
+
+    <div class="slide-brand">FRONTIER · BUILDING BLOCKS</div>
+    <div class="slide-num">07 / 10</div>
+  </section>
+
+  <!-- ─── SLIDE 5: LLM-WIKI ──────────────────────────── -->
+  <section class="slide s-wiki" id="slide-5">
+    <div class="header">
+      <h1 class="slide-title">The <span class="accent-text">LLM-Wiki</span> that makes it repeatable</h1>
+      <p class="subtitle">An <code>agents.md</code> file guides AI agents to store and maintain demo knowledge in a consistent structure.</p>
+    </div>
+
+    <div class="wiki-banner">
+      <div class="wb-file">📄 agents<span class="dot">.</span>md</div>
+      <div class="wb-desc">
+        <b>Instructions for the agents:</b> where to write, how to name things, and which templates &amp; standards to follow — so every use case builds on the same foundation.
+      </div>
+    </div>
+
+    <div class="wiki-grid">
+      <div class="wiki-card">
+        <div class="wc-icon">🗂️</div>
+        <h4>Demo data</h4>
+        <p>Sample records and datasets that make each scenario believable.</p>
+      </div>
+      <div class="wiki-card">
+        <div class="wc-icon">🎭</div>
+        <h4>Use cases</h4>
+        <p>Personas, business value and storylines for each demo scenario.</p>
+      </div>
+      <div class="wiki-card">
+        <div class="wc-icon">⚙️</div>
+        <h4>Current configuration</h4>
+        <p>The environment's enabled features, tables, fields and relationships.</p>
+      </div>
+      <div class="wiki-card">
+        <div class="wc-icon">🔗</div>
+        <h4>Technical dependencies</h4>
+        <p>Solutions, MCP servers and prerequisites a use case relies on.</p>
+      </div>
+      <div class="wiki-card">
+        <div class="wc-icon">📋</div>
+        <h4>Templates &amp; standards</h4>
+        <p>Naming conventions and patterns that keep everything consistent.</p>
+      </div>
+    </div>
+
+    <div class="slide-brand">FRONTIER · LLM-WIKI</div>
+    <div class="slide-num">08 / 10</div>
+  </section>
+
+  <!-- ─── SLIDE 6: BUSINESS IMPACT ───────────────────── -->
+  <section class="slide s-impact" id="slide-6">
+    <div class="header">
+      <h1 class="slide-title">Faster demos, <span class="accent-text">sharper stories</span>, more wins</h1>
+      <p class="subtitle">Reclaim pre-sales capacity and put a tailored, credible environment in front of every prospect.</p>
+    </div>
+
+    <div class="impact-grid">
+      <div class="impact-stats">
+        <div class="impact-stat">
+          <div class="num">Hours</div>
+          <div class="desc"><b>From brief to demo-ready</b> — automated provisioning and seeding replace days of manual setup.</div>
+        </div>
+        <div class="impact-stat">
+          <div class="num">Per deal</div>
+          <div class="desc"><b>Industry-tailored data</b> so every demo reflects the prospect's world, not generic sample records.</div>
+        </div>
+        <div class="impact-stat">
+          <div class="num">1-click</div>
+          <div class="desc"><b>Reset &amp; clone</b> a known-good baseline — no more drift or last-minute repair before a meeting.</div>
+        </div>
+        <div class="impact-stat">
+          <div class="num">More time</div>
+          <div class="desc"><b>Back to selling</b> — consultants focus on the narrative and the customer, not the setup.</div>
+        </div>
+      </div>
+
+      <div class="impact-bar">
+        <h4>Demo Setup Effort — Before vs. After</h4>
+        <div class="timeline-row">
+          <div class="tl-label"><b>Manual setup</b><span>1–2 weeks</span></div>
+          <div class="tl-bar">⏳ baseline</div>
+        </div>
+        <div class="timeline-row">
+          <div class="tl-label"><b>AI-supported</b><span>Hours</span></div>
+          <div class="tl-bar short">▼ faster</div>
+        </div>
+        <div class="tl-source">Illustrative — actual time varies by scenario complexity, solution footprint and data volume.</div>
+      </div>
+    </div>
+
+    <div class="slide-brand">FRONTIER · BUSINESS IMPACT</div>
+    <div class="slide-num">09 / 10</div>
+  </section>
+
+  <!-- ─── SLIDE 7: CALL TO ACTION ────────────────────── -->
+  <section class="slide s-cta" id="slide-7">
+    <div>
+      <div class="header">
+        <h1 class="slide-title">Make every demo <span class="accent-text">customer-specific</span></h1>
+        <p class="subtitle">Three moves to make AI-supported demo environments your team's default.</p>
+      </div>
+
+      <div class="next-steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h4>Join the partner workshop</h4>
+          <p>See how Microsoft Learn MCP &amp; Dataverse MCP were used for real Customer Service &amp; Contact Center research — and apply the same pattern.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h4>Stand up your LLM-Wiki</h4>
+          <p>Adopt the <code>agents.md</code> structure so demo data, use cases, configuration and standards stay consistent and reusable.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h4>Automate the next use case</h4>
+          <p>Combine MCP servers and agent skills to build the next presales demo environment — faster, repeatable, and responsibly.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="closing-stripe">
+      <div class="pledge">Give every prospect a demo that looks like <span>their own business</span>.</div>
+      <div>Frontier Application Consultancy · Enterprise Partner Solution Architects</div>
+    </div>
+
+    <div class="slide-brand">FRONTIER · NEXT STEPS</div>
+    <div class="slide-num">10 / 10</div>
+  </section>
+
+</div>
+
+<!-- ── Navigation ─────────────────────────────────────── -->
+<nav class="nav" aria-label="Slide navigation">
+  <button id="prevBtn" type="button">◀ Prev</button>
+  <div class="dots" id="dots"></div>
+  <span class="counter" id="counter">1 / 10</span>
+  <button id="nextBtn" type="button">Next ▶</button>
+</nav>
+
+<script>
+  (function () {
+    const slides = document.querySelectorAll('.slide');
+    const total = slides.length;
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const counter = document.getElementById('counter');
+    const dotsWrap = document.getElementById('dots');
+    let idx = 0;
+
+    for (let i = 0; i < total; i++) {
+      const d = document.createElement('span');
+      d.className = 'dot' + (i === 0 ? ' active' : '');
+      d.addEventListener('click', () => go(i));
+      dotsWrap.appendChild(d);
+    }
+    const dots = dotsWrap.querySelectorAll('.dot');
+
+    function go(n) {
+      idx = Math.max(0, Math.min(total - 1, n));
+      slides.forEach((s, i) => s.classList.toggle('active', i === idx));
+      dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+      counter.textContent = (idx + 1) + ' / ' + total;
+      prevBtn.disabled = idx === 0;
+      nextBtn.disabled = idx === total - 1;
+    }
+
+    prevBtn.addEventListener('click', () => go(idx - 1));
+    nextBtn.addEventListener('click', () => go(idx + 1));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); go(idx + 1); }
+      if (e.key === 'ArrowLeft'  || e.key === 'PageUp')                    { e.preventDefault(); go(idx - 1); }
+      if (e.key === 'Home') { e.preventDefault(); go(0); }
+      if (e.key === 'End')  { e.preventDefault(); go(total - 1); }
+    });
+
+    go(0);
+  })();
+</script>
+
+</body>
+</html>
