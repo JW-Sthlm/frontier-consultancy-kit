@@ -1,8 +1,8 @@
 # Frontier Consultancy
 
-Public workshop material for consulting teams exploring AI-first delivery with GitHub Copilot, Microsoft Azure, Dynamics 365, and related tools.
+View-only workshop material for consulting teams exploring AI-first delivery with GitHub Copilot, Microsoft Azure, Dynamics 365, and related tools.
 
-Everything here is public. Use the repository to run a workshop, adapt an exercise, or reuse a product example in your own enablement, but check current product guidance before using it with customers. Scenarios are fictional or illustrative unless a source is clearly cited. No partner-confidential or Microsoft-internal material is intended to be included.
+Everything here is public so partners can understand the program, prepare for an invited session, and refer back to the material afterward. It is not an open-source or self-service workshop kit. Scenarios are fictional or illustrative unless a source is clearly cited. No partner-confidential or Microsoft-internal material is intended to be included.
 
 ## Workshop tracks
 
@@ -15,11 +15,11 @@ Everything here is public. Use the repository to run a workshop, adapt an exerci
 
 The public site is available at [jw-sthlm.github.io/frontier-consultancy-kit](https://jw-sthlm.github.io/frontier-consultancy-kit/).
 
-## Reuse
+## Run the workshop
 
-Original workshop text and diagrams are available under CC BY 4.0. Original code and scripts are available under the MIT License. Microsoft and third-party trademarks, logos, screenshots, recordings, and externally owned material are excluded.
+Frontier Consultancy is delivered with Microsoft partners, not licensed for independent delivery. Contact the Microsoft partner team you work with or [Johan Wallquist on LinkedIn](https://www.linkedin.com/in/johanwallquist/) if your organization wants to participate.
 
-Read [LICENSE.md](LICENSE.md) before reusing the material.
+No permission is granted to copy, adapt, redistribute, or independently run the material. Read [LICENSE.md](LICENSE.md) for the complete view-only terms.
 
 ## Questions and contributions
 
