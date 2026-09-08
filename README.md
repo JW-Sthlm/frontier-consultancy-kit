@@ -17,7 +17,7 @@ The public site is available at [jw-sthlm.github.io/frontier-consultancy-kit](ht
 
 ## Run the workshop
 
-Frontier Consultancy is delivered with Microsoft partners, not licensed for independent delivery. Contact the Microsoft partner team you work with or [Johan Wallquist on LinkedIn](https://www.linkedin.com/in/johanwallquist/) if your organization wants to participate.
+Frontier Consultancy is a Microsoft-led program for partners, not licensed for independent delivery. Contact the Microsoft partner team you work with or [Johan Wallquist on LinkedIn](https://www.linkedin.com/in/johanwallquist/) if your organization wants to participate.
 
 No permission is granted to copy, adapt, redistribute, or independently run the material. Read [LICENSE.md](LICENSE.md) for the complete view-only terms.
 
