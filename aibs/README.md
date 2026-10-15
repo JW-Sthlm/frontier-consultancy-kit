@@ -1,24 +1,21 @@
 # AIBS track: AI Business Solutions
 
+AIBS has two learning lanes:
 
+- **[Dynamics 365](dynamics/):** implement and extend an existing business application using Success by Design and AI-first delivery tools.
+- **[Power Platform](power-platform/):** design custom solutions using HVE to turn client evidence into feature and logical schema decisions.
 
-Hands-on workshop for Dynamics 365 partners. The idea: AI-first delivery, where CRM and ERP MCP servers plus Copilot Studio do the heavy lifting and your consultants supervise and direct.
+Choose the lane that matches the delivery motion, or combine them when a Dynamics 365 implementation includes custom Power Platform extensions.
 
+## Dynamics 365
 
+The Dynamics 365 lane is a hands-on workshop for CRM and ERP partners. MCP servers plus Copilot Studio support the work while consultants supervise and direct.
 
-## Watch the deck
+The HTML deck is available from the [Dynamics 365 lane](dynamics/). Arrow keys navigate, `f` enters full screen, and `p` opens speaker notes.
 
+## Power Platform
 
-
-The HTML deck is served live: [jw-sthlm.github.io/frontier-consultancy-kit/aibs/presentation/](https://jw-sthlm.github.io/frontier-consultancy-kit/aibs/presentation/). Arrow keys to navigate, `f` for full screen, `p` for speaker notes.
-
-
-
-## What the deck covers
-
-
-
-40 slides: AI-first delivery for Dynamics 365 partners, CRM and ERP MCP servers, Copilot Studio, vibe configuration, the Zava warehouse demo, and responsible AI.
+The Power Platform lane uses HVE across ten client scenarios to decide technology-specific features, logical schemas, scope changes, and first-release tradeoffs before implementation.
 
 
 
@@ -26,7 +23,7 @@ The HTML deck is served live: [jw-sthlm.github.io/frontier-consultancy-kit/aibs/
 
 ### ERP (F&O) exercise
 
-Setup guides and exercises are available in the [exercise folder](exercise/).
+Setup, scenario, and FAQ are in build. Check back or reach out to the track leads.
 
 ### Implementation Workshop Exercise
 
@@ -36,10 +33,11 @@ Ready-to-use AI prompts for every phase of an implementation workshop. Covers me
 
 
 
-## Questions and contributions
+## Track leads
 
-Use [GitHub Issues](https://github.com/JW-Sthlm/frontier-consultancy-kit/issues) for questions, corrections, and suggested improvements.
 
+
+[Giel Cuijpers](mailto:gielcuijpers@microsoft.com) and [Marvin Heilemann](mailto:Marvin.Heilemann@microsoft.com). For cross-track or program-level questions, reach [Johan Wallquist](mailto:jwallquist@microsoft.com).
 
 
 

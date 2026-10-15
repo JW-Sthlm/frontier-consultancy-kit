@@ -1,4 +1,10 @@
-# AIBS Frontier Consultancy - Hands-on exercise
+# AIBS Dynamics 365 lane: hands-on exercises
+
+These exercises belong to the **Dynamics 365 lane** and follow Success by Design across implementation planning, configuration, testing, and go-live readiness.
+
+For custom apps, automations, agents, portals, or analytics, use the separate [Power Platform lane](../power-platform/index.html). It follows HVE through ten evidence-led feature and schema decision scenarios.
+
+## Dynamics 365 exercises
 
 Two pages. Read them in order.
 
@@ -12,7 +18,7 @@ Two pages. Read them in order.
 
 ## Track
 
-This is the **ERP (Dynamics 365 Finance & Supply Chain)** exercise for the AIBS Frontier Consultancy workshop.
+The ERP exercise is the most complete hands-on path in the Dynamics 365 lane.
 
 You work in **VS Code with GitHub Copilot Chat in agent mode**, using the D365 ERP MCP server and the MS Learn MCP server. You need a live Dynamics 365 Tier 2 or UDE environment for Phase 2.
 

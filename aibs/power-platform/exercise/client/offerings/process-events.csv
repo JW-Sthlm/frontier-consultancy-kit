@@ -1,0 +1,15 @@
+case_id,activity,timestamp,resource
+CASE-01,Received,2026-10-01T08:00:00Z,Intake
+CASE-01,Credit review queued,2026-10-01T09:00:00Z,Finance
+CASE-01,Credit approved,2026-10-02T09:00:00Z,Finance
+CASE-01,Closed,2026-10-02T12:00:00Z,Operations
+CASE-02,Received,2026-10-01T08:00:00Z,Intake
+CASE-02,Credit review queued,2026-10-01T10:00:00Z,Finance
+CASE-02,Credit approved,2026-10-03T10:00:00Z,Finance
+CASE-02,Closed,2026-10-03T12:00:00Z,Operations
+CASE-03,Received,2026-10-01T08:00:00Z,Intake
+CASE-03,Credit review queued,2026-10-01T09:00:00Z,Finance
+CASE-03,Credit approved,2026-10-01T10:00:00Z,Finance
+CASE-03,Closed,2026-10-01T12:00:00Z,Operations
+CASE-04,Received,2026-10-01T08:00:00Z,Intake
+CASE-04,Credit review queued,2026-10-01T09:00:00Z,Finance

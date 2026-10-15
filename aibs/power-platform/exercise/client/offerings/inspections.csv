@@ -1,0 +1,4 @@
+inspection_id,site,inspector,severity,observation
+INS-01,North depot,Inspector A,Low,Label damaged on storage bin
+INS-02,South depot,Inspector B,High,Access route obstructed
+INS-03,North depot,Inspector A,Low,Inspection completed with no finding

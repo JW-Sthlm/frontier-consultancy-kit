@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Synthetic legacy ledger | Zava training</title><link rel="stylesheet" href="../../../assets/track.css"></head>
+<body><main class="container prose">
+<h1>Synthetic legacy ledger</h1>
+<p>Local training fixture only. No server, customer system or financial posting. Records persist in this browser profile on this origin. Use one worker per ledger. Export evidence before removing exact test rows.</p>
+<p><label>Find job ID <input id="search" type="search"></label> <button id="find" type="button">Find</button></p>
+<form id="entry"><p><label>Job ID <input id="job" required pattern="JOB-[0-9]{2}"></label></p><p><label>Customer reference <input id="customer" required></label></p><p><label>Quantity <input id="quantity" type="number" min="1" step="1" required></label></p><button type="submit">Save record</button></form>
+<p id="result" role="status"></p>
+<div class="table-scroll"><table><thead><tr><th>Job ID</th><th>Customer</th><th>Quantity</th></tr></thead><tbody id="rows"></tbody></table></div>
+<p><label>Exact job ID to remove <input id="remove-id"></label> <button id="remove" type="button">Remove exact test row</button></p>
+</main><script src="legacy-ledger.js"></script><footer class="container"><a href="https://github.com/JW-Sthlm/frontier-consultancy-kit/blob/main/LICENSE.md">Participation terms</a></footer>
+</body>
+</html>

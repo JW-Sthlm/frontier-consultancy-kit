@@ -1,0 +1,5 @@
+run_id,evidence_mode,source_id,file_name,vendor_id,invoice_id,invoice_date,currency,po_id,subtotal,tax,total,min_required_confidence,confidence_field_count,ambiguous_fields,requested_action
+SIM-INV-01,SIMULATED,SRC-NORMAL,normal.html,V001,INV-100,2026-09-10,EUR,PO-001,100.00,20.00,120.00,0.98,8,none,review
+SIM-INV-01,SIMULATED,SRC-DIFFICULT,difficult.html,V002,INV-101,2026-09-11,EUR,PO-002,200.00,40.00,240.00,0.72,8,invoice_id,review
+SIM-INV-01,SIMULATED,SRC-DUPLICATE,duplicate.html,V001,INV-099,2026-09-09,EUR,PO-001,100.00,20.00,120.00,0.99,8,none,review
+SIM-INV-01,SIMULATED,SRC-POLICY,policy-exception.html,V001,INV-102,2026-09-12,EUR,PO-001,500.00,100.00,600.00,0.99,8,none,pay_now

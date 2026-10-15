@@ -1,0 +1,6 @@
+work_id,hours,rate_eur,delivered,commercially_approved
+WORK-01,10,100,true,true
+WORK-02,5,100,true,true
+WORK-03,3,100,true,false
+WORK-04,4,100,false,true
+WORK-05,2,100,true,true

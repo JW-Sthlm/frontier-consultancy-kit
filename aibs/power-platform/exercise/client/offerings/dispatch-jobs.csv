@@ -1,0 +1,5 @@
+job_id,required_skill,start_utc,end_utc,assigned_technician
+DSP-01,Electrical,2026-10-14T09:00:00Z,2026-10-14T10:00:00Z,TECH-A
+DSP-02,Electrical,2026-10-14T09:30:00Z,2026-10-14T10:30:00Z,
+DSP-03,Mechanical,2026-10-14T10:00:00Z,2026-10-14T11:00:00Z,
+DSP-04,Electrical,2026-10-14T10:00:00Z,2026-10-14T11:00:00Z,

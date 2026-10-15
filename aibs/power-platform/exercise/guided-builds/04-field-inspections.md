@@ -1,0 +1,290 @@
+# Guided build 04: a phone app that captures a finding offline
+
+[Lab 04](../04-field-inspections.md) | [Orientation](README.md) | [Handoff card](training-handoff.md)
+
+**Build basis:** [RULE-04](../client/offerings/README.md) and [the inspection assignments](../client/offerings/inspections.csv). The first build captures text. Photos are not a hidden requirement.
+
+## 1. Check the prepared field environment
+
+The facilitator supplies:
+
+- Inspection and Finding tables with their relationship and the three inspection assignments.
+- Training inspector/supervisor identities and appropriate Dataverse access.
+- A mobile offline profile compatible with these tables.
+- A **Closure Review** app and server rule for high-severity findings.
+- A supported device running native Power Apps Mobile.
+
+The server rule is not a beginner coding task. You build and use the capture app, then test that rule through the supplied review app.
+
+The Finding table's form includes Finding reference, Inspection lookup, Observation, Severity, Assigned to, Remediation and Finding stage. Do not confuse Assigned to with built-in Owner.
+
+## 2. Ask HVE to explain the three states
+
+In Cowork, after accepting the core handoff and choosing this optional implementation extension:
+
+```text
+[BEGIN STANDALONE CONTEXT]
+STANDALONE-1.0 / Exercise 04 / optional implementation reference
+This request includes its static teaching context below. Do not assume access to course pages, local files, attachments or earlier chat. Source filenames and DS/RULE IDs identify the included evidence, not documents you must fetch.
+
+Use the installed HVE Squad Cowork plugin and the actual authorized selected project. Confirm project identity before creating/adopting a project or starting managed work. New managed work uses the normal squad_run entry point; the server owns routing. Follow an existing working run rather than duplicating it. Do not invent project/run/question/artifact IDs, links or approvals.
+
+If the task depends on reviewed needs, selected features, a preferred model, a handoff, a real run or runtime observations: retrieve the actual verified originals in the selected project, showing their real provenance and the human choices. Earlier exercise content labels can help locate substantive originals through project START-HERE.md and library/deliverables.md; labels echoed in journals are not deliverables. If inputs are absent, ambiguous or unaccepted, list precisely what is missing and ask me to supply the actual original/reference or make the needed workshop decision. Pause dependent work. Do not infer selected scope from candidate proposals or invent earlier acceptance. A missing learner decision cannot be filled by static scenario data.
+
+The current task below defines the decision step. Use interview facts and applicable rules as evidence. Candidate proposals, future changes and supplied design-review findings are fiction to inspect, not approved first-release requirements or executed tests. Unverified licensing/capability/access facts remain open. Core work is feature/schema decisions, not code or designer repairs. Optional maker work requires a separately reviewed design, prepared environment/handoff and actual observations; an example recipe is not proof those exist.
+
+Keep the requested output label in substantive original content. Preserve server-owned canonical paths. Return verified original links and distinguish run outcome, mirror state and document acceptance. Content labels are not filenames or real IDs. Workshop choices do not release operator gates. No production writes, real recipients, ERP actions, external publication or claimed deployment are authorized.
+
+EXERCISE 04: Canvas app, Dataverse mobile offline
+## Feature and schema decision workflow
+
+| Step | Canvas-development decision | HVE output | Used before |
+|---|---|---|---|
+| DS04-1 | Which inspector/supervisor needs are real? | Evidence-linked feature hypotheses and unanswered questions | Choosing screens, data or automation |
+| DS04-2 | Which canvas/mobile capabilities belong in release one? | Included/deferred/rejected feature choices and technology implications | Committing to offline, photos, checklists or remediation features |
+| DS04-3 | What data structure supports those features? | Compared schema options, entity/field rationale and cardinalities | Creating tables, relationships or data sources |
+| DS04-4 | What changes when requirements grow? | Feature/schema impact and explicit first-release tradeoffs | Adding template, collaboration or evidence complexity |
+| DS04-5 | Can the proposed design explain realistic visits? | Reviewed feature/schema decision pack and open decisions | Prototype/build planning and partner offering |
+
+SCENARIO AUTHORITY
+Zava and Nora are fictional. All interviews, policies and records below are synthetic training evidence, not real client data or executed tests. Amounts are EUR and timestamps UTC. CSVs are examples, not prescribed tables.
+
+## People and decisions
+
+| Role | Fictional owner | Authority in the scenario |
+|---|---|---|
+| CoE sponsor | Priya, operations director | Scope, value and operating-model decisions |
+| Order operations | Lena | Order validation and human handoff |
+| Process owner | Omar | Order-to-cash experiment |
+| Field service | Eva | Inspections and remediation acceptance |
+| Procurement | Arun | Supplier review |
+| Service operations | Mia | Service-request policy |
+| Dispatch | Noah | Scheduling rules |
+| Finance | Lina | Leakage investigation, never automatic recovery |
+| Platform owner | Jules | Sandbox configuration and technical release |
+
+Learners playing these roles sign **workshop role-play**. Fictional authority does not authorize real tenant actions.
+
+APPLICABLE POLICIES (complete text)
+- **RULE-01 / Boundaries:** Training sandbox only. Human acceptance, technical release and business approval are separate. No real email recipients, ERP writes, payments or external publication.
+- **RULE-04 / Field:** Findings require an owner, severity and observation. High severity requires supervisor disposition before closure. An inspection cannot close with an open finding. Offline edits must synchronize and be checked in Dataverse before closure is claimed.
+
+SOURCE: client/hve-development/04-field.md
+# Case 04: decide the inspection app's features and schema
+
+**HVE-DECISIONS-1.0. Fictional client interview and design-review inputs. No prescribed canvas controls, formulas or database blueprint.**
+
+## Client interview evidence
+
+- **C04-F1 / Eva:** "A visit may have no defect, or several. The app must not limit us to a fixed number of findings."
+- **C04-F2 / Inspector:** "We return to the same site and equipment. We need to know what was observed on each visit, not overwrite last month's inspection."
+- **C04-F3 / Eva:** "Checklist wording changes. We must still understand the questions and answers from a completed inspection."
+- **C04-F4 / Supervisor:** "A finding may stay open after the inspection. Someone owns remediation and records follow-up. High severity requires my disposition before closure."
+- **C04-F5 / Inspector:** "Connectivity is poor at some sites. A capture solution that requires continuous network access will not work for the intended field use."
+- **C04-F6 / Eva:** "Photos could help a dispute, but we have not agreed retention, access or whether every finding needs one."
+- **C04-F7 / Sponsor:** "The pilot covers two sites and one inspector per visit. AI scoring, inventory integration and travel optimization are not required."
+- **C04-F8:** inspections.csv provides sample observations, not a normalized schema. INS-03 communicates a visit with no finding.
+
+## Technology-specific decision context
+
+A canvas app supports a task-oriented mobile experience and device capture. Supported Dataverse-backed mobile offline is a capability to assess against licensing/player/data constraints, not a reason to invent proven support.
+
+Decide whether the first release needs structured checklist responses, reusable/versioned templates, photo evidence, remediation history and offline capture. Features drive the entities, fields, relationships and access/lifecycle rules.
+
+## Proposal to inspect
+
+- **C04-P1:** One Inspection row with Defect 1 through Defect 10 columns will represent every visit.
+- **C04-P2:** Edit the current checklist in place; old responses do not need original question wording.
+- **C04-P3:** Use one status that becomes Closed when capture is complete, even if remediation is pending.
+- **C04-P4:** Build a configurable template designer, photo library and AI risk score before trying the first inspection.
+
+## Change for discussion
+
+- **C04-C1:** Next quarter, equipment types may use different checklists. Compare preserving a simple version/snapshot now with a full template/question model.
+- **C04-C2:** Two people may help remediate a finding, but one person remains accountable. Decide whether that feature is required now and what association/history it would need.
+
+## Supplied fictional design-review feedback
+
+| ID | Walkthrough finding |
+|---|---|
+| C04-T1 | A visit with zero findings or more than ten cannot be represented consistently. |
+| C04-T2 | After checklist editing, a completed inspection cannot explain the original question wording. |
+| C04-T3 | Closing inspection capture also erases the distinction between open remediation and supervisor acceptance. |
+| C04-T4 | The proposed photo feature has no Finding association, access or retention decision. |
+| C04-T5 | The first-release scope includes AI scoring despite C04-F7 and no supporting user need. |
+
+These are walkthroughs of candidate features/models, not app runtime tests. Derive and justify your own model; more tables are not automatically better.
+
+
+SOURCE: client/offerings/inspections.csv
+inspection_id,site,inspector,severity,observation
+INS-01,North depot,Inspector A,Low,Label damaged on storage bin
+INS-02,South depot,Inspector B,High,Access route obstructed
+INS-03,North depot,Inspector A,Low,Inspection completed with no finding
+
+OPTIONAL RECIPE (example only; reconcile with actual reviewed design and facilitator readiness)
+# Guided build 04: a phone app that captures a finding offline
+
+[Lab 04](../04-field-inspections.md) | [Orientation](README.md) | [Handoff card](training-handoff.md)
+
+**Build basis:** [RULE-04](../client/offerings/README.md) and [the inspection assignments](../client/offerings/inspections.csv). The first build captures text. Photos are not a hidden requirement.
+
+## 1. Check the prepared field environment
+
+The facilitator supplies:
+
+- Inspection and Finding tables with their relationship and the three inspection assignments.
+- Training inspector/supervisor identities and appropriate Dataverse access.
+- A mobile offline profile compatible with these tables.
+- A **Closure Review** app and server rule for high-severity findings.
+- A supported device running native Power Apps Mobile.
+
+The server rule is not a beginner coding task. You build and use the capture app, then test that rule through the supplied review app.
+
+The Finding table's form includes Finding reference, Inspection lookup, Observation, Severity, Assigned to, Remediation and Finding stage. Do not confuse Assigned to with built-in Owner.
+
+## 2. Ask HVE to explain the three states
+
+In Cowork, after accepting the core handoff and choosing this optional implementation extension:
+
+
+
+**Expected:** a short state explanation and an explicit dependency on the native mobile player.
+
+## 3. Generate the first capture app
+
+1. Open Power Apps and choose the training environment.
+2. Open the prepared solution `ZavaFieldQuality`.
+3. Choose **New > App > Canvas app** and use Phone layout. Name it `Zava Finding Capture`.
+4. Use the designer's supported **Start with data / Dataverse** path, selecting Finding, to generate browse/detail/edit screens. If the tenant opens a blank canvas instead, use the facilitator's pre-rehearsed generated-screen starter rather than improvising a different app.
+5. Open the Data pane and confirm both Finding and Inspection tables are available.
+6. On the Edit screen select its form. Choose **Edit fields** and add the fields listed above. Put Inspection, Observation and Severity near the top.
+7. Keep the generated New/Save/Cancel navigation initially. Do not replace it with untested Power Fx.
+8. Save and publish to the training environment. Sharing and role assignment are performed through the facilitator's prepared permissions.
+
+**You should see:** a list of findings, a detail screen and a form where Inspection is a lookup to an actual assignment.
+
+## 4. Prove connected capture first
+
+1. Play the app while connected.
+2. Choose New. Enter Finding reference `FIND-01`, Inspection INS-01, Observation `Label damaged on storage bin`, Severity Low and the permitted Assigned to user.
+3. Save. Open the saved detail and check the values.
+4. Ask your partner to open the supplied connected queue app and find FIND-01 in Dataverse.
+
+**Expected:** the same reference and values. Do not begin offline testing until ordinary save works.
+
+## 5. Enable and verify mobile offline
+
+1. In the canvas app's **Settings**, open the Offline/mobile-offline area available in the rehearsed version.
+2. Enable Dataverse offline-first operation and select the prepared profile. The handoff card gives its exact name; do not create a new profile with a broader dataset.
+3. Confirm Finding, Inspection and required lookup rows are included. The facilitator verifies profile relationships and access.
+4. Save and publish again.
+5. Open **Power Apps Mobile** on the device. Sign in with the inspector account, select the correct environment/app and let its initial data download complete.
+6. Open the app once while connected and confirm INS-01 is selectable.
+
+**Expected:** the app/player reports that the required offline data is ready. A browser Preview button cannot establish that readiness.
+
+If your version's offline controls differ, use the facilitator's rehearsed screen path and [Microsoft's offline setup guidance](https://learn.microsoft.com/power-apps/mobile/canvas-mobile-offline-setup). The course does not require the learner to infer profile administration.
+
+## 6. Capture offline, then verify synchronization
+
+1. Disable device connectivity after the initial download.
+2. Create `FIND-02`, selecting INS-01. Observation `Training offline observation`, Severity Low, with the permitted assignee.
+3. Save. Record what the player actually displays. Call it locally saved/pending sync, not server verified.
+4. Restore connectivity. Inspect the player's sync status and any errors.
+5. On a separate connected client, open the queue app and search for FIND-02.
+6. Compare all saved fields and record the observation time.
+
+**Expected:** an offline-created row reaches Dataverse after synchronization. If not, preserve local data and ask the facilitator to inspect profile/access; do not clear the device's cache.
+
+## 7. Test remediation and the supplied closure rule
+
+1. In the connected review app, open the prepared high-severity INS-02 finding or create the facilitator's designated training example.
+2. Attempt the supplied Close action without supervisor disposition.
+3. **Expected:** rejected; the stored finding remains open.
+4. As the authorized supervisor, record disposition and remediation evidence, then repeat the permitted closure procedure.
+5. Try inspection closure while an open finding exists. It must remain blocked under RULE-04.
+
+The facilitator runs any direct-API bypass test. Beginners observe identity, request and actual stored state without needing API tooling.
+
+## 8. Return to Cowork and transfer
+
+Attach the connected save, local save, synchronization, independent read-back and closure-test observations. Run the main lab's review prompt.
+
+Give a receiving inspector the recipe and INS-03. Observe their capture/sync attempt without coaching. They should explain why the app's local save and the server's closure decision are different.
+
+The reusable offering includes the capture app, prepared server rule, profile specification, device preflight and recovery guide. Do not sell a phone demo as a complete production field-service system.
+[END STANDALONE CONTEXT]
+
+Use guided build 04. Explain local save, pending synchronization and
+server-confirmed record using one inspection finding. Tell me which
+screen I should use for capture and which prepared app handles closure.
+Check the handoff card. Do not ask me to write a Dataverse plug-in or
+claim that browser airplane mode proves mobile offline support.
+```
+
+**Expected:** a short state explanation and an explicit dependency on the native mobile player.
+
+## 3. Generate the first capture app
+
+1. Open Power Apps and choose the training environment.
+2. Open the prepared solution `ZavaFieldQuality`.
+3. Choose **New > App > Canvas app** and use Phone layout. Name it `Zava Finding Capture`.
+4. Use the designer's supported **Start with data / Dataverse** path, selecting Finding, to generate browse/detail/edit screens. If the tenant opens a blank canvas instead, use the facilitator's pre-rehearsed generated-screen starter rather than improvising a different app.
+5. Open the Data pane and confirm both Finding and Inspection tables are available.
+6. On the Edit screen select its form. Choose **Edit fields** and add the fields listed above. Put Inspection, Observation and Severity near the top.
+7. Keep the generated New/Save/Cancel navigation initially. Do not replace it with untested Power Fx.
+8. Save and publish to the training environment. Sharing and role assignment are performed through the facilitator's prepared permissions.
+
+**You should see:** a list of findings, a detail screen and a form where Inspection is a lookup to an actual assignment.
+
+## 4. Prove connected capture first
+
+1. Play the app while connected.
+2. Choose New. Enter Finding reference `FIND-01`, Inspection INS-01, Observation `Label damaged on storage bin`, Severity Low and the permitted Assigned to user.
+3. Save. Open the saved detail and check the values.
+4. Ask your partner to open the supplied connected queue app and find FIND-01 in Dataverse.
+
+**Expected:** the same reference and values. Do not begin offline testing until ordinary save works.
+
+## 5. Enable and verify mobile offline
+
+1. In the canvas app's **Settings**, open the Offline/mobile-offline area available in the rehearsed version.
+2. Enable Dataverse offline-first operation and select the prepared profile. The handoff card gives its exact name; do not create a new profile with a broader dataset.
+3. Confirm Finding, Inspection and required lookup rows are included. The facilitator verifies profile relationships and access.
+4. Save and publish again.
+5. Open **Power Apps Mobile** on the device. Sign in with the inspector account, select the correct environment/app and let its initial data download complete.
+6. Open the app once while connected and confirm INS-01 is selectable.
+
+**Expected:** the app/player reports that the required offline data is ready. A browser Preview button cannot establish that readiness.
+
+If your version's offline controls differ, use the facilitator's rehearsed screen path and [Microsoft's offline setup guidance](https://learn.microsoft.com/power-apps/mobile/canvas-mobile-offline-setup). The course does not require the learner to infer profile administration.
+
+## 6. Capture offline, then verify synchronization
+
+1. Disable device connectivity after the initial download.
+2. Create `FIND-02`, selecting INS-01. Observation `Training offline observation`, Severity Low, with the permitted assignee.
+3. Save. Record what the player actually displays. Call it locally saved/pending sync, not server verified.
+4. Restore connectivity. Inspect the player's sync status and any errors.
+5. On a separate connected client, open the queue app and search for FIND-02.
+6. Compare all saved fields and record the observation time.
+
+**Expected:** an offline-created row reaches Dataverse after synchronization. If not, preserve local data and ask the facilitator to inspect profile/access; do not clear the device's cache.
+
+## 7. Test remediation and the supplied closure rule
+
+1. In the connected review app, open the prepared high-severity INS-02 finding or create the facilitator's designated training example.
+2. Attempt the supplied Close action without supervisor disposition.
+3. **Expected:** rejected; the stored finding remains open.
+4. As the authorized supervisor, record disposition and remediation evidence, then repeat the permitted closure procedure.
+5. Try inspection closure while an open finding exists. It must remain blocked under RULE-04.
+
+The facilitator runs any direct-API bypass test. Beginners observe identity, request and actual stored state without needing API tooling.
+
+## 8. Return to Cowork and transfer
+
+Attach the connected save, local save, synchronization, independent read-back and closure-test observations. Run the main lab's review prompt.
+
+Give a receiving inspector the recipe and INS-03. Observe their capture/sync attempt without coaching. They should explain why the app's local save and the server's closure decision are different.
+
+The reusable offering includes the capture app, prepared server rule, profile specification, device preflight and recovery guide. Do not sell a phone demo as a complete production field-service system.

@@ -1,0 +1,411 @@
+# Guided build 01: the CoE's first working service
+
+[Lab 01](../01-ai-coe-launch.md) | [Beginner orientation](README.md) | [Handoff card](training-handoff.md)
+
+**Optional implementation extension after the core HVE handoff.** This is supporting maker instruction, not the course objective. Compare it with the accepted HVE direction before choosing it; differences require review, not silent substitution.
+
+**Implementation basis:** the accepted core handoff plus the example schema and prepared components below. This is one possible training implementation, not a mandatory architecture.
+
+## 1. Know what you will make
+
+The CoE is the team and operating practice. The app supports it; the app is not itself a complete CoE.
+
+You will make three connected record lists, one request-notification flow, a small knowledge agent and an outcome report:
+
+- **Demand:** why the business wants a service and who decides.
+- **Delivery Decision:** the decision made about that demand.
+- **Service Request:** one employee's Repair or Delivery request.
+
+You build the ordinary app pieces. The facilitator supplies **Closure Guard**, a reviewed server rule preventing closure without an Assigned to user. You will test it, not write a plug-in.
+
+For first-time learners, split this into three sittings: the app and sample rows (sections 3-5), notification and guard tests (6-7), then agent/report and transfer (8-10). Keep the same selected project. Do not open all five product designers at once.
+
+**Ready check:** your card must identify Closure Guard, its compatible table schema, the allowed assignee and the test notification destination. If absent, ask for it now. Do not work for two hours and discover this at the final test.
+
+## 2. Return the fixed recipe to HVE
+
+In **Cowork**, after accepting the core developer handoff and separately choosing this implementation extension:
+
+```text
+[BEGIN STANDALONE CONTEXT]
+STANDALONE-1.0 / Exercise 01 / optional implementation reference
+This request includes its static teaching context below. Do not assume access to course pages, local files, attachments or earlier chat. Source filenames and DS/RULE IDs identify the included evidence, not documents you must fetch.
+
+Use the installed HVE Squad Cowork plugin and the actual authorized selected project. Confirm project identity before creating/adopting a project or starting managed work. New managed work uses the normal squad_run entry point; the server owns routing. Follow an existing working run rather than duplicating it. Do not invent project/run/question/artifact IDs, links or approvals.
+
+If the task depends on reviewed needs, selected features, a preferred model, a handoff, a real run or runtime observations: retrieve the actual verified originals in the selected project, showing their real provenance and the human choices. Earlier exercise content labels can help locate substantive originals through project START-HERE.md and library/deliverables.md; labels echoed in journals are not deliverables. If inputs are absent, ambiguous or unaccepted, list precisely what is missing and ask me to supply the actual original/reference or make the needed workshop decision. Pause dependent work. Do not infer selected scope from candidate proposals or invent earlier acceptance. A missing learner decision cannot be filled by static scenario data.
+
+The current task below defines the decision step. Use interview facts and applicable rules as evidence. Candidate proposals, future changes and supplied design-review findings are fiction to inspect, not approved first-release requirements or executed tests. Unverified licensing/capability/access facts remain open. Core work is feature/schema decisions, not code or designer repairs. Optional maker work requires a separately reviewed design, prepared environment/handoff and actual observations; an example recipe is not proof those exist.
+
+Keep the requested output label in substantive original content. Preserve server-owned canonical paths. Return verified original links and distinguish run outcome, mirror state and document acceptance. Content labels are not filenames or real IDs. Workshop choices do not release operator gates. No production writes, real recipients, ERP actions, external publication or claimed deployment are authorized.
+
+EXERCISE 01: Model-driven app, Power Automate cloud flow, Copilot Studio agent
+## Feature and schema decision workflow
+
+| Step | CoE/service decision | HVE output | Used before |
+|---|---|---|---|
+| DS01-1 | What must the CoE enable and the service solve? | Source-backed capability and user-need map | Selecting platform components |
+| DS01-2 | Which capabilities/features belong in release one? | Central/team responsibility and prioritized feature choices | Commissioning portfolio, intake, routing or agent features |
+| DS01-3 | What records and relationships are necessary? | Compared logical models linked to selected features | Creating use-case/service/decision/asset data |
+| DS01-4 | What should be standard versus team-specific? | Change impact and variation boundaries | Adding more teams or reopening earlier decisions |
+| DS01-5 | Is the scope/data sufficient and proportionate? | First-release decision pack and unresolved owner choices | Prototype/build brief and partner offering |
+
+SCENARIO AUTHORITY
+Zava and Nora are fictional. All interviews, policies and records below are synthetic training evidence, not real client data or executed tests. Amounts are EUR and timestamps UTC. CSVs are examples, not prescribed tables.
+
+## People and decisions
+
+| Role | Fictional owner | Authority in the scenario |
+|---|---|---|
+| CoE sponsor | Priya, operations director | Scope, value and operating-model decisions |
+| Order operations | Lena | Order validation and human handoff |
+| Process owner | Omar | Order-to-cash experiment |
+| Field service | Eva | Inspections and remediation acceptance |
+| Procurement | Arun | Supplier review |
+| Service operations | Mia | Service-request policy |
+| Dispatch | Noah | Scheduling rules |
+| Finance | Lina | Leakage investigation, never automatic recovery |
+| Platform owner | Jules | Sandbox configuration and technical release |
+
+Learners playing these roles sign **workshop role-play**. Fictional authority does not authorize real tenant actions.
+
+APPLICABLE POLICIES (complete text)
+- **RULE-01 / Boundaries:** Training sandbox only. Human acceptance, technical release and business approval are separate. No real email recipients, ERP writes, payments or external publication.
+- **RULE-01 / Boundaries:** Training sandbox only. Human acceptance, technical release and business approval are separate. No real email recipients, ERP writes, payments or external publication.
+
+SOURCE: client/hve-development/01-coe.md
+# Case 01: what must the CoE actually do?
+
+**HVE-DECISIONS-1.0. Fictional client interview and design-review inputs. Not an approved schema or a working platform.**
+
+## Client interview evidence
+
+- **C01-F1 / Priya:** "Teams have three different AI ideas. I need a consistent way to decide which are worth pursuing, not a central committee that approves every small edit."
+- **C01-F2 / Mia:** "Start with employee service requests. I must know who asked, what they need, who is handling it and whether they are satisfied."
+- **C01-F3 / Jules:** "I can support only part of the first pilot. Business teams must own their service decisions and support after handover."
+- **C01-F4 / Priya:** "A use case may be paused, changed or declined. I want to retain the evidence and reason, not just its current score."
+- **C01-F5 / Delivery lead:** "If a second team reuses an asset, we need its owner, accepted version, suitable use and limitations."
+- **C01-F6 / Mia:** "An employee request cannot close without an accountable handler. A technical record owner is not necessarily that person."
+- **C01-F7 / Priya:** "The first service should explain Repair and Delivery and route the request. Payroll advice and autonomous financial decisions are not part of it."
+- **C01-F8:** DEM-01's four-case/40-minute baseline is synthetic. No achieved saving is supplied.
+
+## Technology-specific decision context
+
+Model-driven apps can support related records, work queues and role-specific forms/views. Power Automate can route business events and reminders. Copilot Studio can explain a service or perform a deliberately bounded business action.
+
+Decide which capabilities the CoE and its first service need. Do not start with a mandatory list of tables, flows or agents. Business-process stages may be useful, but nine HVE stages are not automatically nine database statuses.
+
+## Proposal to inspect
+
+- **C01-P1:** One portfolio spreadsheet can hold ideas, requests, assessments, decisions, service activity and asset details in the same row.
+- **C01-P2:** Build a full enterprise CoE inventory/approval system before the first service can be tried.
+- **C01-P3:** An agent is mandatory for every use case; its demonstration proves the CoE is operational.
+
+## Change for discussion
+
+- **C01-C1:** A second business team wants the same intake but different acceptance rules. Identify standard capability versus team-specific variation.
+- **C01-C2:** Priya wants to reconsider a previously declined idea. Current status alone must not erase its earlier decision/evidence.
+
+## Supplied fictional design-review feedback
+
+| ID | Walkthrough finding |
+|---|---|
+| C01-T1 | The proposed feature list contains central approval for every edit, although no interview need supports it. |
+| C01-T2 | The model cannot distinguish a business use case from an individual employee service request. |
+| C01-T3 | Reopening a use case overwrites its earlier decision and reason. |
+| C01-T4 | The reusable asset has no accepted-version or receiving-owner information. |
+| C01-T5 | No first-release boundary explains which CoE features can wait. |
+
+Use this to review feature/schema choices. It is not a runtime test or proof of a deployed CoE.
+
+
+SOURCE: client/offerings/coe-demand.csv
+demand_id,request,owner,baseline_cases,baseline_total_minutes
+DEM-01,Route employee service requests,Mia,4,40
+DEM-02,Validate emailed customer orders,Lena,4,48
+DEM-03,Track supplier application completeness,Arun,3,45
+
+
+SOURCE: client/offerings/service-knowledge.md
+# Approved training service knowledge
+
+**ZAVA-PP-2.0. Synthetic authority for labs 01 and 06.**
+
+## KB-01: service boundaries
+
+Zava accepts Repair and Delivery requests. The service team reviews priority and assignment. A created request is not a repair booking, delivery promise or compensation approval.
+
+## KB-02: information to provide
+
+Supply a category and a description of up to 500 characters. Do not include passwords, payment details or sensitive employee data. The service agent displays the request for confirmation before creation. If creation fails, it must say so and offer a retry using the same request key or a manual handoff.
+
+## KB-03: unsupported request
+
+Payroll advice, employment decisions and supplier payment changes are outside this service. Direct the user to the relevant human service owner without inventing contact details.
+
+OPTIONAL RECIPE (example only; reconcile with actual reviewed design and facilitator readiness)
+# Guided build 01: the CoE's first working service
+
+[Lab 01](../01-ai-coe-launch.md) | [Beginner orientation](README.md) | [Handoff card](training-handoff.md)
+
+**Optional implementation extension after the core HVE handoff.** This is supporting maker instruction, not the course objective. Compare it with the accepted HVE direction before choosing it; differences require review, not silent substitution.
+
+**Implementation basis:** the accepted core handoff plus the example schema and prepared components below. This is one possible training implementation, not a mandatory architecture.
+
+## 1. Know what you will make
+
+The CoE is the team and operating practice. The app supports it; the app is not itself a complete CoE.
+
+You will make three connected record lists, one request-notification flow, a small knowledge agent and an outcome report:
+
+- **Demand:** why the business wants a service and who decides.
+- **Delivery Decision:** the decision made about that demand.
+- **Service Request:** one employee's Repair or Delivery request.
+
+You build the ordinary app pieces. The facilitator supplies **Closure Guard**, a reviewed server rule preventing closure without an Assigned to user. You will test it, not write a plug-in.
+
+For first-time learners, split this into three sittings: the app and sample rows (sections 3-5), notification and guard tests (6-7), then agent/report and transfer (8-10). Keep the same selected project. Do not open all five product designers at once.
+
+**Ready check:** your card must identify Closure Guard, its compatible table schema, the allowed assignee and the test notification destination. If absent, ask for it now. Do not work for two hours and discover this at the final test.
+
+## 2. Return the fixed recipe to HVE
+
+In **Cowork**, after accepting the core developer handoff and separately choosing this implementation extension:
+
+
+
+**Expected:** a short explanation and a readiness decision. A proposed schema alone is not permission to invent different fields.
+
+## 3. Create the solution and tables in Power Apps
+
+Open [Power Apps](https://make.powerapps.com/), select your card's environment and follow orientation **A** to create or open `ZavaCoELaunch`. Use its prepared publisher.
+
+Follow orientation **B** for these tables. If Closure Guard requires the facilitator's precreated Service Request table, choose **Add existing > Table**, select it and include its required forms/views instead of creating a duplicate. The handoff card says which.
+
+| Table | Primary name column | Additional columns and types |
+|---|---|---|
+| Demand | Demand reference, Text | Problem, Multiline text; Business owner, Text; Baseline cases, Whole number; Baseline handling minutes, Whole number; Next decision, Text |
+| Delivery Decision | Decision reference, Text | Demand, Lookup to Demand; Decision, Choice: Proposed/Accepted/Hold; Human reviewer, Text; Conditions, Multiline text; Decision date, Date only |
+| Service Request | Request reference, Text | Demand, Lookup to Demand; Category, Choice: Repair/Delivery; Description, Multiline text; Assigned to, Lookup to User; Service stage, Choice: New/Assigned/Closed; Handling minutes, Whole number |
+
+Use **Service stage**, not the built-in Status. **Assigned to** is the optional business assignment, not the automatically populated built-in Owner. This distinction is necessary for the unassigned-request test.
+
+For choices, enter the labels exactly and set the default Service stage to New. Leave Assigned to optional so you can create and test an unassigned request. The server guard handles closure.
+
+**You should see:** three table components, with the columns above. Open each table's Columns page and check one field's data type before continuing.
+
+## 4. Build the forms, lists and app
+
+Use orientation **C** to add the recipe's fields to each Main form.
+
+For Service Request, create a view called **Unassigned requests**:
+
+1. Open **Views > New view**. Enter that name.
+2. Add Request reference, Category, Assigned to and Service stage.
+3. In **Edit filters**, add **Assigned to > Does not contain data**.
+4. Save and publish.
+
+Use orientation **D** to create `Zava CoE Service`. Add pages for all three tables. Save, publish and play the app.
+
+**You should see:** navigation entries for Demands, Delivery Decisions and Service Requests. Choose Service Requests and confirm Unassigned requests is available in the view selector.
+
+## 5. Enter the first business demand and request
+
+In the **running app**, not the table designer:
+
+1. Open Demands, choose **New** and enter:
+   - Demand reference: `DEM-01`.
+   - Problem: `Employee service requests lack clear routing and ownership`.
+   - Business owner: `Mia (workshop role)`.
+   - Baseline cases: `4`.
+   - Baseline handling minutes: `40`.
+   - Next decision: `Review the first service with Priya`.
+2. Choose **Save**.
+3. Open Delivery Decisions, choose **New**, reference `DEC-01`, select DEM-01 in the Demand lookup and record your workshop reviewer's actual decision. Do not mark Accepted without that person's role-play decision.
+4. Open Service Requests, choose **New**. Reference `TRAIN-REQ-01`; select DEM-01; Category Repair; Description `Training pump needs inspection`; Service stage New; leave Assigned to empty.
+5. Save and return to Unassigned requests.
+
+**You should see:** TRAIN-REQ-01 in that list. If not, refresh and verify the saved Assigned to field rather than changing the view at random.
+
+The 40-minute baseline comes from the source pack. It is not the time you have spent building this app.
+
+## 6. Create the notification flow in Power Automate
+
+Use orientation **E**, selecting the same environment and solution:
+
+1. Create an **Automated cloud flow**, named `Notify unassigned service request`.
+2. Select the Dataverse trigger **When a row is added, modified or deleted**.
+3. Set Change type **Added**, Table name **Service Requests**, Scope **Organization** in the isolated training environment. Use the facilitator-approved connection.
+4. Add a **Condition**. In the left value choose the trigger's **Assigned to (Value)** through dynamic content. Compare it with the expression `null` using **is equal to**. Do not type the word "null" as ordinary text.
+5. In the Yes branch add the facilitator-approved notification action, such as Outlook **Send an email (V2)**. To is the card's test destination. Subject is `Training request needs assignment`. In Body insert Request reference and Description through dynamic content.
+6. Save the flow. Return to the running app and create `TRAIN-REQ-02`, Category Delivery, Description `Training parcel needs review`, Assigned to empty.
+7. Open the flow's run history. Inspect the Condition and notification action. Check the actual training inbox.
+
+**Expected:** one notification for the newly created unassigned request. Creating the flow does not retroactively notify for TRAIN-REQ-01.
+
+The facilitator supplies the operator failure destination and demonstrates its prepared failure-monitoring path. Learners are not asked to invent an enterprise error framework. Save the failed action's actual error if a connection is unavailable.
+
+## 7. Test assignment and the supplied closure rule
+
+1. Open TRAIN-REQ-01. Set Service stage to Closed while Assigned to remains empty. Choose Save.
+2. **Expected:** Closure Guard rejects the save with the rehearsed message. Refresh and verify the stored stage did not become Closed.
+3. Set Assigned to to the permitted user on your card. Set Service stage Assigned and save.
+4. Perform the workshop review, then set Service stage Closed. Enter the hands-on minutes you actually measured in Handling minutes and save.
+
+**Expected:** the assigned request can close; the unassigned one cannot. If the guard is absent or behaves differently, stop acceptance and ask the facilitator. A form's red asterisk is not a replacement.
+
+## 8. Build the knowledge agent
+
+Open the facilitator's Copilot Studio starter agent from the card. This already has the approved training authentication and capacity.
+
+1. Open **Knowledge > Add knowledge**. Upload the supplied [service knowledge](../client/offerings/service-knowledge.md), or its facilitator-prepared supported file equivalent.
+2. Wait for the source to be ready. Do not continue while indexing is pending or failed.
+3. In Instructions enter: `Explain the approved Repair and Delivery service. Do not promise a booking or compensation. For payroll questions explain that payroll is outside this service.`
+4. Open the test panel. Ask `What information do I need for a Repair request?` and then `Can you change my salary?`.
+5. Preserve the actual answers and sources. Do not externally publish the agent or add a transaction tool.
+
+**Expected:** an explanation of the required information, followed by an appropriate out-of-scope response. In a later lab you will build the transaction.
+
+## 9. Make the first outcome report
+
+Use the facilitator's prepared Power BI connection/report shell, **CoE Outcome Starter**, from the card. This avoids making your first app lesson an authentication workshop.
+
+1. Open its editable training copy in Power BI Desktop.
+2. Choose **Refresh** after the requests have synchronized from Dataverse.
+3. Add a **Table** visual. Add Request reference, Service stage, Assigned to and Handling minutes from Service Request.
+4. Add a **Card** visual showing Count of Request reference. Add another showing Sum of Handling minutes.
+5. Add a text box stating the observation date and `Training sample; handling time is not elapsed time`.
+6. Compare the table with the app's actual rows. A blank handling value is unknown, not zero measured effort.
+
+The facilitator's ready card must provide the connected starter and refresh procedure. If no report starter exists, the reporting build is not ready; the learner should not be told simply to "create a Power BI report."
+
+## 10. Bring evidence back and transfer
+
+In Cowork attach a redacted record list, the guard test result, notification run, agent responses and report observation. Run the main lab's review prompt.
+
+Give a partner DEM-02 and ask them to add a Demand and a Proposed Delivery Decision without your help. They use this same recipe, not an undocumented second process.
+
+**Finish:** complete the lab receipt and offering canvas. Explain which parts form the service, which support the CoE operating loop, and which must be configured differently for a real customer. This is the minimum first service, not a production-ready enterprise CoE.
+[END STANDALONE CONTEXT]
+
+Use guided build 01 as the fixed training implementation.
+Explain Demand, Delivery Decision and Service Request in plain language,
+and show how an employee request links to the business demand.
+Check my handoff card for Closure Guard and required access.
+Keep suggested changes separate from the recipe. I will implement in
+Power Apps, not ask the Cowork plugin to deploy.
+Walk me through one recipe section at a time when I request help.
+```
+
+**Expected:** a short explanation and a readiness decision. A proposed schema alone is not permission to invent different fields.
+
+## 3. Create the solution and tables in Power Apps
+
+Open [Power Apps](https://make.powerapps.com/), select your card's environment and follow orientation **A** to create or open `ZavaCoELaunch`. Use its prepared publisher.
+
+Follow orientation **B** for these tables. If Closure Guard requires the facilitator's precreated Service Request table, choose **Add existing > Table**, select it and include its required forms/views instead of creating a duplicate. The handoff card says which.
+
+| Table | Primary name column | Additional columns and types |
+|---|---|---|
+| Demand | Demand reference, Text | Problem, Multiline text; Business owner, Text; Baseline cases, Whole number; Baseline handling minutes, Whole number; Next decision, Text |
+| Delivery Decision | Decision reference, Text | Demand, Lookup to Demand; Decision, Choice: Proposed/Accepted/Hold; Human reviewer, Text; Conditions, Multiline text; Decision date, Date only |
+| Service Request | Request reference, Text | Demand, Lookup to Demand; Category, Choice: Repair/Delivery; Description, Multiline text; Assigned to, Lookup to User; Service stage, Choice: New/Assigned/Closed; Handling minutes, Whole number |
+
+Use **Service stage**, not the built-in Status. **Assigned to** is the optional business assignment, not the automatically populated built-in Owner. This distinction is necessary for the unassigned-request test.
+
+For choices, enter the labels exactly and set the default Service stage to New. Leave Assigned to optional so you can create and test an unassigned request. The server guard handles closure.
+
+**You should see:** three table components, with the columns above. Open each table's Columns page and check one field's data type before continuing.
+
+## 4. Build the forms, lists and app
+
+Use orientation **C** to add the recipe's fields to each Main form.
+
+For Service Request, create a view called **Unassigned requests**:
+
+1. Open **Views > New view**. Enter that name.
+2. Add Request reference, Category, Assigned to and Service stage.
+3. In **Edit filters**, add **Assigned to > Does not contain data**.
+4. Save and publish.
+
+Use orientation **D** to create `Zava CoE Service`. Add pages for all three tables. Save, publish and play the app.
+
+**You should see:** navigation entries for Demands, Delivery Decisions and Service Requests. Choose Service Requests and confirm Unassigned requests is available in the view selector.
+
+## 5. Enter the first business demand and request
+
+In the **running app**, not the table designer:
+
+1. Open Demands, choose **New** and enter:
+   - Demand reference: `DEM-01`.
+   - Problem: `Employee service requests lack clear routing and ownership`.
+   - Business owner: `Mia (workshop role)`.
+   - Baseline cases: `4`.
+   - Baseline handling minutes: `40`.
+   - Next decision: `Review the first service with Priya`.
+2. Choose **Save**.
+3. Open Delivery Decisions, choose **New**, reference `DEC-01`, select DEM-01 in the Demand lookup and record your workshop reviewer's actual decision. Do not mark Accepted without that person's role-play decision.
+4. Open Service Requests, choose **New**. Reference `TRAIN-REQ-01`; select DEM-01; Category Repair; Description `Training pump needs inspection`; Service stage New; leave Assigned to empty.
+5. Save and return to Unassigned requests.
+
+**You should see:** TRAIN-REQ-01 in that list. If not, refresh and verify the saved Assigned to field rather than changing the view at random.
+
+The 40-minute baseline comes from the source pack. It is not the time you have spent building this app.
+
+## 6. Create the notification flow in Power Automate
+
+Use orientation **E**, selecting the same environment and solution:
+
+1. Create an **Automated cloud flow**, named `Notify unassigned service request`.
+2. Select the Dataverse trigger **When a row is added, modified or deleted**.
+3. Set Change type **Added**, Table name **Service Requests**, Scope **Organization** in the isolated training environment. Use the facilitator-approved connection.
+4. Add a **Condition**. In the left value choose the trigger's **Assigned to (Value)** through dynamic content. Compare it with the expression `null` using **is equal to**. Do not type the word "null" as ordinary text.
+5. In the Yes branch add the facilitator-approved notification action, such as Outlook **Send an email (V2)**. To is the card's test destination. Subject is `Training request needs assignment`. In Body insert Request reference and Description through dynamic content.
+6. Save the flow. Return to the running app and create `TRAIN-REQ-02`, Category Delivery, Description `Training parcel needs review`, Assigned to empty.
+7. Open the flow's run history. Inspect the Condition and notification action. Check the actual training inbox.
+
+**Expected:** one notification for the newly created unassigned request. Creating the flow does not retroactively notify for TRAIN-REQ-01.
+
+The facilitator supplies the operator failure destination and demonstrates its prepared failure-monitoring path. Learners are not asked to invent an enterprise error framework. Save the failed action's actual error if a connection is unavailable.
+
+## 7. Test assignment and the supplied closure rule
+
+1. Open TRAIN-REQ-01. Set Service stage to Closed while Assigned to remains empty. Choose Save.
+2. **Expected:** Closure Guard rejects the save with the rehearsed message. Refresh and verify the stored stage did not become Closed.
+3. Set Assigned to to the permitted user on your card. Set Service stage Assigned and save.
+4. Perform the workshop review, then set Service stage Closed. Enter the hands-on minutes you actually measured in Handling minutes and save.
+
+**Expected:** the assigned request can close; the unassigned one cannot. If the guard is absent or behaves differently, stop acceptance and ask the facilitator. A form's red asterisk is not a replacement.
+
+## 8. Build the knowledge agent
+
+Open the facilitator's Copilot Studio starter agent from the card. This already has the approved training authentication and capacity.
+
+1. Open **Knowledge > Add knowledge**. Upload the supplied [service knowledge](../client/offerings/service-knowledge.md), or its facilitator-prepared supported file equivalent.
+2. Wait for the source to be ready. Do not continue while indexing is pending or failed.
+3. In Instructions enter: `Explain the approved Repair and Delivery service. Do not promise a booking or compensation. For payroll questions explain that payroll is outside this service.`
+4. Open the test panel. Ask `What information do I need for a Repair request?` and then `Can you change my salary?`.
+5. Preserve the actual answers and sources. Do not externally publish the agent or add a transaction tool.
+
+**Expected:** an explanation of the required information, followed by an appropriate out-of-scope response. In a later lab you will build the transaction.
+
+## 9. Make the first outcome report
+
+Use the facilitator's prepared Power BI connection/report shell, **CoE Outcome Starter**, from the card. This avoids making your first app lesson an authentication workshop.
+
+1. Open its editable training copy in Power BI Desktop.
+2. Choose **Refresh** after the requests have synchronized from Dataverse.
+3. Add a **Table** visual. Add Request reference, Service stage, Assigned to and Handling minutes from Service Request.
+4. Add a **Card** visual showing Count of Request reference. Add another showing Sum of Handling minutes.
+5. Add a text box stating the observation date and `Training sample; handling time is not elapsed time`.
+6. Compare the table with the app's actual rows. A blank handling value is unknown, not zero measured effort.
+
+The facilitator's ready card must provide the connected starter and refresh procedure. If no report starter exists, the reporting build is not ready; the learner should not be told simply to "create a Power BI report."
+
+## 10. Bring evidence back and transfer
+
+In Cowork attach a redacted record list, the guard test result, notification run, agent responses and report observation. Run the main lab's review prompt.
+
+Give a partner DEM-02 and ask them to add a Demand and a Proposed Delivery Decision without your help. They use this same recipe, not an undocumented second process.
+
+**Finish:** complete the lab receipt and offering canvas. Explain which parts form the service, which support the CoE operating loop, and which must be configured differently for a real customer. This is the minimum first service, not a production-ready enterprise CoE.

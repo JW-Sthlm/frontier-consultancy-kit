@@ -1,0 +1,5 @@
+line_id,work_id,net_eur,status
+INV-01,WORK-01,600,Posted
+INV-02,WORK-01,200,Posted
+INV-03,WORK-02,500,Posted
+INV-04,WORK-05,200,Draft
