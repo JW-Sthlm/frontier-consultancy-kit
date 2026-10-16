@@ -13,6 +13,20 @@
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="https://jw-sthlm.github.io/frontier-consultancy-kit/partners/partner.css">
   <script src="https://jw-sthlm.github.io/frontier-consultancy-kit/partners/partner.js" defer></script>
+  <style>
+    .workshop-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 360px); align-items: center; gap: 32px; }
+    .workshop-content { min-width: 0; }
+    .framework-wheel { margin: 0; }
+    .framework-wheel svg { display: block; width: 100%; max-width: 360px; height: auto; margin-inline: auto; font-family: var(--cp-font); }
+    .framework-wheel .wheel-sector { stroke: var(--cp-border); stroke-width: 2; }
+    .framework-wheel .wheel-label { fill: var(--cp-text); font-size: 27px; font-weight: 700; text-anchor: middle; }
+    .framework-wheel .wheel-center { fill: var(--cp-text); font-size: 25px; font-weight: 700; text-anchor: middle; }
+    .framework-wheel .wheel-count { fill: var(--cp-accent); font-size: 21px; font-weight: 650; text-anchor: middle; }
+    @media (max-width: 900px) {
+      .workshop-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+    }
+    @media print { .framework-wheel { break-inside: avoid; } }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -21,19 +35,12 @@
     <div class="nav-links"><a href="#aitp-workshop">Workshops</a><a href="#pricing-strategies">Pricing exercise</a><a href="#model">Commercial model</a><a href="#organizing">Organization</a><a href="#contact">Contact</a><button class="theme-toggle" type="button" data-theme-toggle hidden>Change theme</button></div>
   </nav>
   <main id="main">
-    <header class="hero container">
-      <div>
-        <p class="eyebrow">Business Transformation · Draft partner material</p>
-        <h1>AI-first delivery breaks the old commercial model.</h1>
-        <p class="lead">AI compresses delivery effort. It can improve capacity, but it does not build the new offer, value-capture method, or pricing model a partner needs next.</p>
-        <p class="audience">Business Transformation helps practice leads, commercial teams, and delivery leaders move from delivery efficiency to a commercially viable AI-first practice.</p>
-        <div class="actions"><a class="button button-primary" href="#offer">Explore Business Transformation</a><a class="button" href="organizing/">Read the organizing guide</a></div>
-      </div>
-      <aside class="start-panel">
-        <h2>Start with a commercial question.</h2>
-        <p>Choose one offer or customer motion. Establish the baseline, test how AI changes the activity, then decide what the partner must build before pricing the outcome.</p>
-        <dl class="quick-contacts"><div><dt>Track lead</dt><dd><a href="mailto:gielcuijpers@microsoft.com">Giel Cuijpers</a></dd></div><div><dt>Status</dt><dd>Draft, for review</dd></div></dl>
-      </aside>
+    <header class="page-hero container">
+      <p class="eyebrow">Business Transformation · Draft partner material</p>
+      <h1>AI-first delivery breaks the old commercial model.</h1>
+      <p class="lead">AI compresses delivery effort. It can improve capacity, but it does not build the new offer, value-capture method, or pricing model a partner needs next.</p>
+      <p class="section-lead">Business Transformation helps practice leads, commercial teams, and delivery leaders move from delivery efficiency to a commercially viable AI-first practice.</p>
+      <div class="actions"><a class="button button-primary" href="#offer">Explore Business Transformation</a><a class="button" href="organizing/">Read the organizing guide</a></div>
     </header>
     <section class="section container" id="model">
       <h2>The partner has to build the new model.</h2>
@@ -44,26 +51,43 @@
       </div>
     </section>
     <section class="section container" id="aitp-workshop">
-      <h2>AI Transformation for partners workshop</h2>
-      <p class="section-lead">Choose an interactive session with a facilitator or work through the self-serve workshop at your own pace.</p>
-      <div class="split">
-        <article>
-          <h3>Interactive workshop</h3>
-          <p>Work with a facilitator on a live practice, offer, or customer motion. Develop a baseline, commercial hypothesis, pilot design, and view of the organizational gaps.</p>
-          <a class="resource-link" href="#contact">Discuss an interactive workshop with Giel</a>
-        </article>
-        <article>
-          <h3>Self-serve workshop</h3>
-          <p>Explore AI Transformation for Partners independently or with your team. Bring your resulting commercial hypothesis to a review conversation.</p>
-          <a class="resource-link" href="https://aka.ms/aitp-cpe" target="_blank" rel="noopener noreferrer">https://aka.ms/aitp-cpe (opens in a new tab)</a>
-        </article>
+      <div class="workshop-layout">
+        <div class="workshop-content">
+          <h2>AI Transformation for partners workshop</h2>
+          <p class="section-lead">AI Transformation for Partners (AITP) helps partner leaders plan how AI changes their business: the value they offer customers, how they price it, and the capabilities their organization needs. The workshop turns these questions into priorities and a practical transformation plan.</p>
+          <p>Choose an interactive session with a facilitator or use the Collaborative Planning Experience (self-serve) at your own pace.</p>
+          <div class="split">
+            <article>
+              <h3>Interactive workshop</h3>
+              <p>Work with a facilitator on a live practice, offer, or customer motion. Develop a baseline, commercial hypothesis, pilot design, and view of the organizational gaps.</p>
+              <a class="resource-link" href="#contact">Discuss an interactive workshop</a>
+            </article>
+            <article>
+              <h3>Collaborative Planning Experience (self-serve)</h3>
+              <p>Explore AI Transformation for Partners independently or with your team. Bring your resulting commercial hypothesis to a review conversation.</p>
+              <a class="resource-link" href="https://aka.ms/aitp-cpe" target="_blank" rel="noopener noreferrer">https://aka.ms/aitp-cpe</a>
+            </article>
+          </div>
+        </div>
+        <figure class="framework-wheel">
+        <svg viewBox="0 0 560 560" role="img" aria-labelledby="framework-wheel-title framework-wheel-description">
+          <title id="framework-wheel-title">Build, Sell, and Deliver</title>
+          <desc id="framework-wheel-description">Three equal sections surround a Frontier-ready partner: Build on the right, Sell at the bottom, and Deliver on the left.</desc>
+          <g class="wheel-sector">
+            <path d="M 280 48 A 232 232 0 0 1 480.918 396 L 394.315 346 A 132 132 0 0 0 280 148 Z" fill="var(--cp-accent-soft)" />
+            <path d="M 280 48 A 232 232 0 0 1 480.918 396 L 394.315 346 A 132 132 0 0 0 280 148 Z" transform="rotate(120 280 280)" fill="var(--cp-surface-soft)" />
+            <path d="M 280 48 A 232 232 0 0 1 480.918 396 L 394.315 346 A 132 132 0 0 0 280 148 Z" transform="rotate(240 280 280)" fill="var(--cp-accent-soft)" />
+          </g>
+          <path d="M 280 44 V 148 M 394.315 346 L 484.382 398 M 165.685 346 L 75.618 398" fill="none" stroke="var(--cp-bg)" stroke-width="8" />
+          <text class="wheel-label" x="462" y="289">Build</text>
+          <text class="wheel-label" x="280" y="471">Sell</text>
+          <text class="wheel-label" x="98" y="289">Deliver</text>
+          <circle cx="280" cy="280" r="120" fill="var(--cp-surface)" stroke="var(--cp-border)" stroke-width="2" />
+          <text class="wheel-center" x="280" y="257"><tspan x="280">Frontier-ready</tspan><tspan x="280" dy="32">partner</tspan></text>
+          <text class="wheel-count" x="280" y="324">AI-first</text>
+        </svg>
+        </figure>
       </div>
-    </section>
-    <section class="section container" id="offer">
-      <span class="status">Work in progress</span>
-      <h2>Value Capture exercise</h2>
-      <p class="section-lead">This exercise is being developed to help you measure customer value and test the economics of AI-first delivery. The current material is a draft for review.</p>
-      <div class="evidence"><h3>Value capture is a discipline.</h3><p>Record the promised KPI, IST baseline, SOLL target, actual result, and delta. Model human, agent, and Services IP inputs. Review what the partner can credibly attribute.</p><a class="resource-link" href="exercise/value-capture-and-pricing-models.md">Open the value capture exercise</a></div>
     </section>
     <section class="section container" id="pricing-strategies">
       <h2>Pricing strategies exercise: Invoice Processing</h2>
@@ -81,9 +105,15 @@
       <div class="evidence">
         <h3>Your exercise output</h3>
         <p>Recommend a pricing model, state your assumptions, and explain who carries each risk. Define the baseline, success measure, attribution rule, and review points needed before making an outcome commitment.</p>
-        <a class="resource-link" href="https://jw-sthlm.github.io/frontier-consultancy-kit/business/exercise/ppt/Pricing%20strategies%20-%20Invoice%20Processing%20case%20study.pptx" target="_blank" rel="noopener noreferrer">Open the Invoice Processing case study (PowerPoint, opens in a new tab)</a>
+        <a class="resource-link" href="https://jw-sthlm.github.io/frontier-consultancy-kit/business/exercise/deck/Pricing%20strategies%20-%20Invoice%20Processing%20case%20study.pptx" target="_blank" rel="noopener noreferrer">Open the Invoice Processing case study</a>
       </div>
       <p class="note">This is a fictitious learning case, not a rate card or a promise of customer outcomes. Validate commercial assumptions with finance, legal, procurement, and delivery teams.</p>
+    </section>
+    <section class="section container" id="offer">
+      <span class="status">Work in progress</span>
+      <h2>Value Capture exercise</h2>
+      <p class="section-lead">This exercise is being developed to help you measure customer value and test the economics of AI-first delivery. The current material is a draft for review.</p>
+      <div class="evidence"><h3>Value capture is a discipline.</h3><p>Record the promised KPI, IST baseline, SOLL target, actual result, and delta. Model human, agent, and Services IP inputs. Review what the partner can credibly attribute.</p><a class="resource-link" href="exercise/value-capture-and-pricing-models.md">Open the value capture exercise</a></div>
     </section>
     <section class="section container" id="organizing">
       <h2>Outcome pricing needs an organization behind it.</h2>
@@ -97,7 +127,7 @@
     <section class="section container" id="contact">
       <h2>Discuss the commercial transition.</h2>
       <p class="section-lead">Share a non-sensitive description of the practice, offer, or customer motion you want to test.</p>
-      <a class="button button-primary" href="mailto:gielcuijpers@microsoft.com?subject=Frontier%20Consultancy%20-%20Business%20Transformation%20discussion">Contact Giel</a>
+      <a class="button button-primary" href="mailto:gielcuijpers@microsoft.com,marvin.heilemann@microsoft.com?subject=Frontier%20Consultancy%20-%20Business%20Transformation%20discussion">Contact the team</a>
     </section>
   </main>
   <footer class="site-footer container"><span>Frontier Consultancy · Business Transformation · Draft partner material</span><a href="https://github.com/JW-Sthlm/frontier-consultancy-kit/blob/main/LICENSE.md">Participation terms</a></footer>
