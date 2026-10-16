@@ -1,0 +1,5 @@
+message_id,body
+MSG-01,"Order O-100 from customer C-100. Please supply 3 units of SKU-100."
+MSG-02,"Order O-101 from customer C-100. Please supply 2 units of SKU-999."
+MSG-03,"Order O-102 from customer C-100. Please supply some units of SKU-200."
+MSG-04,"Order O-103 from customer C-100. Please supply -1 units of SKU-100."

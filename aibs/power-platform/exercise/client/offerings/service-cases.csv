@@ -1,0 +1,5 @@
+case_id,test_user,request_key,category,description
+SR-01,Allowed A,REQ-A-001,Repair,Training pump needs inspection
+SR-02,Allowed A,REQ-A-001,Repair,Training pump needs inspection
+SR-03,Denied B,REQ-B-001,Delivery,Training parcel has not arrived
+SR-04,Allowed A,REQ-A-002,Payroll,Please change my salary

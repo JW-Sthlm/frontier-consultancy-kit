@@ -1,0 +1,16 @@
+asset_id,asset_type,name,environment_id,owner,lifecycle_state,declared_boundary,evidence_state,artifact_kind,real_support_state
+ENV-DEV,environment,Zava Exercise Development,ENV-DEV,Arun Moss,planned,Synthetic only; no production connections,SYNTHETIC declaration; not observed or deployed,environment,unknown_verify
+ENV-TEST,environment,Zava Exercise Test,ENV-TEST,Arun Moss,planned,Limited test writer and denied identity,SYNTHETIC declaration; not observed or deployed,environment,unknown_verify
+ENV-TARGET,environment,Zava Release Rehearsal,ENV-TARGET,Arun Moss,planned,Nonproduction target; same version through stages,SYNTHETIC declaration; not observed or deployed,environment,unknown_verify
+APP-INV,app,Invoice Review Workbench,ENV-DEV,Lena Park,design,Canvas candidate; review only; no payment permission,SYNTHETIC declaration; not observed or deployed,canvas_app,unknown_verify
+FLOW-INV,flow,Invoice Extract Validate Route,ENV-DEV,Arun Moss,design,Cloud-flow candidate; AI Builder capacity and connections unverified,SYNTHETIC declaration; not observed or deployed,cloud_flow,unknown_verify
+DATA-INV,table,Invoice Review Records,ENV-DEV,Lena Park,design,Synthetic values; retain source and run IDs,SYNTHETIC declaration; not observed or deployed,table,unknown_verify
+AGENT-CS,agent,Support Advice and Test Request,ENV-TEST,Priya Cole,design,Approved knowledge; one confirmed test create,SYNTHETIC declaration; not observed or deployed,agent,unknown_verify
+APP-STOCK,app,Stock Status Prototype,ENV-DEV,,orphaned,Canvas candidate; no accepting owner; HOLD,SYNTHETIC declaration; not observed or deployed,canvas_app,unknown_verify
+CTRL-DATA,data_policy,Workshop Connector Boundary,ENV-TEST,Arun Moss,design,Dataverse plus SharePoint allowed; consumer Dropbox blocked by intended policy,SYNTHETIC declaration; not observed or enforced,data_policy,unknown_verify
+PIPE-01,pipeline,Workshop Release Path,ENV-TARGET,Arun Moss,design,Critical failures must block promotion; verify actual rollback,SYNTHETIC declaration; not observed or enforced,pipeline,unknown_verify
+APP-MODEL,app,Alternative Data-first Review,ENV-DEV,Lena Park,candidate,Compare with canvas; do not assume quarantine or Conditional Access support,SYNTHETIC candidate; not observed or deployed,model_driven_app,unknown_verify
+APP-CODE,app,Alternative Code-first Review,ENV-DEV,Arun Moss,candidate,Verify type-specific source-control and release support,SYNTHETIC candidate; not observed or deployed,code_app,unknown_verify
+APP-VIBE,app,Alternative Assisted Authoring,ENV-DEV,Arun Moss,candidate,Verify availability and edit portability; no approval to deploy,SYNTHETIC candidate; not observed or deployed,vibe_app,unknown_verify
+FLOW-DESKTOP,flow,Alternative Legacy Screen Entry,ENV-DEV,Arun Moss,candidate,Compare attended and unattended rights with simpler cloud flow,SYNTHETIC candidate; not observed or deployed,desktop_flow,unknown_verify
+FLOW-GENERATIVE,action,Alternative Adaptive Triage,ENV-DEV,Arun Moss,candidate,Generative action candidate within parent FLOW-INV; verify preview availability and controls; deterministic rules remain alternative,SYNTHETIC candidate; not observed or deployed,generative_actions,unknown_verify
