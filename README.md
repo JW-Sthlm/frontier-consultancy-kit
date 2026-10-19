@@ -9,7 +9,7 @@ Everything here is public so partners can understand the program, prepare for an
 | Track | Focus | Material |
 |---|---|---|
 | CAIP | Cloud and AI platform delivery | [Landing page](caip/) and [exercise kit](caip/exercise/) |
-| AIBS | AI Business Solutions and Dynamics 365 | [Landing page](aibs/) and [exercise kit](aibs/exercise/) |
+| AIBS | AI Business Solutions and Dynamics 365 | [Landing page](aibs/) and [exercise kit](aibs/dynamics/exercise/) |
 | Security | Early public workshop concepts | [Landing page](security/) |
 | Partner resources | Cross-track overview and starter examples | [Partner page](partners/) |
 
