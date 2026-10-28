@@ -29,7 +29,7 @@ Setup, scenario, and FAQ are in build. Check back or reach out to the track lead
 
 Ready-to-use AI prompts for every phase of an implementation workshop. Covers meeting distillation, decisions log, action register, scope extraction, fit/gap analysis, data migration, integration design, security, testing, and cutover readiness.
 
-[Open digitaltwin-exercise.md](exercise/digitaltwin-exercise.md)
+[Open digitaltwin-exercise.md](dynamics/exercise/digitaltwin-exercise.md)
 
 
 
@@ -38,6 +38,5 @@ Ready-to-use AI prompts for every phase of an implementation workshop. Covers me
 
 
 [Giel Cuijpers](mailto:gielcuijpers@microsoft.com) and [Marvin Heilemann](mailto:Marvin.Heilemann@microsoft.com). For cross-track or program-level questions, reach [Johan Wallquist](mailto:jwallquist@microsoft.com).
-
 
 

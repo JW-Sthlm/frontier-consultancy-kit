@@ -2,7 +2,7 @@
 
 These exercises belong to the **Dynamics 365 lane** and follow Success by Design across implementation planning, configuration, testing, and go-live readiness.
 
-For custom apps, automations, agents, portals, or analytics, use the separate [Power Platform lane](../power-platform/index.html). It follows HVE through ten evidence-led feature and schema decision scenarios.
+For custom apps, automations, agents, portals, or analytics, use the separate [Power Platform lane](../../power-platform/index.html). It follows HVE through ten evidence-led feature and schema decision scenarios.
 
 ## Dynamics 365 exercises
 
