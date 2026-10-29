@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M365 Copilot Scenario Navigator | Frontier Consultancy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #07080a;
+      --panel: #111318;
+      --card: #111318;
+      --elevated: #191c23;
+      --text: #f0f1f3;
+      --muted: #a5a9b4;
+      --accent: #22d3ee;
+      --accent-strong: #22d3ee;
+      --border: #30343e;
+      --ok: #a78bfa;
+      --pink: #f472b6;
+      --aurora: linear-gradient(135deg, var(--accent), var(--ok) 50%, var(--pink));
+      --font: 'Inter', 'Segoe UI', sans-serif;
+      --display: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+    }
+    .app {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px 20px 40px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.8rem;
+    }
+    .sub {
+      margin: 0 0 20px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    .front {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .front h2 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+    }
+    .front p {
+      margin: 0 0 10px;
+      color: var(--text);
+      line-height: 1.45;
+    }
+    .front ul {
+      margin: 0 0 12px 18px;
+      color: var(--text);
+    }
+    .front li { margin-bottom: 6px; }
+    .table-wrap {
+      overflow-x: auto;
+      margin: 10px 0 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 620px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    th, td {
+      text-align: left;
+      padding: 9px 10px;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
+      vertical-align: top;
+    }
+    th { color: var(--text); background: var(--elevated); }
+    .front-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .toolbar {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 16px;
+    }
+    .toolbar-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .toolbar-row:last-child { margin-bottom: 0; }
+    input[type="search"] {
+      flex: 1 1 280px;
+      min-width: 220px;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+    }
+    .count {
+      color: var(--ok);
+      font-size: 0.95rem;
+      white-space: nowrap;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .chip {
+      border: 1px solid var(--border);
+      background: var(--panel);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 7px 11px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .chip.active {
+      background: var(--elevated);
+      border-color: var(--accent-strong);
+      color: var(--accent);
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-height: 230px;
+    }
+    .id {
+      font-size: 0.78rem;
+      color: var(--ok);
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    .title {
+      margin: 0;
+      font-size: 1.03rem;
+      line-height: 1.35;
+    }
+    .meta {
+      font-size: 0.86rem;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+    .overview {
+      font-size: 0.92rem;
+      line-height: 1.45;
+      margin: 0;
+      color: var(--text);
+      flex: 1;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .btn {
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--border);
+      background: var(--elevated);
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-size: 0.86rem;
+      font-weight: 600;
+    }
+    .btn:hover { border-color: var(--accent); color: var(--accent); }
+    .empty {
+      display: none;
+      background: var(--panel);
+      border: 1px dashed var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      color: var(--muted);
+    }
+    html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+    body { line-height: 1.65; }
+    button, input { font: inherit; }
+    :focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    .skip-link { position: absolute; top: -80px; left: 16px; padding: 12px; background: var(--panel); color: var(--accent); z-index: 10; }
+    .skip-link:focus { top: 8px; }
+    .topnav { max-width: 1180px; margin: 0 auto; padding: 24px; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+    .brand { font: 800 18px var(--display); color: var(--text); text-decoration: none; }
+    .brand span, .hero h1 span { background: var(--aurora); background-clip: text; -webkit-background-clip: text; color: transparent; }
+    .topnav nav { display: flex; flex-wrap: wrap; gap: 24px; font-size: 13px; }
+    .topnav nav a { color: var(--muted); text-decoration: none; }
+    .topnav nav a:hover { color: var(--text); }
+    .app { max-width: 1180px; padding: 0 24px 48px; }
+    .hero { padding: 56px 0 40px; }
+    .eyebrow { font-size: 12px; letter-spacing: .15em; text-transform: uppercase; font-weight: 700; color: var(--muted); }
+    h1, h2 { font-family: var(--display); letter-spacing: -.025em; text-wrap: balance; }
+    .hero h1 { font-size: clamp(36px, 5vw, 64px); line-height: 1.12; font-weight: 900; max-width: 22ch; margin: 20px 0 24px; }
+    .sub { font-size: 18px; max-width: 68ch; line-height: 1.65; margin: 0; }
+    .front { border-radius: 16px; padding: 28px; margin-bottom: 40px; }
+    .front h2 { margin: 28px 0 16px; font-size: clamp(20px, 2.4vw, 28px); line-height: 1.2; }
+    .front h2:first-child { margin-top: 0; }
+    .front p, .front ul { line-height: 1.65; }
+    .table-wrap { margin: 20px 0; }
+    th, td { padding: 12px; }
+    .toolbar { padding: 20px; border-radius: 16px; margin-bottom: 24px; }
+    input[type="search"] { min-width: 0; width: 100%; }
+    .cards { gap: 20px; }
+    .card { padding: 24px; border-radius: 16px; gap: 16px; }
+    .title { font-size: 20px; line-height: 1.25; }
+    .overview { line-height: 1.65; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 10px 16px; border-radius: 9px; transition: border-color .15s, color .15s; }
+    #scenariosSection { padding-top: 32px; border-top: 1px solid var(--border); }
+    #scenariosSection > h2 { font-size: clamp(28px, 4vw, 38px); margin: 0 0 24px; }
+    footer { border-top: 1px solid var(--border); margin-top: 48px; padding-top: 24px; color: var(--muted); font-size: 13px; }
+    @media (max-width: 600px) {
+      .app { padding-inline: 16px; }
+      .topnav { padding-inline: 16px; }
+      .hero { padding-top: 32px; }
+      .front, .toolbar, .card { padding: 20px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#scenariosSection">Skip to scenarios</a>
+  <header class="topnav">
+    <a class="brand" href="#main">Frontier <span>Consultancy</span></a>
+    <nav aria-label="Page navigation">
+      <a href="#overview">Overview</a>
+      <a href="#partner-zero">Partner Zero</a>
+      <a href="#scenariosSection">Scenarios</a>
+    </nav>
+  </header>
+  <main id="main" class="app">
+    <header class="hero">
+    <div class="eyebrow">M365 Copilot / AI-first beyond delivery</div>
+    <h1><span>M365 Copilot</span><br>Scenario Navigator</h1>
+    <p class="sub">Front page overview plus scenario exercises. Filter by lead persona, scan the scenario summary, and open Cowork prompt or exercises directly.</p>
+
+    </header>
+
+    <section id="overview" class="front" aria-label="Front page overview">
+      <h2>AI-First Beyond Delivery - M365 Copilot for Frontier Consultancy</h2>
+      <p>The Frontier Consultancy focuses on AI-first customer delivery, but an AI-first partner is AI-first everywhere. On the project side, project management, consulting, and development also contain repetitive language-heavy work where Copilot helps. The same applies across internal functions such as Finance, HR, purchasing, facilities, and sales.</p>
+      <h2>Why this matters</h2>
+      <ul>
+        <li><strong>Direct productivity gains</strong> - hours recovered per person per week across departments.</li>
+        <li><strong>Internal credibility</strong> - teams can model AI transformation from their own practice.</li>
+        <li><strong>A replication pattern</strong> - the internal adoption motion becomes the same motion used with customers.</li>
+      </ul>
+      <h2>Adoption approach</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Phase</th><th>Days</th><th>What to do</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Control</td><td>1-10</td><td>Inventory entitlements; redeem and assign licences; fund the gap; name owners; configure access; set guardrails.</td></tr>
+            <tr><td>Use</td><td>11-15</td><td>Pick tasks and baseline outcomes; launch the pilot cohort; run first tasks with champions and human approval gates.</td></tr>
+            <tr><td>Value</td><td>16-30</td><td>Run and measure cost/time/quality; save winning prompts as reusable skills; schedule recurring work; forecast consumption; make Day-30 decision.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Day-30 decision:</strong> scale · adjust · stop</p>
+
+      <h2 id="partner-zero">Partner Zero execution play book</h2>
+      <p>The Partner Zero Execution Playbook is a practical 30-day, internal-first method to adopt Copilot Cowork and Copilot Code, establish governance and cost control, and make a Day-30 scale/adjust/stop decision using measured outcomes.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Phase</th><th>Days</th><th>Steps</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Control</td><td>1-10</td><td>Inventory entitlements; Redeem & assign licences; Fund the gap; Name owners & set response; Configure access; Set guardrails</td></tr>
+            <tr><td>Use</td><td>11-15</td><td>Pick 3-5 tasks & baseline; Launch the cohort</td></tr>
+            <tr><td>Value</td><td>16-30</td><td>Run & measure; Forecast & decide</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="front-actions">
+        <a class="btn" href="https://github.com/JW-Sthlm/frontier-consultancy-kit/blob/main/partners/resources/m365-copilot-frontier/index.md" target="_blank" rel="noopener noreferrer">Open full frontier overview</a>
+        <a class="btn" href="https://github.com/JW-Sthlm/frontier-consultancy-kit/blob/main/partners/resources/m365-copilot-frontier/partner-zero-execution-play-book/index.md" target="_blank" rel="noopener noreferrer">Open Partner Zero playbook</a>
+        <a class="btn" href="https://github.com/JW-Sthlm/frontier-consultancy-kit/blob/main/partners/resources/m365-copilot-frontier/partner-zero-execution-play-book/detailed-steps.md" target="_blank" rel="noopener noreferrer">Open playbook step details</a>
+        <a class="btn" href="#scenariosSection">Go to scenarios and exercises</a>
+      </div>
+    </section>
+
+    <section id="scenariosSection" aria-label="Scenarios section">
+    <h2>Scenarios</h2>
+    <section class="toolbar" aria-label="Filters">
+      <div class="toolbar-row">
+        <input id="searchBox" type="search" placeholder="Search by scenario, persona, category, or mode">
+        <span id="resultCount" class="count"></span>
+      </div>
+      <div id="personaChips" class="chips" aria-label="Lead persona filters"></div>
+    </section>
+
+    <section id="cards" class="cards" aria-live="polite"></section>
+    <section id="emptyState" class="empty">No scenarios match this filter.</section>
+    </section>
+    <footer>Frontier Consultancy &middot; M365 Copilot &middot; AI-first beyond delivery</footer>
+  </main>
+
+  <script>
+    const base = "https://github.com/JW-Sthlm/frontier-consultancy-kit/blob/main/partners/resources/m365-copilot-frontier/M365%20Copilot%20Scenarios";
+    const scenarios = [
+      { id: "RFP01", title: "RFP 01 - Traceable RFP response with Copilot Cowork", personas: "Bid Manager (lead), Pre-sales Solution Architect, Functional Consultant, Account / Sales Lead", mode: "Cowork + FC RFP Processing plugin", category: "Pre-sales | RFP", goal: "Turn the four-file Zava D365 Commerce RFP into a shared OneDrive or SharePoint answer wiki, assign reviewers, ground all question categories in Microsoft Learn, review and approve, then export the response matrix, Word document, and answer pack.", exerciseUrl: `${base}/RFP01/rfp-exercise.md`, setupUrl: `${base}/RFP01/rfp-setup-overview.md` },
+      { id: "RFP02", title: "RFP 02 — Orals and demo-script preparation", personas: "Pre-sales Solution Architect (lead) · Functional Consultant · Bid Manager", mode: "Cowork + Skill (Orals Prep)", category: "Pre-sales › RFP", goal: "Prepare the shortlist presentation and a scripted D365 demo that maps directly to the customer's top scored requirements." },
+      { id: "SA01", title: "SA 01 — Discovery-to-solution blueprint", personas: "Solution Architect (lead) · Technical / Integration Architect", mode: "Cowork + Skill (Solution Blueprint)", category: "Solution Architecture", goal: "Convert discovery workshops into a solution architecture document for D365 and M365, with integrations, data, security and licensing considerations." },
+      { id: "SA02", title: "SA 02 — Fit-gap analysis and effort estimate", personas: "Solution Architect (lead) · Functional Consultant · Bid Manager", mode: "Cowork + Skill (Fit-Gap Estimator)", category: "Solution Architecture", goal: "Produce a defensible fit-gap and a bottom-up estimate that pre-sales, delivery and commercial teams all trust." },
+      { id: "PM01", title: "PM 01 — Weekly status and RAID log with Cowork", personas: "Project Manager (lead) · PMO Analyst · Workstream Leads", mode: "Cowork + Skill (Weekly Status)", category: "Project Management", goal: "Give the project manager a weekly status report and an up-to-date RAID log without chasing workstream leads." },
+      { id: "PM02", title: "PM 02 — Steering committee pack and change control", personas: "Project Manager (lead) · Engagement / Delivery Director", mode: "Cowork + Skill (SteerCo Pack)", category: "Project Management", goal: "Prepare a decision-ready steering committee pack and assess change requests for scope, cost and timeline impact." },
+      { id: "PM03", title: "PM 03 — Project and meeting management flow with scheduled Cowork tasks", personas: "Project Manager (lead) · PMO Analyst", mode: "Cowork + Skill (Meeting Rhythm)", category: "Project Management", goal: "Run the project's meeting rhythm automatically: agendas before each meeting, minutes and actions after, and a weekly roll-up to the PM." },
+      { id: "M36501", title: "M365 01 — M365 Copilot readiness and adoption plan", personas: "Change & Adoption Lead (lead) · Modern Work Consultant", mode: "Cowork + Skill (Copilot Readiness)", category: "Build & POC › M365 Copilot", goal: "Help the customer move from M365 Copilot pilot to scale with a readiness assessment, governance plan and persona-based adoption programme." }
+    ];
+
+    function getLeadPersona(personas) {
+      const match = personas.match(/([^·,]+?)\s*\(lead\)/i);
+      if (match) return match[1].trim();
+      return personas.split(/[·,]/)[0].trim();
+    }
+
+    scenarios.forEach(s => {
+      s.leadPersona = getLeadPersona(s.personas);
+      s.overviewUrl = `${base}/${s.id}/index.md`;
+      s.promptUrl = `${base}/${s.id}/index.md#cowork-prompt-create-your-own-skill`;
+      s.practiceUrl = `${base}/${s.id}/index.md#practice-this-scenario`;
+    });
+
+    const cardsEl = document.getElementById("cards");
+    const countEl = document.getElementById("resultCount");
+    const chipsEl = document.getElementById("personaChips");
+    const searchEl = document.getElementById("searchBox");
+    const emptyEl = document.getElementById("emptyState");
+    let activeLead = "All";
+
+    const leadPersonas = ["All", ...Array.from(new Set(scenarios.map(s => s.leadPersona))).sort()];
+
+    function renderChips() {
+      chipsEl.innerHTML = "";
+      leadPersonas.forEach(name => {
+        const btn = document.createElement("button");
+        btn.className = `chip${activeLead === name ? " active" : ""}`;
+        btn.textContent = name;
+        btn.type = "button";
+        btn.addEventListener("click", () => {
+          activeLead = name;
+          renderChips();
+          renderCards();
+        });
+        chipsEl.appendChild(btn);
+      });
+    }
+
+    function toSearchable(s) {
+      return `${s.id} ${s.title} ${s.leadPersona} ${s.personas} ${s.category} ${s.mode} ${s.goal}`.toLowerCase();
+    }
+
+    function renderCards() {
+      const q = searchEl.value.trim().toLowerCase();
+      const filtered = scenarios.filter(s => {
+        const leadOk = activeLead === "All" || s.leadPersona === activeLead;
+        const searchOk = !q || toSearchable(s).includes(q);
+        return leadOk && searchOk;
+      });
+
+      countEl.textContent = `${filtered.length} of ${scenarios.length} scenarios`;
+      cardsEl.innerHTML = "";
+      emptyEl.style.display = filtered.length ? "none" : "block";
+
+      filtered.forEach(s => {
+        const card = document.createElement("article");
+        card.className = "card";
+        card.innerHTML = `
+          <div class="id">${s.id}</div>
+          <h2 class="title">${s.title}</h2>
+          <div class="meta"><strong>Lead persona:</strong> ${s.leadPersona}</div>
+          <div class="meta"><strong>Mode:</strong> ${s.mode}</div>
+          <div class="meta"><strong>Category:</strong> ${s.category}</div>
+          <p class="overview">${s.goal}</p>
+          <div class="actions">
+            ${s.exerciseUrl ? `
+            <a class="btn" href="${s.exerciseUrl}" target="_blank" rel="noopener noreferrer">Exercise</a>
+            <a class="btn" href="${s.setupUrl}" target="_blank" rel="noopener noreferrer">Setup</a>
+            ` : `
+            <a class="btn" href="${s.overviewUrl}" target="_blank" rel="noopener noreferrer">Scenario overview</a>
+            <a class="btn" href="${s.promptUrl}" target="_blank" rel="noopener noreferrer">Cowork prompt</a>
+            <a class="btn" href="${s.practiceUrl}" target="_blank" rel="noopener noreferrer">Exercises</a>
+            `}
+          </div>
+        `;
+        cardsEl.appendChild(card);
+      });
+    }
+
+    searchEl.addEventListener("input", renderCards);
+    renderChips();
+    renderCards();
+  </script>
+</body>
+</html>

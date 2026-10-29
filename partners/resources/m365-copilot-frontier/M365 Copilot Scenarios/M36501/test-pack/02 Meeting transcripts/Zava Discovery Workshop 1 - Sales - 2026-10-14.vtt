@@ -1,0 +1,109 @@
+WEBVTT
+
+NOTE Zava – Discovery Workshop 1: Sales process
+NOTE Wed 14 Oct 2026 10:00–12:00 GST, Teams. Attendees: Daniel Reyes, Ahmed Al Mansoori (Zava); Lina Mansour, Omar Khalil, Lorette Roos (Frontier)
+NOTE Fictitious test data – Copilot for Frontier Consultancy scenario testing
+
+1
+00:00:05.000 --> 00:00:20.000
+<v Lina Mansour>Good morning everyone. Today we want to understand how a deal moves from first contact to a won order. Daniel, can you walk us through it?</v>
+
+2
+00:00:22.000 --> 00:00:35.000
+<v Daniel Reyes>Sure. Leads come from three places: the website, exhibitions like Big 5, and our reps walking construction sites. About 40% come from exhibitions.</v>
+
+3
+00:00:37.000 --> 00:00:53.000
+<v Daniel Reyes>A rep qualifies the lead. Does the project have funding, who is the main contractor, what is the timeline. If it looks real, we do a site survey.</v>
+
+4
+00:00:55.000 --> 00:01:03.000
+<v Omar Khalil>Is the site survey always needed, or only for some product lines?</v>
+
+5
+00:01:05.000 --> 00:01:18.000
+<v Daniel Reyes>For HVAC, generators and rental, always. For cement and rebar, usually not, unless it is a big project over two million dirhams.</v>
+
+6
+00:01:20.000 --> 00:01:25.000
+<v Lina Mansour>What gets captured during the survey?</v>
+
+7
+00:01:27.000 --> 00:01:40.000
+<v Daniel Reyes>Site location, access for trucks, power availability, the contractor's site manager, photos, and estimated quantities. Today it's a paper form and WhatsApp photos.</v>
+
+8
+00:01:42.000 --> 00:01:53.000
+<v Ahmed Al Mansoori>And that's a problem for us from an audit and data protection point of view. Photos on personal phones.</v>
+
+9
+00:01:55.000 --> 00:02:00.000
+<v Lina Mansour>Then the quote. Daniel, you mentioned Excel.</v>
+
+10
+00:02:02.000 --> 00:02:22.000
+<v Daniel Reyes>Yes. The rep takes the price list, which changes weekly for steel, adds transport, and applies discounts. Above ten percent needs the sales manager, above twenty needs me. Average is three days to get a quote out.</v>
+
+11
+00:02:24.000 --> 00:02:31.000
+<v Omar Khalil>Are there bundles, for example generator plus rental plus maintenance?</v>
+
+12
+00:02:33.000 --> 00:02:46.000
+<v Daniel Reyes>Yes, and that's where mistakes happen. Rental is priced per day or per month, with a minimum hire period. Reps forget the minimum.</v>
+
+13
+00:02:48.000 --> 00:02:53.000
+<v Lina Mansour>How do you know your pipeline today?</v>
+
+14
+00:02:55.000 --> 00:03:09.000
+<v Daniel Reyes>Salesforce, in theory. In practice half the team updates it on Thursday before my forecast call. I rebuild the forecast in Excel every Sunday.</v>
+
+15
+00:03:11.000 --> 00:03:29.000
+<v Ahmed Al Mansoori>For us the key thing is one view of the customer. The same contractor can be a sales account, a rental customer and a service customer, and we see three different systems.</v>
+
+16
+00:03:31.000 --> 00:03:36.000
+<v Lina Mansour>What does a won deal trigger?</v>
+
+17
+00:03:38.000 --> 00:03:54.000
+<v Daniel Reyes>An order in SAP Business One for UAE, or Sage for KSA and Oman. Somebody retypes the quote. Then credit check with finance, which can take two days.</v>
+
+18
+00:03:56.000 --> 00:04:03.000
+<v Omar Khalil>So credit limit visibility in the sales app would help?</v>
+
+19
+00:04:05.000 --> 00:04:13.000
+<v Daniel Reyes>Very much. Reps often promise delivery to customers who are on credit hold.</v>
+
+20
+00:04:15.000 --> 00:04:26.000
+<v Lorette Roos>Daniel, if you had to pick the one thing to see in a demonstration, what would it be?</v>
+
+21
+00:04:28.000 --> 00:04:44.000
+<v Daniel Reyes>A rep doing a site survey on a phone, and the quote approved and sent the same day. With the discount approval in the system, not on WhatsApp.</v>
+
+22
+00:04:46.000 --> 00:04:54.000
+<v Ahmed Al Mansoori>And the CFO will ask about Arabic. Our KSA customers expect Arabic quotes.</v>
+
+23
+00:04:56.000 --> 00:05:04.000
+<v Lina Mansour>Noted. Dual-language quote documents. Any questions on lost deals? Do you track reasons?</v>
+
+24
+00:05:06.000 --> 00:05:17.000
+<v Daniel Reyes>Not properly. A dropdown nobody fills in. I would like to know why we lose to competitors on price.</v>
+
+25
+00:05:19.000 --> 00:05:33.000
+<v Lina Mansour>Thank you. We'll send a summary and open questions. Open items so far: rental minimum hire rules, the approval matrix in writing, and sample quotes.</v>
+
+26
+00:05:35.000 --> 00:05:40.000
+<v Daniel Reyes>I'll send a sample quote today.</v>

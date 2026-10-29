@@ -1,0 +1,30 @@
+From: Omar Khalil <omar.khalil@frontierconsulting.example>
+To: Sara Haddad <sara.haddad@frontierconsulting.example>
+Cc: Lorette Roos <lorette.roos@frontierconsulting.example>
+Subject: RE: Tailspin RFP =?utf-8?b?4oCT?= bid/no-bid needed by Wednesday
+Date: Tue, 13 Oct 2026 08:55:00 +0400
+X-Test-Scenario: RFP 01, SA 02
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Sara,
+
+Had a first scan of Appendix A. My gut feel:
+- Sales and Service are mostly standard. Quote PDF in Arabic/English is an ex=
+tension.
+- Rental equipment telematics billing is a genuine gap. Probably needs an ISV=
+ or a custom Azure Function.
+- The finance consolidation in SAR and AED needs James to look at it. This is=
+ where Gulf Cement went wrong.
+- WhatsApp channel volumes are not given anywhere, so we cannot size it.
+
+I am on the Al Noor phase 2 workshops in the weeks of 26 Oct and 2 Nov. I can=
+ give maybe 2 days a week to this bid. We should ask Lina to own the CE fit-g=
+ap.
+
+Omar
+
+--
+Fictitious test data =E2=80=93 Copilot for Frontier Consultancy scenario test=
+ing

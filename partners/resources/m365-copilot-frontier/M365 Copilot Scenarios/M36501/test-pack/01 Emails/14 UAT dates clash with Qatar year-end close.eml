@@ -1,0 +1,31 @@
+From: Hassan Ali <hassan.ali@zava.example>
+To: Priya Nair <priya.nair@frontierconsulting.example>
+Cc: Nadia Farouk <nadia.farouk@zava.example>
+Subject: UAT dates clash with Qatar year-end close
+Date: Mon, 12 Oct 2026 13:40:00 +0400
+X-Test-Scenario: PM 01, PM 02
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Dear Priya,
+
+The UAT window (11=E2=80=9329 January 2027) clashes with the ZVQA year-end au=
+dit. My Qatar finance team cannot spend more than 30% of their time on UAT in=
+ that period.
+
+Options I can see:
+1. Run ZVQA UAT later (1=E2=80=9312 February), which squeezes the time before=
+ cutover
+2. Backfill with key users from ZVAE
+3. Accept reduced ZVQA test coverage
+
+Please bring a recommendation to the SteerCo.
+
+Regards,
+Hassan Ali
+Group Financial Controller
+
+--
+Fictitious test data =E2=80=93 Copilot for Frontier Consultancy scenario test=
+ing

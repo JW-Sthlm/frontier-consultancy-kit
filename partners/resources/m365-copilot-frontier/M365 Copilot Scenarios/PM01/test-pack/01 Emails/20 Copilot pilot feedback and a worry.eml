@@ -1,0 +1,29 @@
+From: Elena Petrova <elena.petrova@zava.example>
+To: Tom Becker <tom.becker@frontierconsulting.example>
+Cc: Lorette Roos <lorette.roos@frontierconsulting.example>
+Subject: Copilot pilot =?utf-8?b?4oCT?= feedback and a worry
+Date: Tue, 13 Oct 2026 10:25:00 +0400
+X-Test-Scenario: M365 01
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hi Tom,
+
+Mixed feedback from the 120 pilot users:
+- The finance analysts love it for Excel and email summaries
+- The customer service agents say it "doesn't know our processes"
+- Operations supervisors hardly use it
+
+My big worry: one pilot user asked Copilot about "salary increases" and got a=
+ summary of an HR payroll file. Our HR-Payroll site is open to "Everyone exce=
+pt external users". This must be fixed before we go from 120 to 600 users.
+
+Can we talk about governance and a proper adoption plan?
+
+Elena Petrova
+HR & Change Manager
+
+--
+Fictitious test data =E2=80=93 Copilot for Frontier Consultancy scenario test=
+ing

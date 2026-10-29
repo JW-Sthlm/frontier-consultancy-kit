@@ -1,0 +1,801 @@
+Ticket ID,Created,Channel,Category,Priority,Customer tier,Customer,City,Subject,Assigned group,Assignee,Status,SLA target (h),Resolution time (h),SLA breached,Notes
+ZD-482001,2026-09-05 18:27,Email,Rental equipment breakdown,Urgent,Gold,Contractor 009 LLC,Abu Dhabi,URGENT generator stopped on site,Rental,Agent 14,Solved,8,6.2,No,
+ZD-482002,2026-09-23 15:00,Email,Damaged goods,Low,Gold,Contractor 041 LLC,Muscat,Pallet damaged – 20 bags lost,Logistics,Agent 22,Open,48,,No,Customer chased twice
+ZD-482003,2026-09-13 08:46,Portal,Delivery delay,Normal,Gold,Contractor 118 LLC,Dubai,Where is my delivery PO 26361?,Logistics,Agent 25,Open,24,,No,
+ZD-482004,2026-09-19 10:05,Phone,Warranty claim,High,Standard,Contractor 060 LLC,Sharjah,Generator fault under warranty,Technical,Agent 18,Solved,8,2.7,No,Escalated to supervisor
+ZD-482005,2026-09-22 11:10,Email,Rental equipment breakdown,Urgent,Gold,Contractor 119 LLC,Abu Dhabi,Rental compressor broken – site stopped,Rental,Agent 36,Pending,8,,No,
+ZD-482006,2026-09-27 07:45,Phone,Rental equipment breakdown,Urgent,Standard,Contractor 081 LLC,Abu Dhabi,URGENT generator stopped on site,Rental,Agent 32,Solved,8,26.3,Yes,Escalated to supervisor
+ZD-482007,2026-09-08 18:23,Phone,Account update,Normal,Platinum,Contractor 057 LLC,Abu Dhabi,Change billing address,Billing,Agent 32,Solved,24,19.7,No,
+ZD-482008,2026-09-26 17:29,WhatsApp,Product enquiry,Low,Gold,Contractor 136 LLC,Abu Dhabi,Availability of 250kVA generator,Sales support,Agent 01,Solved,48,34.4,No,
+ZD-482009,2026-09-25 17:46,Phone,Product enquiry,Normal,Standard,Contractor 068 LLC,Sharjah,Do you stock sulphate-resistant cement?,Sales support,Agent 33,Solved,24,9.1,No,
+ZD-482010,2026-09-07 09:33,Email,Account update,Normal,Standard,Contractor 001 LLC,Jeddah,Update TRN on account,Billing,Agent 32,Pending,24,,No,
+ZD-482011,2026-09-08 07:31,Email,Delivery delay,Normal,Standard,Contractor 018 LLC,Sharjah,Where is my delivery PO 26483?,Logistics,Agent 09,Solved,24,22.0,No,
+ZD-482012,2026-09-14 10:23,Email,Damaged goods,Normal,Gold,Contractor 113 LLC,Jeddah,Pallet damaged – 20 bags lost,Logistics,Agent 08,Pending,24,,No,
+ZD-482013,2026-09-19 10:57,Email,Delivery delay,High,Standard,Contractor 009 LLC,Abu Dhabi,Cement order late again,Logistics,Agent 33,Solved,8,2.8,No,
+ZD-482014,2026-09-30 16:06,Email,Invoice dispute,Low,Standard,Contractor 025 LLC,Muscat,VAT amount incorrect,Billing,Agent 23,Solved,48,22.6,No,Escalated to supervisor
+ZD-482015,2026-09-04 07:12,Email,Account update,Low,Standard,Contractor 049 LLC,Muscat,Update TRN on account,Billing,Agent 09,Solved,48,38.9,No,Escalated to supervisor
+ZD-482016,2026-09-15 19:05,Email,Delivery delay,High,Standard,Contractor 061 LLC,Dubai,Rebar delivery not arrived – site waiting,Logistics,Agent 32,Open,8,,No,Escalated to supervisor
+ZD-482017,2026-09-01 13:44,Email,Delivery delay,Normal,Platinum,Contractor 143 LLC,Riyadh,Where is my delivery PO 73788?,Logistics,Agent 10,Solved,24,22.8,No,
+ZD-482018,2026-09-02 18:54,Portal,Invoice dispute,Normal,Standard,Contractor 136 LLC,Jeddah,Invoice 17455 charges transport twice,Billing,Agent 33,Solved,24,8.2,No,
+ZD-482019,2026-09-04 16:36,Email,Delivery delay,Normal,Standard,Contractor 134 LLC,Riyadh,Cement order late again,Logistics,Agent 14,Pending,24,,Yes,
+ZD-482020,2026-09-21 11:29,Email,Product enquiry,Low,Gold,Contractor 160 LLC,Muscat,Do you stock sulphate-resistant cement?,Sales support,Agent 05,Solved,48,25.0,No,
+ZD-482021,2026-09-29 10:19,Email,Delivery delay,Normal,Standard,Contractor 157 LLC,Dubai,Where is my delivery PO 79329?,Logistics,Agent 01,Solved,24,12.0,No,
+ZD-482022,2026-09-09 08:13,Email,Product enquiry,High,Standard,Contractor 088 LLC,Abu Dhabi,Price for 500t rebar 16mm,Sales support,Agent 17,Solved,8,6.6,No,
+ZD-482023,2026-09-21 13:16,WhatsApp,Damaged goods,Normal,Standard,Contractor 042 LLC,Dubai,Pallet damaged – 20 bags lost,Logistics,Agent 36,Solved,24,7.9,No,
+ZD-482024,2026-09-29 09:08,Email,Damaged goods,High,Platinum,Contractor 011 LLC,Muscat,HVAC unit dented,Logistics,Agent 03,Solved,8,7.1,No,Customer chased twice
+ZD-482025,2026-09-29 13:11,Email,Delivery delay,Normal,Platinum,Contractor 106 LLC,Jeddah,Rebar delivery not arrived – site waiting,Logistics,Agent 22,Pending,24,,Yes,Escalated to supervisor
+ZD-482026,2026-09-06 19:58,WhatsApp,Product enquiry,High,Standard,Contractor 118 LLC,Sharjah,Availability of 250kVA generator,Sales support,Agent 15,Solved,8,17.6,Yes,
+ZD-482027,2026-09-25 11:34,Email,Delivery delay,Normal,Gold,Contractor 085 LLC,Dubai,Rebar delivery not arrived – site waiting,Logistics,Agent 17,Open,24,,No,
+ZD-482028,2026-09-14 12:57,Portal,Warranty claim,Normal,Platinum,Contractor 148 LLC,Jeddah,Generator fault under warranty,Technical,Agent 03,Solved,24,14.5,No,
+ZD-482029,2026-09-24 18:20,Email,Damaged goods,Normal,Standard,Contractor 170 LLC,Muscat,Cement bags torn on delivery,Logistics,Agent 33,Solved,24,64.3,Yes,Customer chased twice
+ZD-482030,2026-09-05 10:11,Email,Rental equipment breakdown,Urgent,Standard,Contractor 158 LLC,Jeddah,Lighting tower not starting,Rental,Agent 26,Pending,8,,No,
+ZD-482031,2026-09-20 17:30,Email,Account update,Normal,Gold,Contractor 044 LLC,Jeddah,Update TRN on account,Billing,Agent 19,Solved,24,15.0,No,
+ZD-482032,2026-09-22 11:30,Phone,Rental equipment breakdown,Urgent,Platinum,Contractor 157 LLC,Abu Dhabi,URGENT generator stopped on site,Rental,Agent 27,Solved,8,6.9,No,
+ZD-482033,2026-09-08 09:49,Phone,Warranty claim,High,Gold,Contractor 109 LLC,Riyadh,Generator fault under warranty,Technical,Agent 34,Open,8,,No,Escalated to supervisor
+ZD-482034,2026-09-05 19:48,Email,Delivery delay,Low,Standard,Contractor 114 LLC,Riyadh,Where is my delivery PO 76162?,Logistics,Agent 28,Solved,48,36.8,No,
+ZD-482035,2026-09-09 19:15,Email,Damaged goods,Normal,Standard,Contractor 071 LLC,Riyadh,HVAC unit dented,Logistics,Agent 19,Solved,24,70.9,Yes,
+ZD-482036,2026-09-05 10:26,Email,Invoice dispute,Low,Standard,Contractor 085 LLC,Abu Dhabi,VAT amount incorrect,Billing,Agent 27,Solved,48,37.7,No,Escalated to supervisor
+ZD-482037,2026-09-28 19:24,Phone,Invoice dispute,Low,Standard,Contractor 108 LLC,Dubai,VAT amount incorrect,Billing,Agent 39,Solved,48,30.4,No,Escalated to supervisor
+ZD-482038,2026-09-22 17:39,Email,Delivery delay,Low,Platinum,Contractor 137 LLC,Sharjah,Rebar delivery not arrived – site waiting,Logistics,Agent 38,Open,48,,No,
+ZD-482039,2026-09-06 07:24,Email,Rental equipment breakdown,Urgent,Gold,Contractor 072 LLC,Riyadh,Rental compressor broken – site stopped,Rental,Agent 06,Pending,8,,Yes,Escalated to supervisor
+ZD-482040,2026-09-08 17:15,Email,Delivery delay,High,Standard,Contractor 052 LLC,Sharjah,Rebar delivery not arrived – site waiting,Logistics,Agent 10,Pending,8,,No,
+ZD-482041,2026-09-15 18:47,Phone,Delivery delay,Normal,Standard,Contractor 030 LLC,Abu Dhabi,Rebar delivery not arrived – site waiting,Logistics,Agent 07,Pending,24,,No,
+ZD-482042,2026-09-13 18:06,Email,Delivery delay,Normal,Standard,Contractor 179 LLC,Riyadh,Cement order late again,Logistics,Agent 39,Pending,24,,No,
+ZD-482043,2026-09-14 17:26,Phone,Product enquiry,Normal,Platinum,Contractor 126 LLC,Jeddah,Price for 500t rebar 16mm,Sales support,Agent 24,Solved,24,8.4,No,
+ZD-482044,2026-09-24 15:29,Email,Account update,Normal,Gold,Contractor 112 LLC,Abu Dhabi,Update TRN on account,Billing,Agent 18,Pending,24,,No,Customer chased twice
+ZD-482045,2026-09-08 19:31,Phone,Account update,Low,Platinum,Contractor 084 LLC,Riyadh,Change billing address,Billing,Agent 14,Solved,48,33.5,No,Customer chased twice
+ZD-482046,2026-09-29 11:26,Email,Product enquiry,High,Standard,Contractor 126 LLC,Muscat,Do you stock sulphate-resistant cement?,Sales support,Agent 31,Solved,8,5.3,No,
+ZD-482047,2026-09-08 13:33,Email,Product enquiry,Normal,Platinum,Contractor 089 LLC,Sharjah,Availability of 250kVA generator,Sales support,Agent 22,Solved,24,12.3,No,Customer chased twice
+ZD-482048,2026-09-24 10:11,Email,Product enquiry,Normal,Gold,Contractor 050 LLC,Dubai,Price for 500t rebar 16mm,Sales support,Agent 18,Pending,24,,No,
+ZD-482049,2026-09-27 10:34,Phone,Warranty claim,Normal,Standard,Contractor 033 LLC,Dubai,Chiller compressor failure,Technical,Agent 04,Solved,24,11.0,No,
+ZD-482050,2026-09-04 07:03,WhatsApp,Invoice dispute,Normal,Standard,Contractor 065 LLC,Riyadh,Wrong discount on invoice 24953,Billing,Agent 05,Solved,24,15.1,No,
+ZD-482051,2026-09-10 08:50,Phone,Warranty claim,Normal,Gold,Contractor 159 LLC,Jeddah,Generator fault under warranty,Technical,Agent 25,Pending,24,,No,Escalated to supervisor
+ZD-482052,2026-09-10 16:13,Email,Returns,High,Standard,Contractor 161 LLC,Riyadh,Return unused cement bags,Logistics,Agent 06,Open,8,,No,
+ZD-482053,2026-09-20 14:55,Email,Warranty claim,Normal,Gold,Contractor 117 LLC,Muscat,Generator fault under warranty,Technical,Agent 17,Solved,24,7.7,No,
+ZD-482054,2026-09-18 10:10,Phone,Warranty claim,Normal,Gold,Contractor 079 LLC,Dubai,AC unit not cooling – 8 months old,Technical,Agent 19,Solved,24,22.5,No,Escalated to supervisor
+ZD-482055,2026-09-17 15:47,Phone,Delivery delay,Low,Standard,Contractor 083 LLC,Sharjah,Where is my delivery PO 42816?,Logistics,Agent 02,Open,48,,No,
+ZD-482056,2026-09-01 19:33,Phone,Delivery delay,Normal,Standard,Contractor 167 LLC,Jeddah,Cement order late again,Logistics,Agent 12,Solved,24,16.9,No,
+ZD-482057,2026-09-12 13:31,Phone,Damaged goods,Normal,Standard,Contractor 074 LLC,Riyadh,Pallet damaged – 20 bags lost,Logistics,Agent 36,Solved,24,34.7,Yes,
+ZD-482058,2026-09-28 15:12,Email,Damaged goods,High,Gold,Contractor 133 LLC,Riyadh,HVAC unit dented,Logistics,Agent 32,Solved,8,6.1,No,
+ZD-482059,2026-09-30 11:40,Email,Damaged goods,Low,Gold,Contractor 156 LLC,Abu Dhabi,Cement bags torn on delivery,Logistics,Agent 20,Solved,48,44.0,No,
+ZD-482060,2026-09-15 08:17,Email,Delivery delay,Normal,Gold,Contractor 107 LLC,Dubai,Cement order late again,Logistics,Agent 16,Solved,24,15.6,No,Escalated to supervisor
+ZD-482061,2026-09-24 09:59,Email,Warranty claim,High,Standard,Contractor 130 LLC,Jeddah,Chiller compressor failure,Technical,Agent 19,Solved,8,3.9,No,
+ZD-482062,2026-09-28 09:29,Phone,Invoice dispute,Low,Standard,Contractor 083 LLC,Riyadh,Invoice 41300 charges transport twice,Billing,Agent 37,Solved,48,115.3,Yes,Escalated to supervisor
+ZD-482063,2026-09-13 17:55,Phone,Delivery delay,Normal,Standard,Contractor 026 LLC,Riyadh,Cement order late again,Logistics,Agent 34,Solved,24,54.7,Yes,Escalated to supervisor
+ZD-482064,2026-09-03 14:54,Email,Delivery delay,Normal,Standard,Contractor 085 LLC,Abu Dhabi,Where is my delivery PO 79942?,Logistics,Agent 25,Pending,24,,No,Customer chased twice
+ZD-482065,2026-09-02 16:14,WhatsApp,Rental equipment breakdown,Urgent,Standard,Contractor 024 LLC,Jeddah,Rental compressor broken – site stopped,Rental,Agent 07,Solved,8,3.7,No,Escalated to supervisor
+ZD-482066,2026-09-26 07:26,Email,Delivery delay,Normal,Platinum,Contractor 145 LLC,Sharjah,Where is my delivery PO 33600?,Logistics,Agent 11,Solved,24,13.2,No,
+ZD-482067,2026-09-16 16:42,WhatsApp,Delivery delay,Normal,Standard,Contractor 003 LLC,Abu Dhabi,Cement order late again,Logistics,Agent 35,Solved,24,11.1,No,
+ZD-482068,2026-09-21 13:54,WhatsApp,Delivery delay,Normal,Standard,Contractor 124 LLC,Sharjah,Rebar delivery not arrived – site waiting,Logistics,Agent 25,Open,24,,No,Agent used personal WhatsApp
+ZD-482069,2026-09-27 17:47,Email,Invoice dispute,Low,Standard,Contractor 013 LLC,Dubai,VAT amount incorrect,Billing,Agent 19,Pending,48,,No,
+ZD-482070,2026-09-09 17:19,Email,Warranty claim,Normal,Standard,Contractor 113 LLC,Jeddah,Generator fault under warranty,Technical,Agent 24,Pending,24,,No,
+ZD-482071,2026-09-06 10:32,WhatsApp,Delivery delay,Normal,Gold,Contractor 070 LLC,Riyadh,Rebar delivery not arrived – site waiting,Logistics,Agent 31,Solved,24,20.4,No,Customer chased twice
+ZD-482072,2026-09-05 19:54,Email,Product enquiry,Normal,Platinum,Contractor 143 LLC,Dubai,Availability of 250kVA generator,Sales support,Agent 26,Open,24,,No,
+ZD-482073,2026-09-22 11:14,Email,Invoice dispute,Low,Gold,Contractor 121 LLC,Muscat,Invoice 91205 charges transport twice,Billing,Agent 36,Solved,48,42.0,No,
+ZD-482074,2026-09-10 17:07,Email,Delivery delay,Low,Standard,Contractor 025 LLC,Muscat,Rebar delivery not arrived – site waiting,Logistics,Agent 09,Open,48,,Yes,Escalated to supervisor
+ZD-482075,2026-09-14 16:39,Phone,Damaged goods,Normal,Standard,Contractor 105 LLC,Jeddah,HVAC unit dented,Logistics,Agent 24,Open,24,,No,
+ZD-482076,2026-09-22 12:54,Portal,Damaged goods,Normal,Standard,Contractor 117 LLC,Dubai,Cement bags torn on delivery,Logistics,Agent 14,Open,24,,No,
+ZD-482077,2026-09-08 09:13,Portal,Rental equipment breakdown,Urgent,Platinum,Contractor 060 LLC,Sharjah,Rental compressor broken – site stopped,Rental,Agent 39,Solved,8,2.8,No,
+ZD-482078,2026-09-09 19:22,Portal,Invoice dispute,Normal,Standard,Contractor 061 LLC,Jeddah,VAT amount incorrect,Billing,Agent 02,Solved,24,9.0,No,
+ZD-482079,2026-09-16 14:02,Email,Delivery delay,Normal,Platinum,Contractor 169 LLC,Dubai,Where is my delivery PO 49535?,Logistics,Agent 30,Open,24,,Yes,
+ZD-482080,2026-09-14 17:05,Email,Returns,High,Standard,Contractor 083 LLC,Riyadh,Return 3 pallets of blocks,Logistics,Agent 05,Solved,8,5.1,No,
+ZD-482081,2026-09-17 11:07,Email,Rental equipment breakdown,Urgent,Gold,Contractor 168 LLC,Jeddah,Lighting tower not starting,Rental,Agent 14,Pending,8,,No,Escalated to supervisor
+ZD-482082,2026-09-13 13:43,Email,Damaged goods,High,Gold,Contractor 122 LLC,Riyadh,Cement bags torn on delivery,Logistics,Agent 06,Open,8,,Yes,
+ZD-482083,2026-09-18 07:48,Phone,Damaged goods,Normal,Gold,Contractor 109 LLC,Abu Dhabi,Pallet damaged – 20 bags lost,Logistics,Agent 19,Open,24,,No,
+ZD-482084,2026-09-22 14:07,Email,Invoice dispute,Normal,Standard,Contractor 072 LLC,Abu Dhabi,VAT amount incorrect,Billing,Agent 28,Solved,24,21.4,No,
+ZD-482085,2026-09-27 18:58,Phone,Rental equipment breakdown,Urgent,Platinum,Contractor 087 LLC,Muscat,Rental compressor broken – site stopped,Rental,Agent 12,Pending,8,,No,
+ZD-482086,2026-09-01 08:19,Email,Warranty claim,Normal,Platinum,Contractor 084 LLC,Muscat,AC unit not cooling – 8 months old,Technical,Agent 06,Solved,24,13.5,No,
+ZD-482087,2026-09-09 14:48,Phone,Delivery delay,Low,Platinum,Contractor 132 LLC,Dubai,Rebar delivery not arrived – site waiting,Logistics,Agent 28,Solved,48,30.7,No,
+ZD-482088,2026-09-10 07:19,Phone,Invoice dispute,Normal,Standard,Contractor 055 LLC,Muscat,Invoice 43491 charges transport twice,Billing,Agent 19,Solved,24,13.8,No,
+ZD-482089,2026-09-23 10:01,Email,Damaged goods,Normal,Platinum,Contractor 118 LLC,Jeddah,Cement bags torn on delivery,Logistics,Agent 37,Solved,24,8.4,No,Escalated to supervisor
+ZD-482090,2026-09-13 07:44,Phone,Warranty claim,Normal,Gold,Contractor 093 LLC,Dubai,Generator fault under warranty,Technical,Agent 07,Solved,24,10.1,No,
+ZD-482091,2026-09-24 12:07,Email,Damaged goods,Normal,Platinum,Contractor 136 LLC,Sharjah,Pallet damaged – 20 bags lost,Logistics,Agent 23,Solved,24,12.8,No,Customer chased twice
+ZD-482092,2026-09-04 09:41,Phone,Product enquiry,Normal,Standard,Contractor 020 LLC,Abu Dhabi,Price for 500t rebar 16mm,Sales support,Agent 32,Pending,24,,No,Escalated to supervisor
+ZD-482093,2026-09-21 17:04,Phone,Product enquiry,Normal,Gold,Contractor 121 LLC,Jeddah,Availability of 250kVA generator,Sales support,Agent 20,Solved,24,21.7,No,Customer chased twice
+ZD-482094,2026-09-15 07:05,Email,Warranty claim,High,Platinum,Contractor 158 LLC,Riyadh,AC unit not cooling – 8 months old,Technical,Agent 25,Open,8,,Yes,Escalated to supervisor
+ZD-482095,2026-09-15 19:03,Portal,Warranty claim,Normal,Standard,Contractor 116 LLC,Dubai,Generator fault under warranty,Technical,Agent 06,Solved,24,12.6,No,
+ZD-482096,2026-09-17 15:49,Email,Rental equipment breakdown,Urgent,Standard,Contractor 087 LLC,Riyadh,Lighting tower not starting,Rental,Agent 04,Solved,8,4.4,No,
+ZD-482097,2026-09-13 11:55,Email,Rental equipment breakdown,Urgent,Platinum,Contractor 039 LLC,Muscat,Rental compressor broken – site stopped,Rental,Agent 38,Open,8,,No,
+ZD-482098,2026-09-22 13:24,Email,Delivery delay,Normal,Standard,Contractor 165 LLC,Muscat,Cement order late again,Logistics,Agent 34,Solved,24,17.2,No,
+ZD-482099,2026-09-10 09:08,Email,Rental equipment breakdown,Urgent,Gold,Contractor 040 LLC,Sharjah,URGENT generator stopped on site,Rental,Agent 07,Solved,8,4.3,No,
+ZD-482100,2026-09-22 12:44,Phone,Product enquiry,Normal,Standard,Contractor 160 LLC,Dubai,Price for 500t rebar 16mm,Sales support,Agent 03,Solved,24,17.2,No,Escalated to supervisor
+ZD-482101,2026-09-10 19:57,Phone,Invoice dispute,Low,Standard,Contractor 050 LLC,Jeddah,Wrong discount on invoice 98907,Billing,Agent 37,Pending,48,,Yes,Escalated to supervisor
+ZD-482102,2026-09-06 10:59,Phone,Product enquiry,Normal,Standard,Contractor 027 LLC,Riyadh,Do you stock sulphate-resistant cement?,Sales support,Agent 08,Solved,24,53.5,Yes,Customer chased twice
+ZD-482103,2026-09-05 13:01,Email,Delivery delay,High,Gold,Contractor 107 LLC,Jeddah,Rebar delivery not arrived – site waiting,Logistics,Agent 33,Solved,8,17.2,Yes,Customer chased twice
+ZD-482104,2026-09-11 08:44,Portal,Delivery delay,Normal,Gold,Contractor 036 LLC,Dubai,Where is my delivery PO 71487?,Logistics,Agent 29,Open,24,,Yes,
+ZD-482105,2026-09-18 18:03,Email,Delivery delay,Low,Gold,Contractor 062 LLC,Abu Dhabi,Cement order late again,Logistics,Agent 40,Solved,48,18.1,No,Escalated to supervisor
+ZD-482106,2026-09-01 17:36,Phone,Delivery delay,Normal,Standard,Contractor 107 LLC,Jeddah,Rebar delivery not arrived – site waiting,Logistics,Agent 06,Solved,24,25.3,Yes,
+ZD-482107,2026-09-26 15:23,Email,Returns,High,Standard,Contractor 065 LLC,Jeddah,Return 3 pallets of blocks,Logistics,Agent 23,Pending,8,,No,Customer chased twice
+ZD-482108,2026-09-24 19:41,Phone,Invoice dispute,Normal,Platinum,Contractor 045 LLC,Jeddah,VAT amount incorrect,Billing,Agent 31,Solved,24,9.4,No,
+ZD-482109,2026-09-07 07:25,Phone,Delivery delay,Normal,Standard,Contractor 140 LLC,Sharjah,Cement order late again,Logistics,Agent 03,Solved,24,22.1,No,
+ZD-482110,2026-09-11 11:28,Email,Delivery delay,High,Standard,Contractor 099 LLC,Muscat,Cement order late again,Logistics,Agent 32,Solved,8,6.9,No,
+ZD-482111,2026-09-24 13:18,WhatsApp,Damaged goods,High,Standard,Contractor 083 LLC,Dubai,Cement bags torn on delivery,Logistics,Agent 21,Solved,8,4.8,No,
+ZD-482112,2026-09-23 14:39,Email,Invoice dispute,Normal,Standard,Contractor 112 LLC,Abu Dhabi,Wrong discount on invoice 93816,Billing,Agent 04,Open,24,,No,Refund promised by agent
+ZD-482113,2026-09-01 09:24,Email,Damaged goods,Low,Standard,Contractor 146 LLC,Abu Dhabi,Cement bags torn on delivery,Logistics,Agent 10,Solved,48,142.0,Yes,
+ZD-482114,2026-09-19 09:07,Email,Damaged goods,Normal,Gold,Contractor 007 LLC,Dubai,Pallet damaged – 20 bags lost,Logistics,Agent 32,Solved,24,13.9,No,
+ZD-482115,2026-09-23 14:31,Phone,Invoice dispute,Normal,Gold,Contractor 052 LLC,Sharjah,Invoice 27790 charges transport twice,Billing,Agent 05,Open,24,,No,
+ZD-482116,2026-09-22 12:10,Email,Damaged goods,High,Standard,Contractor 180 LLC,Sharjah,Pallet damaged – 20 bags lost,Logistics,Agent 24,Solved,8,5.5,No,
+ZD-482117,2026-09-26 14:35,Portal,Delivery delay,High,Standard,Contractor 034 LLC,Abu Dhabi,Where is my delivery PO 21300?,Logistics,Agent 05,Solved,8,4.4,No,Customer chased twice
+ZD-482118,2026-09-25 13:33,Phone,Damaged goods,High,Standard,Contractor 089 LLC,Riyadh,Cement bags torn on delivery,Logistics,Agent 38,Solved,8,9.9,Yes,
+ZD-482119,2026-09-27 08:14,Email,Product enquiry,Normal,Standard,Contractor 089 LLC,Dubai,Do you stock sulphate-resistant cement?,Sales support,Agent 06,Open,24,,No,Customer chased twice
+ZD-482120,2026-09-10 16:09,Portal,Delivery delay,High,Gold,Contractor 044 LLC,Muscat,Where is my delivery PO 91851?,Logistics,Agent 39,Open,8,,No,Customer chased twice
+ZD-482121,2026-09-03 07:40,Phone,Account update,Normal,Standard,Contractor 008 LLC,Dubai,Add new site contact,Billing,Agent 35,Solved,24,18.1,No,Customer chased twice
+ZD-482122,2026-09-13 11:13,Email,Rental equipment breakdown,Urgent,Gold,Contractor 088 LLC,Muscat,Lighting tower not starting,Rental,Agent 21,Solved,8,17.0,Yes,
+ZD-482123,2026-09-05 19:28,Portal,Invoice dispute,Normal,Gold,Contractor 064 LLC,Riyadh,Invoice 22689 charges transport twice,Billing,Agent 04,Solved,24,39.4,Yes,Escalated to supervisor
+ZD-482124,2026-09-27 12:29,Email,Account update,Normal,Standard,Contractor 128 LLC,Abu Dhabi,Add new site contact,Billing,Agent 02,Open,24,,No,
+ZD-482125,2026-09-19 12:41,Email,Returns,High,Standard,Contractor 173 LLC,Abu Dhabi,Return wrong HVAC model,Logistics,Agent 35,Open,8,,No,
+ZD-482126,2026-09-12 07:18,WhatsApp,Damaged goods,Low,Standard,Contractor 019 LLC,Riyadh,HVAC unit dented,Logistics,Agent 29,Solved,48,16.1,No,Agent used personal WhatsApp
+ZD-482127,2026-09-05 08:23,Portal,Invoice dispute,Low,Standard,Contractor 037 LLC,Dubai,Invoice 88966 charges transport twice,Billing,Agent 33,Solved,48,26.9,No,
+ZD-482128,2026-09-17 14:39,Email,Delivery delay,Normal,Gold,Contractor 082 LLC,Riyadh,Rebar delivery not arrived – site waiting,Logistics,Agent 40,Solved,24,17.4,No,
+ZD-482129,2026-09-18 14:26,Phone,Account update,Normal,Standard,Contractor 150 LLC,Jeddah,Add new site contact,Billing,Agent 02,Solved,24,44.7,Yes,
+ZD-482130,2026-09-19 10:53,Portal,Damaged goods,High,Standard,Contractor 098 LLC,Jeddah,Cement bags torn on delivery,Logistics,Agent 16,Pending,8,,Yes,
+ZD-482131,2026-09-11 13:30,Phone,Warranty claim,Normal,Gold,Contractor 016 LLC,Riyadh,AC unit not cooling – 8 months old,Technical,Agent 34,Pending,24,,Yes,
+ZD-482132,2026-09-11 09:46,Portal,Warranty claim,Low,Standard,Contractor 175 LLC,Riyadh,AC unit not cooling – 8 months old,Technical,Agent 40,Pending,48,,Yes,Escalated to supervisor
+ZD-482133,2026-09-10 19:30,Email,Delivery delay,Normal,Standard,Contractor 090 LLC,Abu Dhabi,Where is my delivery PO 45842?,Logistics,Agent 19,Solved,24,19.0,No,
+ZD-482134,2026-09-27 12:28,Email,Warranty claim,Normal,Standard,Contractor 168 LLC,Riyadh,Chiller compressor failure,Technical,Agent 14,Solved,24,67.2,Yes,
+ZD-482135,2026-09-05 08:40,Email,Account update,Normal,Standard,Contractor 060 LLC,Sharjah,Change billing address,Billing,Agent 27,Solved,24,11.3,No,Customer chased twice
+ZD-482136,2026-09-18 09:41,Email,Product enquiry,Low,Standard,Contractor 052 LLC,Dubai,Availability of 250kVA generator,Sales support,Agent 19,Solved,48,36.3,No,
+ZD-482137,2026-09-18 18:11,Phone,Delivery delay,High,Standard,Contractor 010 LLC,Abu Dhabi,Cement order late again,Logistics,Agent 12,Open,8,,No,
+ZD-482138,2026-09-10 16:41,WhatsApp,Returns,High,Standard,Contractor 140 LLC,Dubai,Return 3 pallets of blocks,Logistics,Agent 09,Solved,8,7.6,No,Escalated to supervisor
+ZD-482139,2026-09-15 17:43,Phone,Invoice dispute,Normal,Gold,Contractor 050 LLC,Muscat,Invoice 90079 charges transport twice,Billing,Agent 26,Solved,24,45.0,Yes,
+ZD-482140,2026-09-16 12:17,Email,Invoice dispute,Normal,Platinum,Contractor 085 LLC,Abu Dhabi,Wrong discount on invoice 86344,Billing,Agent 37,Solved,24,7.3,No,Refund promised by agent
+ZD-482141,2026-09-10 09:49,Email,Invoice dispute,Low,Standard,Contractor 080 LLC,Riyadh,VAT amount incorrect,Billing,Agent 19,Open,48,,No,
+ZD-482142,2026-09-20 12:51,Email,Delivery delay,Low,Gold,Contractor 171 LLC,Muscat,Rebar delivery not arrived – site waiting,Logistics,Agent 39,Pending,48,,No,
+ZD-482143,2026-09-04 07:07,Email,Warranty claim,Normal,Gold,Contractor 175 LLC,Jeddah,Generator fault under warranty,Technical,Agent 32,Solved,24,44.5,Yes,
+ZD-482144,2026-09-17 13:19,Email,Account update,Low,Platinum,Contractor 006 LLC,Abu Dhabi,Add new site contact,Billing,Agent 01,Pending,48,,No,
+ZD-482145,2026-09-03 15:26,Email,Delivery delay,High,Gold,Contractor 047 LLC,Muscat,Rebar delivery not arrived – site waiting,Logistics,Agent 27,Solved,8,26.7,Yes,Customer chased twice
+ZD-482146,2026-09-13 08:33,Email,Returns,Normal,Standard,Contractor 033 LLC,Riyadh,Return 3 pallets of blocks,Logistics,Agent 01,Solved,24,35.7,Yes,Customer chased twice
+ZD-482147,2026-09-27 10:48,Phone,Damaged goods,Normal,Gold,Contractor 029 LLC,Riyadh,Cement bags torn on delivery,Logistics,Agent 27,Open,24,,Yes,
+ZD-482148,2026-09-03 08:15,WhatsApp,Product enquiry,High,Platinum,Contractor 012 LLC,Abu Dhabi,Availability of 250kVA generator,Sales support,Agent 15,Open,8,,No,Agent used personal WhatsApp
+ZD-482149,2026-09-10 10:15,WhatsApp,Delivery delay,Normal,Platinum,Contractor 078 LLC,Jeddah,Rebar delivery not arrived – site waiting,Logistics,Agent 34,Open,24,,No,
+ZD-482150,2026-09-29 18:22,Email,Damaged goods,Normal,Standard,Contractor 165 LLC,Jeddah,Pallet damaged – 20 bags lost,Logistics,Agent 34,Solved,24,17.7,No,Customer chased twice
+ZD-482151,2026-09-25 15:09,Email,Rental equipment breakdown,Urgent,Gold,Contractor 119 LLC,Abu Dhabi,URGENT generator stopped on site,Rental,Agent 27,Open,8,,No,Escalated to supervisor
+ZD-482152,2026-09-11 17:46,Email,Warranty claim,High,Gold,Contractor 049 LLC,Abu Dhabi,Generator fault under warranty,Technical,Agent 25,Solved,8,7.6,No,
+ZD-482153,2026-09-24 17:58,Email,Warranty claim,Normal,Platinum,Contractor 004 LLC,Jeddah,Generator fault under warranty,Technical,Agent 08,Solved,24,15.3,No,
+ZD-482154,2026-09-23 10:24,Email,Returns,Low,Gold,Contractor 120 LLC,Jeddah,Return 3 pallets of blocks,Logistics,Agent 23,Pending,48,,No,Customer chased twice
+ZD-482155,2026-09-16 19:36,Email,Warranty claim,Normal,Platinum,Contractor 057 LLC,Muscat,AC unit not cooling – 8 months old,Technical,Agent 02,Solved,24,22.6,No,Customer chased twice
+ZD-482156,2026-09-05 10:35,Phone,Warranty claim,Normal,Standard,Contractor 168 LLC,Sharjah,AC unit not cooling – 8 months old,Technical,Agent 17,Solved,24,11.1,No,Escalated to supervisor
+ZD-482157,2026-09-24 19:58,Phone,Returns,Normal,Standard,Contractor 139 LLC,Abu Dhabi,Return 3 pallets of blocks,Logistics,Agent 34,Solved,24,10.0,No,
+ZD-482158,2026-09-05 17:03,Phone,Returns,Normal,Standard,Contractor 159 LLC,Riyadh,Return 3 pallets of blocks,Logistics,Agent 40,Solved,24,38.1,Yes,
+ZD-482159,2026-09-01 15:44,Email,Damaged goods,Normal,Standard,Contractor 173 LLC,Dubai,HVAC unit dented,Logistics,Agent 07,Solved,24,16.2,No,
+ZD-482160,2026-09-27 12:15,Email,Warranty claim,Normal,Standard,Contractor 179 LLC,Sharjah,Generator fault under warranty,Technical,Agent 06,Solved,24,81.6,Yes,
+ZD-482161,2026-09-13 13:27,Phone,Returns,Low,Platinum,Contractor 166 LLC,Riyadh,Return wrong HVAC model,Logistics,Agent 07,Solved,48,70.6,Yes,
+ZD-482162,2026-09-16 11:34,WhatsApp,Delivery delay,High,Standard,Contractor 145 LLC,Jeddah,Where is my delivery PO 14312?,Logistics,Agent 12,Solved,8,7.6,No,Customer chased twice
+ZD-482163,2026-09-27 13:54,Email,Delivery delay,High,Platinum,Contractor 100 LLC,Muscat,Where is my delivery PO 80852?,Logistics,Agent 22,Solved,8,4.1,No,Escalated to supervisor
+ZD-482164,2026-09-03 15:21,Email,Product enquiry,Normal,Standard,Contractor 155 LLC,Muscat,Do you stock sulphate-resistant cement?,Sales support,Agent 26,Open,24,,No,Customer chased twice
+ZD-482165,2026-09-08 12:05,Email,Delivery delay,Low,Standard,Contractor 159 LLC,Riyadh,Cement order late again,Logistics,Agent 05,Pending,48,,No,
+ZD-482166,2026-09-24 13:48,Email,Invoice dispute,Normal,Standard,Contractor 070 LLC,Abu Dhabi,Invoice 27367 charges transport twice,Billing,Agent 06,Solved,24,80.6,Yes,Escalated to supervisor
+ZD-482167,2026-09-12 15:00,Email,Warranty claim,High,Platinum,Contractor 075 LLC,Dubai,Chiller compressor failure,Technical,Agent 06,Open,8,,No,
+ZD-482168,2026-09-17 09:10,WhatsApp,Returns,Low,Standard,Contractor 112 LLC,Jeddah,Return wrong HVAC model,Logistics,Agent 20,Solved,48,82.0,Yes,
+ZD-482169,2026-09-20 16:53,WhatsApp,Invoice dispute,Normal,Standard,Contractor 159 LLC,Riyadh,Wrong discount on invoice 53193,Billing,Agent 29,Solved,24,25.6,Yes,
+ZD-482170,2026-09-07 14:47,Email,Returns,Normal,Gold,Contractor 178 LLC,Muscat,Return 3 pallets of blocks,Logistics,Agent 37,Solved,24,10.2,No,Customer chased twice
+ZD-482171,2026-09-30 16:35,Phone,Invoice dispute,Normal,Gold,Contractor 007 LLC,Dubai,VAT amount incorrect,Billing,Agent 14,Pending,24,,No,Customer chased twice
+ZD-482172,2026-09-22 14:50,Email,Account update,Normal,Standard,Contractor 097 LLC,Riyadh,Change billing address,Billing,Agent 39,Pending,24,,Yes,Escalated to supervisor
+ZD-482173,2026-09-14 15:34,Email,Warranty claim,High,Standard,Contractor 153 LLC,Muscat,AC unit not cooling – 8 months old,Technical,Agent 07,Open,8,,No,
+ZD-482174,2026-09-19 17:06,Email,Rental equipment breakdown,Urgent,Standard,Contractor 003 LLC,Dubai,URGENT generator stopped on site,Rental,Agent 15,Pending,4,,No,
+ZD-482175,2026-09-15 12:09,Phone,Product enquiry,Low,Standard,Contractor 089 LLC,Abu Dhabi,Price for 500t rebar 16mm,Sales support,Agent 07,Pending,48,,No,Customer chased twice
+ZD-482176,2026-09-05 12:22,Portal,Damaged goods,Normal,Platinum,Contractor 122 LLC,Muscat,Cement bags torn on delivery,Logistics,Agent 29,Solved,24,13.0,No,Customer chased twice
+ZD-482177,2026-09-28 12:15,Email,Delivery delay,High,Standard,Contractor 133 LLC,Dubai,Rebar delivery not arrived – site waiting,Logistics,Agent 11,Open,8,,No,Customer chased twice
+ZD-482178,2026-09-21 09:39,Portal,Warranty claim,Normal,Gold,Contractor 051 LLC,Riyadh,Chiller compressor failure,Technical,Agent 28,Solved,24,18.0,No,Escalated to supervisor
+ZD-482179,2026-09-26 19:23,Email,Delivery delay,High,Gold,Contractor 084 LLC,Muscat,Rebar delivery not arrived – site waiting,Logistics,Agent 08,Solved,8,5.6,No,Customer chased twice
+ZD-482180,2026-09-20 13:39,Email,Rental equipment breakdown,Urgent,Standard,Contractor 045 LLC,Sharjah,Lighting tower not starting,Rental,Agent 40,Open,8,,No,
+ZD-482181,2026-09-04 09:08,Email,Delivery delay,Normal,Platinum,Contractor 148 LLC,Sharjah,Cement order late again,Logistics,Agent 12,Solved,24,18.8,No,Escalated to supervisor
+ZD-482182,2026-09-18 09:39,Phone,Rental equipment breakdown,Urgent,Standard,Contractor 014 LLC,Abu Dhabi,Rental compressor broken – site stopped,Rental,Agent 32,Open,8,,No,
+ZD-482183,2026-09-16 13:05,Email,Delivery delay,Low,Standard,Contractor 145 LLC,Muscat,Rebar delivery not arrived – site waiting,Logistics,Agent 19,Solved,48,28.4,No,
+ZD-482184,2026-09-19 18:52,Email,Invoice dispute,Low,Gold,Contractor 094 LLC,Riyadh,VAT amount incorrect,Billing,Agent 29,Pending,48,,Yes,Escalated to supervisor
+ZD-482185,2026-09-28 07:55,Phone,Delivery delay,Low,Standard,Contractor 031 LLC,Sharjah,Rebar delivery not arrived – site waiting,Logistics,Agent 38,Solved,48,23.2,No,
+ZD-482186,2026-09-20 09:34,Phone,Invoice dispute,Normal,Standard,Contractor 072 LLC,Abu Dhabi,VAT amount incorrect,Billing,Agent 11,Solved,24,20.9,No,
+ZD-482187,2026-09-29 17:03,Phone,Invoice dispute,High,Standard,Contractor 071 LLC,Jeddah,VAT amount incorrect,Billing,Agent 09,Solved,8,3.2,No,
+ZD-482188,2026-09-16 09:50,Email,Invoice dispute,Normal,Standard,Contractor 024 LLC,Riyadh,Wrong discount on invoice 77582,Billing,Agent 18,Solved,24,17.7,No,Customer chased twice
+ZD-482189,2026-09-03 18:50,Email,Damaged goods,Low,Standard,Contractor 137 LLC,Muscat,HVAC unit dented,Logistics,Agent 28,Open,48,,No,
+ZD-482190,2026-09-19 09:02,Email,Damaged goods,Low,Gold,Contractor 026 LLC,Jeddah,Pallet damaged – 20 bags lost,Logistics,Agent 02,Pending,48,,No,
+ZD-482191,2026-09-07 18:05,Email,Returns,Normal,Standard,Contractor 168 LLC,Riyadh,Return wrong HVAC model,Logistics,Agent 06,Open,24,,Yes,
+ZD-482192,2026-09-25 10:30,Email,Delivery delay,Low,Gold,Contractor 020 LLC,Muscat,Rebar delivery not arrived – site waiting,Logistics,Agent 15,Solved,48,36.4,No,
+ZD-482193,2026-09-28 13:51,Email,Rental equipment breakdown,Urgent,Standard,Contractor 027 LLC,Dubai,URGENT generator stopped on site,Rental,Agent 24,Solved,4,2.5,No,Customer chased twice
+ZD-482194,2026-09-21 17:10,Phone,Delivery delay,Normal,Standard,Contractor 113 LLC,Abu Dhabi,Cement order late again,Logistics,Agent 10,Pending,24,,No,Escalated to supervisor
+ZD-482195,2026-09-05 19:20,Email,Rental equipment breakdown,Urgent,Gold,Contractor 036 LLC,Dubai,URGENT generator stopped on site,Rental,Agent 06,Open,4,,No,
+ZD-482196,2026-09-01 17:25,Phone,Warranty claim,Normal,Standard,Contractor 076 LLC,Muscat,AC unit not cooling – 8 months old,Technical,Agent 16,Solved,24,10.7,No,Escalated to supervisor
+ZD-482197,2026-09-17 07:23,Email,Invoice dispute,Normal,Standard,Contractor 140 LLC,Dubai,VAT amount incorrect,Billing,Agent 31,Solved,24,75.8,Yes,
+ZD-482198,2026-09-30 07:26,Email,Delivery delay,Low,Gold,Contractor 109 LLC,Dubai,Where is my delivery PO 62727?,Logistics,Agent 06,Solved,48,31.4,No,
+ZD-482199,2026-09-03 15:37,Phone,Warranty claim,Normal,Gold,Contractor 163 LLC,Sharjah,AC unit not cooling – 8 months old,Technical,Agent 05,Solved,24,23.6,No,Customer chased twice
+ZD-482200,2026-09-08 08:42,Phone,Rental equipment breakdown,Urgent,Standard,Contractor 169 LLC,Dubai,Lighting tower not starting,Rental,Agent 08,Solved,4,1.5,No,
+ZD-482201,2026-09-17 15:56,Phone,Product enquiry,Normal,Gold,Contractor 031 LLC,Sharjah,Price for 500t rebar 16mm,Sales support,Agent 28,Solved,24,71.1,Yes,Customer chased twice
+ZD-482202,2026-09-03 14:10,Email,Warranty claim,Low,Standard,Contractor 066 LLC,Muscat,Generator fault under warranty,Technical,Agent 08,Solved,48,151.5,Yes,
+ZD-482203,2026-09-08 07:54,Email,Product enquiry,Low,Standard,Contractor 010 LLC,Dubai,Do you stock sulphate-resistant cement?,Sales support,Agent 27,Solved,48,26.6,No,
+ZD-482204,2026-09-27 08:14,Email,Invoice dispute,Normal,Standard,Contractor 133 LLC,Sharjah,Invoice 62550 charges transport twice,Billing,Agent 05,Solved,24,9.2,No,Customer chased twice
+ZD-482205,2026-09-01 12:15,Email,Product enquiry,Normal,Platinum,Contractor 119 LLC,Riyadh,Availability of 250kVA generator,Sales support,Agent 32,Pending,24,,No,
+ZD-482206,2026-09-01 13:56,Email,Product enquiry,High,Standard,Contractor 003 LLC,Abu Dhabi,Availability of 250kVA generator,Sales support,Agent 25,Open,8,,No,
+ZD-482207,2026-09-14 14:02,Email,Product enquiry,High,Standard,Contractor 060 LLC,Abu Dhabi,Do you stock sulphate-resistant cement?,Sales support,Agent 24,Solved,8,7.8,No,Escalated to supervisor
+ZD-482208,2026-09-21 13:18,Email,Returns,High,Platinum,Contractor 067 LLC,Abu Dhabi,Return wrong HVAC model,Logistics,Agent 21,Solved,8,21.4,Yes,Customer chased twice
+ZD-482209,2026-09-04 09:34,WhatsApp,Delivery delay,High,Platinum,Contractor 092 LLC,Jeddah,Rebar delivery not arrived – site waiting,Logistics,Agent 20,Solved,8,3.3,No,Escalated to supervisor
+ZD-482210,2026-09-10 18:45,Email,Invoice dispute,High,Gold,Contractor 064 LLC,Muscat,Wrong discount on invoice 61936,Billing,Agent 33,Solved,8,3.6,No,Customer chased twice
+ZD-482211,2026-09-28 14:03,Portal,Invoice dispute,Normal,Platinum,Contractor 057 LLC,Riyadh,Invoice 35969 charges transport twice,Billing,Agent 26,Solved,24,71.9,Yes,
+ZD-482212,2026-09-01 08:57,Email,Returns,Normal,Standard,Contractor 085 LLC,Dubai,Return unused cement bags,Logistics,Agent 30,Solved,24,22.4,No,
+ZD-482213,2026-09-22 13:28,Phone,Damaged goods,Normal,Standard,Contractor 039 LLC,Riyadh,Cement bags torn on delivery,Logistics,Agent 40,Solved,24,13.1,No,
+ZD-482214,2026-09-16 07:33,Email,Invoice dispute,High,Gold,Contractor 064 LLC,Jeddah,VAT amount incorrect,Billing,Agent 02,Open,8,,Yes,
+ZD-482215,2026-09-17 12:51,Email,Invoice dispute,Low,Standard,Contractor 072 LLC,Jeddah,Invoice 71824 charges transport twice,Billing,Agent 34,Solved,48,120.6,Yes,
+ZD-482216,2026-09-08 11:51,Portal,Returns,High,Platinum,Contractor 100 LLC,Muscat,Return wrong HVAC model,Logistics,Agent 12,Solved,8,6.7,No,Customer chased twice
+ZD-482217,2026-09-23 18:12,Phone,Product enquiry,Normal,Standard,Contractor 127 LLC,Dubai,Do you stock sulphate-resistant cement?,Sales support,Agent 12,Solved,24,23.1,No,Escalated to supervisor
+ZD-482218,2026-09-17 14:21,Email,Delivery delay,High,Standard,Contractor 046 LLC,Dubai,Cement order late again,Logistics,Agent 02,Open,8,,No,
+ZD-482219,2026-09-28 12:06,WhatsApp,Warranty claim,High,Standard,Contractor 087 LLC,Jeddah,Chiller compressor failure,Technical,Agent 09,Solved,8,4.5,No,
+ZD-482220,2026-09-21 12:39,Email,Product enquiry,Normal,Standard,Contractor 092 LLC,Riyadh,Price for 500t rebar 16mm,Sales support,Agent 38,Open,24,,No,
+ZD-482221,2026-09-24 07:11,Phone,Invoice dispute,Low,Gold,Contractor 155 LLC,Abu Dhabi,Wrong discount on invoice 90134,Billing,Agent 15,Solved,48,43.0,No,
+ZD-482222,2026-09-12 12:42,Email,Returns,Normal,Standard,Contractor 164 LLC,Abu Dhabi,Return 3 pallets of blocks,Logistics,Agent 29,Open,24,,No,
+ZD-482223,2026-09-24 07:56,Email,Invoice dispute,High,Gold,Contractor 106 LLC,Dubai,Wrong discount on invoice 59638,Billing,Agent 23,Open,8,,No,
+ZD-482224,2026-09-08 09:20,Phone,Account update,Low,Standard,Contractor 067 LLC,Muscat,Change billing address,Billing,Agent 22,Solved,48,16.9,No,
+ZD-482225,2026-09-11 16:38,Email,Account update,Low,Platinum,Contractor 112 LLC,Dubai,Change billing address,Billing,Agent 07,Pending,48,,No,Customer chased twice
+ZD-482226,2026-09-30 18:25,Email,Delivery delay,Normal,Standard,Contractor 147 LLC,Muscat,Where is my delivery PO 74349?,Logistics,Agent 10,Solved,24,18.3,No,
+ZD-482227,2026-09-21 16:05,Email,Invoice dispute,Low,Gold,Contractor 122 LLC,Muscat,Invoice 50416 charges transport twice,Billing,Agent 26,Solved,48,70.5,Yes,
+ZD-482228,2026-09-29 13:53,Phone,Invoice dispute,Normal,Gold,Contractor 069 LLC,Sharjah,VAT amount incorrect,Billing,Agent 10,Solved,24,51.1,Yes,
+ZD-482229,2026-09-25 16:26,Phone,Delivery delay,Normal,Standard,Contractor 138 LLC,Riyadh,Where is my delivery PO 72236?,Logistics,Agent 37,Open,24,,No,
+ZD-482230,2026-09-02 15:10,Email,Damaged goods,Normal,Standard,Contractor 055 LLC,Muscat,Cement bags torn on delivery,Logistics,Agent 03,Solved,24,9.2,No,Escalated to supervisor
+ZD-482231,2026-09-05 16:05,Phone,Delivery delay,Normal,Gold,Contractor 100 LLC,Muscat,Where is my delivery PO 62082?,Logistics,Agent 36,Open,24,,No,Customer chased twice
+ZD-482232,2026-09-26 18:37,Email,Account update,Low,Standard,Contractor 026 LLC,Dubai,Change billing address,Billing,Agent 07,Solved,48,18.2,No,Customer chased twice
+ZD-482233,2026-09-13 17:25,WhatsApp,Account update,Low,Standard,Contractor 037 LLC,Sharjah,Update TRN on account,Billing,Agent 26,Solved,48,33.6,No,
+ZD-482234,2026-09-24 14:17,WhatsApp,Damaged goods,Normal,Standard,Contractor 126 LLC,Dubai,Pallet damaged – 20 bags lost,Logistics,Agent 07,Solved,24,73.3,Yes,
+ZD-482235,2026-09-09 18:26,Portal,Delivery delay,Low,Gold,Contractor 125 LLC,Sharjah,Where is my delivery PO 59009?,Logistics,Agent 04,Open,48,,Yes,
+ZD-482236,2026-09-05 19:03,Email,Product enquiry,High,Standard,Contractor 064 LLC,Riyadh,Price for 500t rebar 16mm,Sales support,Agent 04,Solved,8,3.4,No,Customer chased twice
+ZD-482237,2026-09-13 17:55,Email,Product enquiry,High,Standard,Contractor 122 LLC,Jeddah,Do you stock sulphate-resistant cement?,Sales support,Agent 23,Solved,8,18.0,Yes,Customer chased twice
+ZD-482238,2026-09-03 11:13,WhatsApp,Delivery delay,High,Standard,Contractor 057 LLC,Muscat,Where is my delivery PO 39505?,Logistics,Agent 14,Solved,8,4.6,No,Customer chased twice
+ZD-482239,2026-09-01 14:16,Email,Rental equipment breakdown,Urgent,Standard,Contractor 156 LLC,Muscat,Rental compressor broken – site stopped,Rental,Agent 18,Solved,8,6.0,No,Escalated to supervisor
+ZD-482240,2026-09-15 11:53,WhatsApp,Account update,Low,Standard,Contractor 096 LLC,Abu Dhabi,Update TRN on account,Billing,Agent 39,Open,48,,Yes,Agent used personal WhatsApp
+ZD-482241,2026-09-09 17:57,Phone,Invoice dispute,Normal,Standard,Contractor 167 LLC,Sharjah,Wrong discount on invoice 34688,Billing,Agent 10,Pending,24,,No,
+ZD-482242,2026-09-13 17:18,Phone,Account update,Normal,Standard,Contractor 067 LLC,Jeddah,Add new site contact,Billing,Agent 25,Pending,24,,No,
+ZD-482243,2026-09-11 18:42,Phone,Delivery delay,Normal,Standard,Contractor 092 LLC,Abu Dhabi,Where is my delivery PO 49347?,Logistics,Agent 11,Solved,24,18.7,No,
+ZD-482244,2026-09-24 11:14,Email,Account update,Normal,Platinum,Contractor 091 LLC,Abu Dhabi,Change billing address,Billing,Agent 27,Pending,24,,No,Customer chased twice
+ZD-482245,2026-09-16 07:43,Phone,Invoice dispute,High,Standard,Contractor 098 LLC,Dubai,VAT amount incorrect,Billing,Agent 27,Solved,8,5.0,No,
+ZD-482246,2026-09-29 14:31,Email,Delivery delay,Normal,Gold,Contractor 086 LLC,Jeddah,Where is my delivery PO 33176?,Logistics,Agent 21,Pending,24,,No,
+ZD-482247,2026-09-19 19:39,Email,Delivery delay,Normal,Gold,Contractor 112 LLC,Abu Dhabi,Where is my delivery PO 66283?,Logistics,Agent 26,Solved,24,15.4,No,Escalated to supervisor
+ZD-482248,2026-09-24 12:01,Email,Returns,High,Platinum,Contractor 174 LLC,Abu Dhabi,Return unused cement bags,Logistics,Agent 16,Solved,8,7.4,No,Customer chased twice
+ZD-482249,2026-09-06 08:38,Email,Invoice dispute,High,Standard,Contractor 135 LLC,Sharjah,Wrong discount on invoice 66841,Billing,Agent 09,Pending,8,,No,Escalated to supervisor
+ZD-482250,2026-09-01 10:10,Email,Invoice dispute,Normal,Standard,Contractor 032 LLC,Riyadh,Wrong discount on invoice 95267,Billing,Agent 03,Solved,24,68.4,Yes,
+ZD-482251,2026-09-22 08:16,Email,Invoice dispute,High,Platinum,Contractor 122 LLC,Dubai,VAT amount incorrect,Billing,Agent 14,Solved,8,17.1,Yes,
+ZD-482252,2026-09-09 16:39,Email,Delivery delay,Normal,Platinum,Contractor 031 LLC,Jeddah,Cement order late again,Logistics,Agent 07,Solved,24,14.2,No,Escalated to supervisor
+ZD-482253,2026-09-07 12:59,Email,Delivery delay,Low,Gold,Contractor 124 LLC,Jeddah,Cement order late again,Logistics,Agent 01,Solved,48,108.8,Yes,
+ZD-482254,2026-09-16 09:41,WhatsApp,Rental equipment breakdown,Urgent,Standard,Contractor 060 LLC,Muscat,Rental compressor broken – site stopped,Rental,Agent 17,Open,8,,Yes,Escalated to supervisor
+ZD-482255,2026-09-12 19:00,Phone,Delivery delay,Normal,Standard,Contractor 036 LLC,Sharjah,Where is my delivery PO 94829?,Logistics,Agent 11,Open,24,,Yes,Customer chased twice
+ZD-482256,2026-09-03 12:17,Email,Invoice dispute,Normal,Standard,Contractor 099 LLC,Muscat,VAT amount incorrect,Billing,Agent 27,Open,24,,No,
+ZD-482257,2026-09-04 13:24,Phone,Delivery delay,Low,Platinum,Contractor 092 LLC,Abu Dhabi,Where is my delivery PO 13777?,Logistics,Agent 09,Solved,48,41.4,No,Escalated to supervisor
+ZD-482258,2026-09-03 11:47,Email,Returns,Normal,Gold,Contractor 148 LLC,Dubai,Return 3 pallets of blocks,Logistics,Agent 15,Solved,24,7.4,No,
+ZD-482259,2026-09-04 13:09,Email,Account update,Normal,Standard,Contractor 143 LLC,Jeddah,Update TRN on account,Billing,Agent 01,Pending,24,,No,
+ZD-482260,2026-09-28 09:32,Email,Returns,High,Standard,Contractor 058 LLC,Riyadh,Return 3 pallets of blocks,Logistics,Agent 25,Solved,8,14.9,Yes,
+ZD-482261,2026-09-28 14:01,Email,Delivery delay,Low,Standard,Contractor 027 LLC,Dubai,Cement order late again,Logistics,Agent 03,Pending,48,,No,
+ZD-482262,2026-09-21 11:52,Phone,Warranty claim,Normal,Standard,Contractor 014 LLC,Jeddah,Generator fault under warranty,Technical,Agent 22,Solved,24,18.2,No,
+ZD-482263,2026-09-23 14:22,Phone,Product enquiry,High,Standard,Contractor 163 LLC,Sharjah,Availability of 250kVA generator,Sales support,Agent 34,Solved,8,2.9,No,Customer chased twice
+ZD-482264,2026-09-27 18:59,Email,Product enquiry,Low,Gold,Contractor 101 LLC,Abu Dhabi,Price for 500t rebar 16mm,Sales support,Agent 13,Solved,48,18.0,No,
+ZD-482265,2026-09-27 17:32,Phone,Invoice dispute,High,Platinum,Contractor 035 LLC,Muscat,Wrong discount on invoice 10568,Billing,Agent 34,Pending,8,,No,
+ZD-482266,2026-09-25 09:56,Phone,Returns,Normal,Standard,Contractor 083 LLC,Jeddah,Return 3 pallets of blocks,Logistics,Agent 27,Pending,24,,Yes,
+ZD-482267,2026-09-15 19:32,Email,Product enquiry,Normal,Standard,Contractor 077 LLC,Sharjah,Do you stock sulphate-resistant cement?,Sales support,Agent 21,Open,24,,No,
+ZD-482268,2026-09-20 18:45,Phone,Product enquiry,Normal,Gold,Contractor 167 LLC,Abu Dhabi,Price for 500t rebar 16mm,Sales support,Agent 35,Solved,24,18.7,No,
+ZD-482269,2026-09-16 16:56,Phone,Rental equipment breakdown,Urgent,Standard,Contractor 109 LLC,Jeddah,URGENT generator stopped on site,Rental,Agent 07,Solved,8,6.2,No,
+ZD-482270,2026-09-25 19:03,Email,Invoice dispute,Normal,Platinum,Contractor 177 LLC,Sharjah,Wrong discount on invoice 36738,Billing,Agent 35,Solved,24,23.7,No,Escalated to supervisor
+ZD-482271,2026-09-24 17:18,WhatsApp,Delivery delay,Low,Standard,Contractor 178 LLC,Abu Dhabi,Where is my delivery PO 16157?,Logistics,Agent 25,Pending,48,,No,Escalated to supervisor
+ZD-482272,2026-09-02 07:28,Phone,Damaged goods,Normal,Standard,Contractor 058 LLC,Jeddah,Pallet damaged – 20 bags lost,Logistics,Agent 24,Open,24,,No,
+ZD-482273,2026-09-10 14:07,Phone,Warranty claim,Normal,Standard,Contractor 097 LLC,Abu Dhabi,Generator fault under warranty,Technical,Agent 18,Pending,24,,Yes,
+ZD-482274,2026-09-11 14:49,Email,Invoice dispute,Normal,Standard,Contractor 161 LLC,Dubai,VAT amount incorrect,Billing,Agent 20,Solved,24,7.9,No,
+ZD-482275,2026-09-08 09:22,Email,Warranty claim,High,Standard,Contractor 057 LLC,Jeddah,Generator fault under warranty,Technical,Agent 22,Solved,8,19.0,Yes,Customer chased twice
+ZD-482276,2026-09-16 15:58,Email,Invoice dispute,High,Standard,Contractor 160 LLC,Jeddah,Invoice 15226 charges transport twice,Billing,Agent 21,Pending,8,,Yes,
+ZD-482277,2026-09-27 19:18,Email,Invoice dispute,Normal,Gold,Contractor 167 LLC,Jeddah,Invoice 51984 charges transport twice,Billing,Agent 33,Solved,24,15.8,No,
+ZD-482278,2026-09-21 08:27,Portal,Delivery delay,Normal,Standard,Contractor 027 LLC,Dubai,Rebar delivery not arrived – site waiting,Logistics,Agent 28,Open,24,,No,
+ZD-482279,2026-09-15 18:04,Email,Product enquiry,Normal,Standard,Contractor 148 LLC,Dubai,Price for 500t rebar 16mm,Sales support,Agent 27,Solved,24,35.7,Yes,Escalated to supervisor
+ZD-482280,2026-09-22 08:37,Email,Damaged goods,High,Gold,Contractor 012 LLC,Riyadh,Pallet damaged – 20 bags lost,Logistics,Agent 23,Pending,8,,No,
+ZD-482281,2026-09-10 19:10,Phone,Delivery delay,Low,Gold,Contractor 137 LLC,Dubai,Rebar delivery not arrived – site waiting,Logistics,Agent 26,Solved,48,27.2,No,
+ZD-482282,2026-09-21 12:00,Phone,Invoice dispute,High,Gold,Contractor 147 LLC,Muscat,VAT amount incorrect,Billing,Agent 35,Solved,8,5.5,No,
+ZD-482283,2026-09-07 13:12,Phone,Invoice dispute,Normal,Standard,Contractor 030 LLC,Sharjah,Invoice 97946 charges transport twice,Billing,Agent 37,Open,24,,No,
+ZD-482284,2026-09-09 08:08,Email,Damaged goods,Normal,Gold,Contractor 172 LLC,Dubai,Pallet damaged – 20 bags lost,Logistics,Agent 07,Solved,24,19.4,No,Customer chased twice
+ZD-482285,2026-09-11 16:27,WhatsApp,Rental equipment breakdown,Urgent,Gold,Contractor 044 LLC,Riyadh,URGENT generator stopped on site,Rental,Agent 16,Open,8,,Yes,
+ZD-482286,2026-09-05 17:19,Phone,Product enquiry,Normal,Gold,Contractor 125 LLC,Sharjah,Do you stock sulphate-resistant cement?,Sales support,Agent 12,Solved,24,21.9,No,
+ZD-482287,2026-09-29 15:04,Phone,Warranty claim,Normal,Standard,Contractor 005 LLC,Abu Dhabi,AC unit not cooling – 8 months old,Technical,Agent 02,Solved,24,11.6,No,
+ZD-482288,2026-09-18 11:57,Phone,Warranty claim,Low,Gold,Contractor 151 LLC,Dubai,AC unit not cooling – 8 months old,Technical,Agent 09,Solved,48,36.4,No,Escalated to supervisor
+ZD-482289,2026-09-22 10:36,Email,Damaged goods,Normal,Gold,Contractor 145 LLC,Dubai,Pallet damaged – 20 bags lost,Logistics,Agent 31,Solved,24,19.9,No,Customer chased twice
+ZD-482290,2026-09-12 10:24,Phone,Delivery delay,High,Gold,Contractor 121 LLC,Sharjah,Cement order late again,Logistics,Agent 03,Pending,8,,No,
+ZD-482291,2026-09-27 18:24,Phone,Invoice dispute,Normal,Standard,Contractor 094 LLC,Sharjah,VAT amount incorrect,Billing,Agent 05,Solved,24,16.9,No,Escalated to supervisor
+ZD-482292,2026-09-16 19:14,Email,Returns,Low,Gold,Contractor 020 LLC,Sharjah,Return 3 pallets of blocks,Logistics,Agent 18,Solved,48,154.1,Yes,
+ZD-482293,2026-09-08 13:13,Phone,Delivery delay,Normal,Standard,Contractor 152 LLC,Muscat,Rebar delivery not arrived – site waiting,Logistics,Agent 27,Solved,24,19.3,No,
+ZD-482294,2026-09-21 15:59,Email,Invoice dispute,High,Standard,Contractor 047 LLC,Abu Dhabi,VAT amount incorrect,Billing,Agent 39,Solved,8,7.4,No,
+ZD-482295,2026-09-03 10:14,Phone,Delivery delay,Low,Standard,Contractor 106 LLC,Sharjah,Where is my delivery PO 28705?,Logistics,Agent 38,Solved,48,34.8,No,
+ZD-482296,2026-09-11 14:12,Email,Rental equipment breakdown,Urgent,Gold,Contractor 134 LLC,Muscat,Lighting tower not starting,Rental,Agent 27,Solved,8,3.7,No,
+ZD-482297,2026-09-02 19:34,Email,Warranty claim,High,Standard,Contractor 001 LLC,Jeddah,AC unit not cooling – 8 months old,Technical,Agent 28,Open,8,,No,
+ZD-482298,2026-09-08 19:47,WhatsApp,Damaged goods,Low,Standard,Contractor 179 LLC,Riyadh,Pallet damaged – 20 bags lost,Logistics,Agent 28,Solved,48,40.9,No,
+ZD-482299,2026-09-10 16:33,Phone,Invoice dispute,Low,Standard,Contractor 031 LLC,Dubai,VAT amount incorrect,Billing,Agent 25,Solved,48,137.9,Yes,
+ZD-482300,2026-09-21 16:39,Email,Product enquiry,Normal,Platinum,Contractor 071 LLC,Riyadh,Do you stock sulphate-resistant cement?,Sales support,Agent 14,Solved,24,11.6,No,Escalated to supervisor
+ZD-482301,2026-09-18 14:25,Phone,Warranty claim,Normal,Gold,Contractor 036 LLC,Jeddah,AC unit not cooling – 8 months old,Technical,Agent 15,Pending,24,,No,Escalated to supervisor
+ZD-482302,2026-09-13 19:03,WhatsApp,Product enquiry,Normal,Platinum,Contractor 042 LLC,Jeddah,Availability of 250kVA generator,Sales support,Agent 01,Pending,24,,No,
+ZD-482303,2026-09-03 11:59,Email,Account update,Normal,Standard,Contractor 103 LLC,Dubai,Update TRN on account,Billing,Agent 34,Pending,24,,No,Customer chased twice
+ZD-482304,2026-09-21 14:33,Phone,Product enquiry,Low,Standard,Contractor 074 LLC,Abu Dhabi,Price for 500t rebar 16mm,Sales support,Agent 39,Open,48,,No,
+ZD-482305,2026-09-12 10:42,Email,Warranty claim,High,Gold,Contractor 102 LLC,Dubai,Chiller compressor failure,Technical,Agent 13,Solved,8,13.8,Yes,
+ZD-482306,2026-09-10 18:12,Phone,Delivery delay,Normal,Standard,Contractor 117 LLC,Jeddah,Cement order late again,Logistics,Agent 01,Solved,24,13.0,No,Customer chased twice
+ZD-482307,2026-09-10 12:52,Email,Delivery delay,High,Standard,Contractor 148 LLC,Jeddah,Cement order late again,Logistics,Agent 25,Open,8,,No,
+ZD-482308,2026-09-22 14:14,Email,Damaged goods,High,Gold,Contractor 174 LLC,Riyadh,Pallet damaged – 20 bags lost,Logistics,Agent 21,Pending,8,,Yes,Escalated to supervisor
+ZD-482309,2026-09-08 11:35,Email,Returns,High,Platinum,Contractor 046 LLC,Sharjah,Return wrong HVAC model,Logistics,Agent 23,Solved,8,4.6,No,
+ZD-482310,2026-09-16 18:14,WhatsApp,Invoice dispute,Normal,Standard,Contractor 052 LLC,Abu Dhabi,Invoice 91080 charges transport twice,Billing,Agent 23,Solved,24,11.1,No,
+ZD-482311,2026-09-20 07:57,Email,Delivery delay,High,Standard,Contractor 148 LLC,Riyadh,Cement order late again,Logistics,Agent 12,Solved,8,7.1,No,
+ZD-482312,2026-09-17 19:25,Email,Invoice dispute,Low,Standard,Contractor 176 LLC,Dubai,Invoice 69925 charges transport twice,Billing,Agent 08,Solved,48,30.5,No,Escalated to supervisor
+ZD-482313,2026-09-19 08:16,Email,Invoice dispute,Normal,Standard,Contractor 061 LLC,Riyadh,Wrong discount on invoice 71780,Billing,Agent 40,Solved,24,13.3,No,
+ZD-482314,2026-09-12 13:43,Email,Damaged goods,Normal,Standard,Contractor 059 LLC,Sharjah,Cement bags torn on delivery,Logistics,Agent 16,Open,24,,No,
+ZD-482315,2026-09-05 14:54,Email,Damaged goods,High,Platinum,Contractor 162 LLC,Muscat,Pallet damaged – 20 bags lost,Logistics,Agent 21,Open,8,,No,Escalated to supervisor
+ZD-482316,2026-09-04 18:40,Phone,Invoice dispute,Normal,Standard,Contractor 025 LLC,Riyadh,Wrong discount on invoice 53864,Billing,Agent 17,Solved,24,8.2,No,
+ZD-482317,2026-09-04 12:49,Phone,Warranty claim,Normal,Gold,Contractor 073 LLC,Riyadh,Chiller compressor failure,Technical,Agent 33,Solved,24,16.9,No,Escalated to supervisor
+ZD-482318,2026-09-10 14:26,Email,Product enquiry,Normal,Platinum,Contractor 162 LLC,Jeddah,Do you stock sulphate-resistant cement?,Sales support,Agent 26,Open,24,,No,
+ZD-482319,2026-09-10 18:49,Email,Delivery delay,Normal,Gold,Contractor 093 LLC,Muscat,Where is my delivery PO 86928?,Logistics,Agent 34,Open,24,,No,Escalated to supervisor
+ZD-482320,2026-09-08 17:10,Email,Damaged goods,Normal,Platinum,Contractor 102 LLC,Muscat,Cement bags torn on delivery,Logistics,Agent 05,Solved,24,23.0,No,Escalated to supervisor
+ZD-482321,2026-09-04 11:14,Email,Warranty claim,Normal,Gold,Contractor 064 LLC,Dubai,AC unit not cooling – 8 months old,Technical,Agent 29,Solved,24,8.6,No,
+ZD-482322,2026-09-22 12:59,Email,Delivery delay,Normal,Gold,Contractor 070 LLC,Dubai,Where is my delivery PO 68306?,Logistics,Agent 09,Open,24,,No,
+ZD-482323,2026-09-21 16:22,Phone,Warranty claim,Low,Standard,Contractor 124 LLC,Muscat,AC unit not cooling – 8 months old,Technical,Agent 06,Solved,48,32.0,No,Escalated to supervisor
+ZD-482324,2026-09-01 15:59,Email,Invoice dispute,Normal,Gold,Contractor 126 LLC,Dubai,Wrong discount on invoice 49270,Billing,Agent 01,Solved,24,13.0,No,Customer chased twice
+ZD-482325,2026-09-14 15:24,Phone,Warranty claim,Low,Standard,Contractor 097 LLC,Abu Dhabi,Generator fault under warranty,Technical,Agent 06,Pending,48,,No,Escalated to supervisor
+ZD-482326,2026-09-26 18:26,Email,Rental equipment breakdown,Urgent,Standard,Contractor 049 LLC,Jeddah,URGENT generator stopped on site,Rental,Agent 09,Open,8,,No,Customer chased twice
+ZD-482327,2026-09-20 14:01,Email,Delivery delay,Normal,Standard,Contractor 048 LLC,Muscat,Rebar delivery not arrived – site waiting,Logistics,Agent 18,Open,24,,No,
+ZD-482328,2026-09-01 14:23,Phone,Product enquiry,Normal,Gold,Contractor 119 LLC,Abu Dhabi,Do you stock sulphate-resistant cement?,Sales support,Agent 22,Pending,24,,No,
+ZD-482329,2026-09-03 15:24,Portal,Account update,Low,Platinum,Contractor 004 LLC,Riyadh,Change billing address,Billing,Agent 25,Solved,48,20.5,No,Escalated to supervisor
+ZD-482330,2026-09-25 08:20,Portal,Invoice dispute,Normal,Gold,Contractor 041 LLC,Muscat,VAT amount incorrect,Billing,Agent 36,Solved,24,15.1,No,Customer chased twice
+ZD-482331,2026-09-28 17:00,Email,Damaged goods,Normal,Gold,Contractor 043 LLC,Dubai,HVAC unit dented,Logistics,Agent 08,Solved,24,23.6,No,Escalated to supervisor
+ZD-482332,2026-09-16 18:39,Email,Product enquiry,Normal,Platinum,Contractor 087 LLC,Muscat,Do you stock sulphate-resistant cement?,Sales support,Agent 04,Solved,24,34.5,Yes,Customer chased twice
+ZD-482333,2026-09-16 10:51,Phone,Rental equipment breakdown,Urgent,Standard,Contractor 113 LLC,Abu Dhabi,Lighting tower not starting,Rental,Agent 02,Pending,8,,No,
+ZD-482334,2026-09-16 18:36,Phone,Invoice dispute,Low,Gold,Contractor 048 LLC,Dubai,VAT amount incorrect,Billing,Agent 21,Solved,48,33.2,No,Customer chased twice
+ZD-482335,2026-09-03 15:29,Phone,Account update,Normal,Standard,Contractor 001 LLC,Abu Dhabi,Update TRN on account,Billing,Agent 25,Solved,24,14.7,No,
+ZD-482336,2026-09-08 12:33,Email,Delivery delay,High,Standard,Contractor 175 LLC,Jeddah,Cement order late again,Logistics,Agent 10,Solved,8,6.1,No,
+ZD-482337,2026-09-17 17:02,Email,Invoice dispute,High,Gold,Contractor 052 LLC,Dubai,Invoice 73618 charges transport twice,Billing,Agent 13,Solved,8,2.6,No,
+ZD-482338,2026-09-23 16:58,Email,Rental equipment breakdown,Urgent,Standard,Contractor 054 LLC,Jeddah,Lighting tower not starting,Rental,Agent 06,Solved,8,22.5,Yes,Escalated to supervisor
+ZD-482339,2026-09-27 12:19,Email,Product enquiry,High,Standard,Contractor 020 LLC,Riyadh,Price for 500t rebar 16mm,Sales support,Agent 07,Solved,8,9.2,Yes,
+ZD-482340,2026-09-22 10:49,Email,Product enquiry,Normal,Gold,Contractor 164 LLC,Jeddah,Do you stock sulphate-resistant cement?,Sales support,Agent 30,Pending,24,,No,
+ZD-482341,2026-09-18 13:59,WhatsApp,Rental equipment breakdown,Urgent,Gold,Contractor 091 LLC,Abu Dhabi,Rental compressor broken – site stopped,Rental,Agent 21,Solved,8,6.1,No,Customer chased twice
+ZD-482342,2026-09-20 10:23,Phone,Damaged goods,Normal,Standard,Contractor 116 LLC,Sharjah,HVAC unit dented,Logistics,Agent 01,Pending,24,,No,
+ZD-482343,2026-09-29 11:01,Email,Delivery delay,High,Platinum,Contractor 177 LLC,Abu Dhabi,Cement order late again,Logistics,Agent 33,Open,8,,No,
+ZD-482344,2026-09-12 09:16,Phone,Warranty claim,Normal,Platinum,Contractor 077 LLC,Riyadh,Generator fault under warranty,Technical,Agent 26,Solved,24,11.7,No,
+ZD-482345,2026-09-06 14:05,Phone,Returns,High,Standard,Contractor 015 LLC,Riyadh,Return wrong HVAC model,Logistics,Agent 28,Solved,8,22.7,Yes,
+ZD-482346,2026-09-30 07:36,Email,Account update,Low,Standard,Contractor 039 LLC,Jeddah,Add new site contact,Billing,Agent 15,Solved,48,16.2,No,
+ZD-482347,2026-09-25 16:05,Phone,Delivery delay,High,Gold,Contractor 122 LLC,Riyadh,Where is my delivery PO 16463?,Logistics,Agent 36,Solved,8,16.1,Yes,Escalated to supervisor
+ZD-482348,2026-09-05 19:36,Email,Invoice dispute,Normal,Gold,Contractor 051 LLC,Muscat,VAT amount incorrect,Billing,Agent 34,Solved,24,15.3,No,
+ZD-482349,2026-09-03 08:01,Email,Invoice dispute,Low,Standard,Contractor 079 LLC,Jeddah,Invoice 55838 charges transport twice,Billing,Agent 40,Solved,48,88.1,Yes,Escalated to supervisor
+ZD-482350,2026-09-07 17:47,Email,Rental equipment breakdown,Urgent,Standard,Contractor 014 LLC,Abu Dhabi,URGENT generator stopped on site,Rental,Agent 10,Solved,8,3.3,No,Customer chased twice
+ZD-482351,2026-09-16 07:33,Phone,Delivery delay,Normal,Platinum,Contractor 067 LLC,Riyadh,Where is my delivery PO 73311?,Logistics,Agent 40,Solved,24,10.7,No,
+ZD-482352,2026-09-19 17:17,Phone,Returns,High,Standard,Contractor 014 LLC,Riyadh,Return wrong HVAC model,Logistics,Agent 01,Pending,8,,Yes,Refund promised by agent
+ZD-482353,2026-09-01 11:06,WhatsApp,Invoice dispute,Low,Standard,Contractor 081 LLC,Dubai,Wrong discount on invoice 88263,Billing,Agent 35,Open,48,,No,
+ZD-482354,2026-09-02 10:22,Email,Damaged goods,Normal,Standard,Contractor 176 LLC,Dubai,HVAC unit dented,Logistics,Agent 20,Solved,24,12.8,No,
+ZD-482355,2026-09-21 11:35,Portal,Returns,Low,Gold,Contractor 072 LLC,Dubai,Return unused cement bags,Logistics,Agent 22,Solved,48,44.3,No,
+ZD-482356,2026-09-20 17:19,Phone,Delivery delay,Normal,Standard,Contractor 155 LLC,Muscat,Cement order late again,Logistics,Agent 35,Solved,24,14.2,No,
+ZD-482357,2026-09-28 09:27,Email,Delivery delay,Normal,Standard,Contractor 038 LLC,Abu Dhabi,Where is my delivery PO 84035?,Logistics,Agent 11,Open,24,,No,Customer chased twice
+ZD-482358,2026-09-11 09:26,Email,Delivery delay,High,Standard,Contractor 078 LLC,Abu Dhabi,Cement order late again,Logistics,Agent 18,Solved,8,6.7,No,
+ZD-482359,2026-09-20 11:49,Email,Product enquiry,Normal,Gold,Contractor 123 LLC,Jeddah,Price for 500t rebar 16mm,Sales support,Agent 39,Solved,24,26.7,Yes,Escalated to supervisor
+ZD-482360,2026-09-16 09:17,Email,Product enquiry,Normal,Standard,Contractor 106 LLC,Riyadh,Price for 500t rebar 16mm,Sales support,Agent 13,Solved,24,70.2,Yes,
+ZD-482361,2026-09-16 18:49,WhatsApp,Delivery delay,Normal,Standard,Contractor 011 LLC,Jeddah,Where is my delivery PO 59856?,Logistics,Agent 21,Solved,24,21.8,No,Escalated to supervisor
+ZD-482362,2026-09-21 18:02,Phone,Rental equipment breakdown,Urgent,Standard,Contractor 063 LLC,Jeddah,Lighting tower not starting,Rental,Agent 26,Open,8,,No,
+ZD-482363,2026-09-07 11:29,Email,Delivery delay,Low,Standard,Contractor 043 LLC,Dubai,Cement order late again,Logistics,Agent 40,Open,48,,No,
+ZD-482364,2026-09-15 08:34,WhatsApp,Rental equipment breakdown,Urgent,Standard,Contractor 035 LLC,Muscat,Rental compressor broken – site stopped,Rental,Agent 21,Open,8,,No,Escalated to supervisor
+ZD-482365,2026-09-29 14:50,Email,Delivery delay,High,Standard,Contractor 042 LLC,Abu Dhabi,Where is my delivery PO 26193?,Logistics,Agent 06,Open,8,,No,
+ZD-482366,2026-09-13 18:58,Phone,Product enquiry,Normal,Platinum,Contractor 086 LLC,Muscat,Do you stock sulphate-resistant cement?,Sales support,Agent 10,Pending,24,,No,
+ZD-482367,2026-09-10 11:00,Email,Account update,Low,Standard,Contractor 160 LLC,Riyadh,Add new site contact,Billing,Agent 30,Open,48,,Yes,Escalated to supervisor
+ZD-482368,2026-09-08 10:00,Email,Account update,Low,Platinum,Contractor 063 LLC,Riyadh,Update TRN on account,Billing,Agent 40,Pending,48,,No,
+ZD-482369,2026-09-02 17:53,Phone,Warranty claim,Normal,Platinum,Contractor 155 LLC,Abu Dhabi,Chiller compressor failure,Technical,Agent 06,Pending,24,,No,
+ZD-482370,2026-09-20 17:02,Portal,Delivery delay,Normal,Gold,Contractor 024 LLC,Sharjah,Cement order late again,Logistics,Agent 24,Solved,24,23.4,No,Escalated to supervisor
+ZD-482371,2026-09-10 14:26,Phone,Account update,Normal,Standard,Contractor 135 LLC,Dubai,Change billing address,Billing,Agent 40,Solved,24,9.2,No,
+ZD-482372,2026-09-16 18:36,Phone,Delivery delay,Normal,Standard,Contractor 160 LLC,Dubai,Cement order late again,Logistics,Agent 40,Solved,24,14.4,No,
+ZD-482373,2026-09-29 16:01,Phone,Damaged goods,Normal,Standard,Contractor 120 LLC,Abu Dhabi,Pallet damaged – 20 bags lost,Logistics,Agent 14,Solved,24,19.1,No,
+ZD-482374,2026-09-26 17:19,Email,Returns,Normal,Gold,Contractor 077 LLC,Jeddah,Return 3 pallets of blocks,Logistics,Agent 21,Pending,24,,Yes,
+ZD-482375,2026-09-01 09:51,Email,Rental equipment breakdown,Urgent,Standard,Contractor 010 LLC,Jeddah,Lighting tower not starting,Rental,Agent 31,Open,8,,Yes,
+ZD-482376,2026-09-15 19:43,WhatsApp,Rental equipment breakdown,Urgent,Standard,Contractor 081 LLC,Sharjah,Lighting tower not starting,Rental,Agent 02,Solved,8,18.6,Yes,
+ZD-482377,2026-09-03 09:34,Email,Warranty claim,Normal,Standard,Contractor 043 LLC,Sharjah,AC unit not cooling – 8 months old,Technical,Agent 25,Solved,24,21.3,No,
+ZD-482378,2026-09-28 12:53,WhatsApp,Warranty claim,High,Standard,Contractor 078 LLC,Muscat,Generator fault under warranty,Technical,Agent 20,Solved,8,25.6,Yes,
+ZD-482379,2026-09-15 15:21,Phone,Delivery delay,High,Standard,Contractor 124 LLC,Dubai,Where is my delivery PO 78632?,Logistics,Agent 20,Solved,8,6.9,No,Customer chased twice
+ZD-482380,2026-09-22 09:33,WhatsApp,Delivery delay,Normal,Standard,Contractor 030 LLC,Jeddah,Rebar delivery not arrived – site waiting,Logistics,Agent 03,Pending,24,,No,
+ZD-482381,2026-09-04 15:13,WhatsApp,Account update,Normal,Gold,Contractor 083 LLC,Dubai,Change billing address,Billing,Agent 19,Pending,24,,No,Customer chased twice
+ZD-482382,2026-09-05 09:06,Phone,Warranty claim,Normal,Standard,Contractor 053 LLC,Sharjah,AC unit not cooling – 8 months old,Technical,Agent 36,Solved,24,9.1,No,Customer chased twice
+ZD-482383,2026-09-08 09:03,WhatsApp,Invoice dispute,High,Standard,Contractor 034 LLC,Jeddah,Invoice 71700 charges transport twice,Billing,Agent 04,Solved,8,4.1,No,
+ZD-482384,2026-09-21 18:42,Email,Delivery delay,Low,Standard,Contractor 137 LLC,Jeddah,Rebar delivery not arrived – site waiting,Logistics,Agent 37,Pending,48,,Yes,
+ZD-482385,2026-09-15 11:57,Phone,Delivery delay,Low,Standard,Contractor 158 LLC,Dubai,Cement order late again,Logistics,Agent 26,Solved,48,30.2,No,
+ZD-482386,2026-09-15 14:18,Phone,Rental equipment breakdown,Urgent,Standard,Contractor 090 LLC,Sharjah,Lighting tower not starting,Rental,Agent 09,Open,8,,Yes,
+ZD-482387,2026-09-18 17:26,Phone,Delivery delay,High,Standard,Contractor 062 LLC,Sharjah,Where is my delivery PO 41941?,Logistics,Agent 36,Solved,8,6.8,No,
+ZD-482388,2026-09-19 13:11,Email,Returns,Low,Gold,Contractor 170 LLC,Muscat,Return 3 pallets of blocks,Logistics,Agent 37,Pending,48,,No,
+ZD-482389,2026-09-06 11:24,Email,Warranty claim,Low,Standard,Contractor 084 LLC,Riyadh,Chiller compressor failure,Technical,Agent 04,Pending,48,,Yes,
+ZD-482390,2026-09-26 07:39,Email,Delivery delay,Normal,Standard,Contractor 148 LLC,Muscat,Cement order late again,Logistics,Agent 14,Solved,24,18.3,No,
+ZD-482391,2026-09-10 13:32,Email,Account update,Normal,Standard,Contractor 104 LLC,Muscat,Change billing address,Billing,Agent 04,Pending,24,,No,Customer chased twice
+ZD-482392,2026-09-27 12:44,Portal,Returns,High,Platinum,Contractor 152 LLC,Jeddah,Return wrong HVAC model,Logistics,Agent 21,Solved,8,7.2,No,Escalated to supervisor
+ZD-482393,2026-09-05 10:18,Email,Invoice dispute,Low,Standard,Contractor 172 LLC,Riyadh,Invoice 27600 charges transport twice,Billing,Agent 01,Solved,48,42.7,No,
+ZD-482394,2026-09-03 09:59,WhatsApp,Delivery delay,Low,Standard,Contractor 109 LLC,Abu Dhabi,Where is my delivery PO 33566?,Logistics,Agent 30,Pending,48,,No,Agent used personal WhatsApp
+ZD-482395,2026-09-06 13:32,Phone,Damaged goods,High,Gold,Contractor 069 LLC,Abu Dhabi,HVAC unit dented,Logistics,Agent 37,Solved,8,5.6,No,Customer chased twice
+ZD-482396,2026-09-04 16:54,Email,Delivery delay,Low,Standard,Contractor 072 LLC,Sharjah,Cement order late again,Logistics,Agent 06,Solved,48,136.3,Yes,
+ZD-482397,2026-09-22 17:39,Email,Account update,High,Standard,Contractor 014 LLC,Muscat,Add new site contact,Billing,Agent 01,Solved,8,6.2,No,Escalated to supervisor
+ZD-482398,2026-09-14 12:46,WhatsApp,Damaged goods,Normal,Standard,Contractor 145 LLC,Sharjah,HVAC unit dented,Logistics,Agent 31,Pending,24,,Yes,Agent used personal WhatsApp
+ZD-482399,2026-09-20 07:16,Email,Delivery delay,Normal,Standard,Contractor 034 LLC,Muscat,Where is my delivery PO 46827?,Logistics,Agent 18,Pending,24,,Yes,Customer chased twice
+ZD-482400,2026-09-24 09:11,Email,Delivery delay,Low,Gold,Contractor 136 LLC,Jeddah,Rebar delivery not arrived – site waiting,Logistics,Agent 06,Solved,48,142.4,Yes,
+ZD-482401,2026-09-25 13:36,Phone,Warranty claim,Normal,Standard,Contractor 089 LLC,Riyadh,Generator fault under warranty,Technical,Agent 17,Solved,24,18.3,No,
+ZD-482402,2026-09-24 19:09,Email,Delivery delay,Normal,Standard,Contractor 136 LLC,Riyadh,Cement order late again,Logistics,Agent 19,Solved,24,13.6,No,Escalated to supervisor
+ZD-482403,2026-09-04 15:54,Email,Invoice dispute,Normal,Standard,Contractor 070 LLC,Dubai,Wrong discount on invoice 45432,Billing,Agent 18,Open,24,,No,Customer chased twice
+ZD-482404,2026-09-08 18:20,Email,Rental equipment breakdown,Urgent,Standard,Contractor 141 LLC,Muscat,URGENT generator stopped on site,Rental,Agent 01,Open,8,,No,
+ZD-482405,2026-09-12 10:38,Email,Delivery delay,Normal,Platinum,Contractor 169 LLC,Riyadh,Rebar delivery not arrived – site waiting,Logistics,Agent 08,Solved,24,61.6,Yes,
+ZD-482406,2026-09-22 19:29,Email,Returns,Normal,Standard,Contractor 170 LLC,Riyadh,Return unused cement bags,Logistics,Agent 30,Solved,24,22.3,No,Customer chased twice
+ZD-482407,2026-09-09 09:16,Phone,Product enquiry,High,Standard,Contractor 068 LLC,Sharjah,Price for 500t rebar 16mm,Sales support,Agent 05,Open,8,,Yes,Escalated to supervisor
+ZD-482408,2026-09-16 08:06,Email,Returns,Normal,Gold,Contractor 114 LLC,Muscat,Return 3 pallets of blocks,Logistics,Agent 07,Pending,24,,No,
+ZD-482409,2026-09-05 17:44,Email,Warranty claim,High,Gold,Contractor 085 LLC,Riyadh,Chiller compressor failure,Technical,Agent 01,Solved,8,7.6,No,
+ZD-482410,2026-09-28 18:30,Phone,Product enquiry,High,Standard,Contractor 032 LLC,Riyadh,Do you stock sulphate-resistant cement?,Sales support,Agent 23,Open,8,,Yes,Customer chased twice
+ZD-482411,2026-09-03 12:41,Email,Rental equipment breakdown,Urgent,Standard,Contractor 052 LLC,Muscat,URGENT generator stopped on site,Rental,Agent 03,Pending,8,,No,Escalated to supervisor
+ZD-482412,2026-09-21 18:12,Email,Rental equipment breakdown,Urgent,Gold,Contractor 036 LLC,Dubai,URGENT generator stopped on site,Rental,Agent 02,Solved,4,2.6,No,
+ZD-482413,2026-09-21 11:01,Email,Returns,Low,Gold,Contractor 010 LLC,Jeddah,Return wrong HVAC model,Logistics,Agent 22,Solved,48,32.3,No,
+ZD-482414,2026-09-15 17:31,Email,Damaged goods,Normal,Standard,Contractor 168 LLC,Jeddah,Cement bags torn on delivery,Logistics,Agent 40,Pending,24,,Yes,
+ZD-482415,2026-09-02 11:52,Phone,Invoice dispute,High,Platinum,Contractor 028 LLC,Muscat,Invoice 75161 charges transport twice,Billing,Agent 39,Solved,8,5.0,No,
+ZD-482416,2026-09-22 13:20,Email,Delivery delay,Normal,Gold,Contractor 055 LLC,Muscat,Rebar delivery not arrived – site waiting,Logistics,Agent 12,Solved,24,9.2,No,Customer chased twice
+ZD-482417,2026-09-23 12:06,Email,Delivery delay,Normal,Standard,Contractor 162 LLC,Abu Dhabi,Where is my delivery PO 59300?,Logistics,Agent 11,Solved,24,14.6,No,
+ZD-482418,2026-09-23 17:44,Email,Account update,Normal,Platinum,Contractor 033 LLC,Dubai,Change billing address,Billing,Agent 18,Pending,24,,No,
+ZD-482419,2026-09-02 16:52,Email,Damaged goods,Normal,Gold,Contractor 078 LLC,Muscat,HVAC unit dented,Logistics,Agent 01,Solved,24,19.2,No,
+ZD-482420,2026-09-20 12:03,Email,Delivery delay,Normal,Standard,Contractor 050 LLC,Dubai,Rebar delivery not arrived – site waiting,Logistics,Agent 31,Solved,24,15.0,No,Escalated to supervisor
+ZD-482421,2026-09-12 11:48,Phone,Delivery delay,Normal,Platinum,Contractor 117 LLC,Muscat,Rebar delivery not arrived – site waiting,Logistics,Agent 04,Open,24,,No,
+ZD-482422,2026-09-03 10:43,Phone,Delivery delay,Low,Standard,Contractor 084 LLC,Dubai,Rebar delivery not arrived – site waiting,Logistics,Agent 21,Solved,48,34.3,No,
+ZD-482423,2026-09-29 10:09,Phone,Delivery delay,High,Standard,Contractor 056 LLC,Riyadh,Where is my delivery PO 69636?,Logistics,Agent 12,Open,8,,No,Escalated to supervisor
+ZD-482424,2026-09-09 10:08,Email,Invoice dispute,Normal,Gold,Contractor 029 LLC,Sharjah,Wrong discount on invoice 70106,Billing,Agent 27,Solved,24,9.3,No,Customer chased twice
+ZD-482425,2026-09-20 09:13,Email,Delivery delay,Normal,Gold,Contractor 152 LLC,Muscat,Cement order late again,Logistics,Agent 18,Solved,24,8.7,No,
+ZD-482426,2026-09-14 16:36,Phone,Product enquiry,Normal,Gold,Contractor 002 LLC,Sharjah,Availability of 250kVA generator,Sales support,Agent 03,Solved,24,22.2,No,Escalated to supervisor
+ZD-482427,2026-09-16 19:46,Email,Product enquiry,High,Gold,Contractor 105 LLC,Riyadh,Price for 500t rebar 16mm,Sales support,Agent 23,Solved,8,19.3,Yes,Customer chased twice
+ZD-482428,2026-09-10 09:29,Portal,Delivery delay,Low,Platinum,Contractor 119 LLC,Muscat,Rebar delivery not arrived – site waiting,Logistics,Agent 12,Solved,48,43.2,No,Customer chased twice
+ZD-482429,2026-09-03 13:44,Phone,Rental equipment breakdown,Urgent,Platinum,Contractor 157 LLC,Muscat,Lighting tower not starting,Rental,Agent 14,Pending,8,,No,
+ZD-482430,2026-09-17 17:23,WhatsApp,Delivery delay,Normal,Standard,Contractor 094 LLC,Dubai,Rebar delivery not arrived – site waiting,Logistics,Agent 36,Pending,24,,Yes,
+ZD-482431,2026-09-08 15:55,Phone,Delivery delay,High,Gold,Contractor 180 LLC,Sharjah,Rebar delivery not arrived – site waiting,Logistics,Agent 21,Pending,8,,No,Customer chased twice
+ZD-482432,2026-09-03 12:30,Email,Account update,Normal,Gold,Contractor 137 LLC,Dubai,Update TRN on account,Billing,Agent 19,Open,24,,No,Escalated to supervisor
+ZD-482433,2026-09-07 14:04,Phone,Rental equipment breakdown,Urgent,Standard,Contractor 028 LLC,Dubai,URGENT generator stopped on site,Rental,Agent 08,Solved,4,1.4,No,
+ZD-482434,2026-09-01 11:22,Email,Delivery delay,Low,Gold,Contractor 108 LLC,Muscat,Cement order late again,Logistics,Agent 02,Solved,48,47.0,No,Customer chased twice
+ZD-482435,2026-09-21 12:31,Email,Delivery delay,Low,Standard,Contractor 152 LLC,Jeddah,Where is my delivery PO 79489?,Logistics,Agent 36,Pending,48,,No,Escalated to supervisor
+ZD-482436,2026-09-06 19:54,Phone,Damaged goods,Normal,Standard,Contractor 013 LLC,Sharjah,Cement bags torn on delivery,Logistics,Agent 19,Solved,24,11.0,No,Escalated to supervisor
+ZD-482437,2026-09-10 09:09,Phone,Returns,Normal,Gold,Contractor 042 LLC,Jeddah,Return unused cement bags,Logistics,Agent 03,Pending,24,,No,
+ZD-482438,2026-09-23 07:34,Email,Delivery delay,Normal,Gold,Contractor 078 LLC,Jeddah,Rebar delivery not arrived – site waiting,Logistics,Agent 26,Open,24,,Yes,Escalated to supervisor
+ZD-482439,2026-09-01 18:48,WhatsApp,Product enquiry,Normal,Standard,Contractor 147 LLC,Abu Dhabi,Do you stock sulphate-resistant cement?,Sales support,Agent 37,Open,24,,No,
+ZD-482440,2026-09-16 07:14,Email,Returns,Normal,Standard,Contractor 115 LLC,Muscat,Return wrong HVAC model,Logistics,Agent 21,Pending,24,,Yes,Refund promised by agent
+ZD-482441,2026-09-07 07:05,Email,Delivery delay,High,Standard,Contractor 132 LLC,Sharjah,Cement order late again,Logistics,Agent 32,Pending,8,,No,Customer chased twice
+ZD-482442,2026-09-12 13:00,Email,Warranty claim,Normal,Platinum,Contractor 073 LLC,Muscat,Chiller compressor failure,Technical,Agent 20,Solved,24,19.2,No,Escalated to supervisor
+ZD-482443,2026-09-24 13:27,Email,Account update,Low,Standard,Contractor 107 LLC,Riyadh,Change billing address,Billing,Agent 39,Open,48,,No,
+ZD-482444,2026-09-11 08:26,Email,Delivery delay,Low,Standard,Contractor 045 LLC,Jeddah,Where is my delivery PO 70570?,Logistics,Agent 37,Open,48,,No,
+ZD-482445,2026-09-02 11:50,Phone,Delivery delay,Normal,Gold,Contractor 001 LLC,Riyadh,Rebar delivery not arrived – site waiting,Logistics,Agent 20,Solved,24,15.5,No,
+ZD-482446,2026-09-14 09:48,Email,Account update,Low,Standard,Contractor 071 LLC,Sharjah,Add new site contact,Billing,Agent 39,Solved,48,44.9,No,
+ZD-482447,2026-09-21 17:46,Email,Invoice dispute,Low,Gold,Contractor 148 LLC,Sharjah,Invoice 44018 charges transport twice,Billing,Agent 11,Solved,48,47.1,No,
+ZD-482448,2026-09-02 11:18,WhatsApp,Invoice dispute,Normal,Platinum,Contractor 075 LLC,Abu Dhabi,VAT amount incorrect,Billing,Agent 05,Solved,24,14.2,No,
+ZD-482449,2026-09-11 12:34,Email,Delivery delay,Normal,Standard,Contractor 149 LLC,Jeddah,Cement order late again,Logistics,Agent 01,Solved,24,11.8,No,
+ZD-482450,2026-09-30 09:50,Email,Warranty claim,High,Standard,Contractor 144 LLC,Sharjah,AC unit not cooling – 8 months old,Technical,Agent 35,Open,8,,No,
+ZD-482451,2026-09-30 08:19,Phone,Warranty claim,High,Platinum,Contractor 177 LLC,Riyadh,Chiller compressor failure,Technical,Agent 29,Solved,8,7.0,No,
+ZD-482452,2026-09-01 18:14,Portal,Warranty claim,High,Gold,Contractor 079 LLC,Sharjah,Generator fault under warranty,Technical,Agent 09,Solved,8,3.6,No,
+ZD-482453,2026-09-25 14:03,Phone,Damaged goods,Low,Platinum,Contractor 121 LLC,Dubai,Cement bags torn on delivery,Logistics,Agent 03,Solved,48,143.7,Yes,
+ZD-482454,2026-09-30 16:01,Email,Invoice dispute,Normal,Platinum,Contractor 024 LLC,Dubai,Invoice 46356 charges transport twice,Billing,Agent 38,Pending,24,,No,
+ZD-482455,2026-09-19 08:45,Phone,Account update,High,Standard,Contractor 050 LLC,Jeddah,Add new site contact,Billing,Agent 35,Solved,8,7.0,No,
+ZD-482456,2026-09-28 18:06,Email,Returns,Low,Gold,Contractor 047 LLC,Jeddah,Return wrong HVAC model,Logistics,Agent 28,Solved,48,26.7,No,
+ZD-482457,2026-09-04 15:46,Phone,Damaged goods,Normal,Gold,Contractor 011 LLC,Riyadh,Cement bags torn on delivery,Logistics,Agent 32,Solved,24,15.5,No,
+ZD-482458,2026-09-27 14:12,Email,Invoice dispute,Normal,Standard,Contractor 018 LLC,Muscat,Wrong discount on invoice 99015,Billing,Agent 24,Open,24,,No,Refund promised by agent
+ZD-482459,2026-09-22 08:06,Email,Damaged goods,High,Gold,Contractor 044 LLC,Muscat,Cement bags torn on delivery,Logistics,Agent 13,Solved,8,3.2,No,Customer chased twice
+ZD-482460,2026-09-27 13:17,Phone,Delivery delay,Low,Gold,Contractor 165 LLC,Abu Dhabi,Cement order late again,Logistics,Agent 31,Solved,48,23.8,No,
+ZD-482461,2026-09-05 19:40,Email,Warranty claim,Low,Standard,Contractor 035 LLC,Sharjah,Generator fault under warranty,Technical,Agent 04,Solved,48,18.0,No,
+ZD-482462,2026-09-22 12:42,Email,Damaged goods,Normal,Gold,Contractor 134 LLC,Jeddah,HVAC unit dented,Logistics,Agent 13,Pending,24,,No,Customer chased twice
+ZD-482463,2026-09-26 15:24,Email,Rental equipment breakdown,Urgent,Gold,Contractor 116 LLC,Sharjah,Rental compressor broken – site stopped,Rental,Agent 29,Open,8,,Yes,Escalated to supervisor
+ZD-482464,2026-09-29 18:07,Email,Delivery delay,Normal,Standard,Contractor 146 LLC,Sharjah,Where is my delivery PO 74297?,Logistics,Agent 36,Solved,24,67.3,Yes,
+ZD-482465,2026-09-17 07:43,Email,Warranty claim,Low,Standard,Contractor 091 LLC,Abu Dhabi,Chiller compressor failure,Technical,Agent 04,Solved,48,23.2,No,
+ZD-482466,2026-09-19 07:26,Email,Warranty claim,Normal,Gold,Contractor 090 LLC,Muscat,Generator fault under warranty,Technical,Agent 16,Open,24,,No,
+ZD-482467,2026-09-03 11:55,Email,Delivery delay,High,Platinum,Contractor 109 LLC,Muscat,Where is my delivery PO 77470?,Logistics,Agent 27,Solved,8,14.8,Yes,Customer chased twice
+ZD-482468,2026-09-13 16:13,Email,Delivery delay,Low,Platinum,Contractor 087 LLC,Sharjah,Cement order late again,Logistics,Agent 22,Pending,48,,Yes,
+ZD-482469,2026-09-21 19:03,Email,Rental equipment breakdown,Urgent,Gold,Contractor 077 LLC,Riyadh,Lighting tower not starting,Rental,Agent 15,Solved,8,7.1,No,
+ZD-482470,2026-09-19 12:13,Email,Product enquiry,Normal,Standard,Contractor 089 LLC,Dubai,Price for 500t rebar 16mm,Sales support,Agent 20,Solved,24,8.3,No,
+ZD-482471,2026-09-14 13:11,Email,Product enquiry,Normal,Standard,Contractor 005 LLC,Abu Dhabi,Do you stock sulphate-resistant cement?,Sales support,Agent 12,Pending,24,,No,
+ZD-482472,2026-09-09 17:12,Phone,Damaged goods,Low,Standard,Contractor 094 LLC,Riyadh,HVAC unit dented,Logistics,Agent 16,Solved,48,45.8,No,
+ZD-482473,2026-09-11 08:43,Phone,Product enquiry,Normal,Standard,Contractor 154 LLC,Riyadh,Price for 500t rebar 16mm,Sales support,Agent 16,Solved,24,42.1,Yes,
+ZD-482474,2026-09-15 14:17,Email,Delivery delay,Low,Standard,Contractor 035 LLC,Sharjah,Rebar delivery not arrived – site waiting,Logistics,Agent 18,Solved,48,28.6,No,
+ZD-482475,2026-09-16 19:19,Phone,Warranty claim,High,Platinum,Contractor 017 LLC,Muscat,Chiller compressor failure,Technical,Agent 06,Solved,8,2.7,No,Escalated to supervisor
+ZD-482476,2026-09-19 18:59,Phone,Returns,High,Platinum,Contractor 135 LLC,Dubai,Return wrong HVAC model,Logistics,Agent 06,Open,8,,No,
+ZD-482477,2026-09-13 19:13,Email,Product enquiry,Normal,Standard,Contractor 071 LLC,Muscat,Availability of 250kVA generator,Sales support,Agent 17,Solved,24,22.9,No,
+ZD-482478,2026-09-11 15:50,Email,Delivery delay,Low,Standard,Contractor 038 LLC,Dubai,Cement order late again,Logistics,Agent 24,Solved,48,30.4,No,Customer chased twice
+ZD-482479,2026-09-22 19:35,Portal,Delivery delay,High,Standard,Contractor 099 LLC,Muscat,Cement order late again,Logistics,Agent 24,Solved,8,6.3,No,
+ZD-482480,2026-09-01 13:19,WhatsApp,Delivery delay,Normal,Standard,Contractor 054 LLC,Riyadh,Rebar delivery not arrived – site waiting,Logistics,Agent 21,Pending,24,,No,
+ZD-482481,2026-09-16 18:06,Email,Damaged goods,Low,Standard,Contractor 042 LLC,Riyadh,Pallet damaged – 20 bags lost,Logistics,Agent 33,Open,48,,Yes,
+ZD-482482,2026-09-11 14:28,Phone,Invoice dispute,High,Standard,Contractor 165 LLC,Muscat,Invoice 10403 charges transport twice,Billing,Agent 26,Solved,8,6.7,No,Customer chased twice
+ZD-482483,2026-09-23 19:20,Email,Invoice dispute,Normal,Gold,Contractor 116 LLC,Jeddah,Wrong discount on invoice 27499,Billing,Agent 17,Pending,24,,No,
+ZD-482484,2026-09-12 09:14,Phone,Account update,Low,Gold,Contractor 006 LLC,Riyadh,Change billing address,Billing,Agent 40,Open,48,,No,
+ZD-482485,2026-09-23 09:05,Email,Delivery delay,High,Standard,Contractor 095 LLC,Sharjah,Rebar delivery not arrived – site waiting,Logistics,Agent 08,Solved,8,4.6,No,
+ZD-482486,2026-09-27 17:55,Email,Product enquiry,Low,Standard,Contractor 069 LLC,Riyadh,Availability of 250kVA generator,Sales support,Agent 25,Solved,48,18.4,No,
+ZD-482487,2026-09-24 17:18,Email,Damaged goods,Normal,Gold,Contractor 068 LLC,Sharjah,Cement bags torn on delivery,Logistics,Agent 29,Solved,24,14.2,No,
+ZD-482488,2026-09-16 09:24,Phone,Invoice dispute,Normal,Standard,Contractor 109 LLC,Dubai,VAT amount incorrect,Billing,Agent 17,Solved,24,23.6,No,
+ZD-482489,2026-09-20 17:25,Email,Delivery delay,High,Gold,Contractor 172 LLC,Sharjah,Cement order late again,Logistics,Agent 36,Solved,8,2.4,No,
+ZD-482490,2026-09-29 14:16,Email,Warranty claim,Normal,Standard,Contractor 030 LLC,Sharjah,Chiller compressor failure,Technical,Agent 09,Solved,24,8.7,No,Escalated to supervisor
+ZD-482491,2026-09-10 11:47,Phone,Account update,Normal,Standard,Contractor 126 LLC,Riyadh,Change billing address,Billing,Agent 29,Solved,24,15.9,No,
+ZD-482492,2026-09-09 09:02,Email,Delivery delay,Low,Gold,Contractor 114 LLC,Riyadh,Cement order late again,Logistics,Agent 32,Open,48,,No,Escalated to supervisor
+ZD-482493,2026-09-12 08:32,Phone,Damaged goods,Normal,Standard,Contractor 070 LLC,Dubai,Pallet damaged – 20 bags lost,Logistics,Agent 38,Solved,24,21.8,No,
+ZD-482494,2026-09-06 13:21,Portal,Warranty claim,High,Standard,Contractor 007 LLC,Jeddah,Chiller compressor failure,Technical,Agent 08,Solved,8,3.8,No,Escalated to supervisor
+ZD-482495,2026-09-05 07:40,WhatsApp,Invoice dispute,High,Platinum,Contractor 069 LLC,Sharjah,VAT amount incorrect,Billing,Agent 01,Solved,8,5.0,No,
+ZD-482496,2026-09-24 19:03,Portal,Rental equipment breakdown,Urgent,Gold,Contractor 019 LLC,Muscat,Lighting tower not starting,Rental,Agent 25,Solved,8,21.0,Yes,
+ZD-482497,2026-09-03 07:48,Email,Damaged goods,Normal,Standard,Contractor 168 LLC,Riyadh,Cement bags torn on delivery,Logistics,Agent 20,Solved,24,9.9,No,Escalated to supervisor
+ZD-482498,2026-09-20 09:31,Phone,Product enquiry,Normal,Standard,Contractor 115 LLC,Muscat,Availability of 250kVA generator,Sales support,Agent 18,Solved,24,18.4,No,
+ZD-482499,2026-09-20 09:43,Email,Warranty claim,Low,Gold,Contractor 058 LLC,Sharjah,AC unit not cooling – 8 months old,Technical,Agent 10,Open,48,,Yes,Escalated to supervisor
+ZD-482500,2026-09-14 08:19,Phone,Warranty claim,Low,Platinum,Contractor 064 LLC,Riyadh,AC unit not cooling – 8 months old,Technical,Agent 19,Pending,48,,No,
+ZD-482501,2026-09-17 13:16,Email,Delivery delay,Low,Platinum,Contractor 091 LLC,Dubai,Cement order late again,Logistics,Agent 06,Solved,48,17.6,No,
+ZD-482502,2026-09-27 13:37,Phone,Delivery delay,High,Standard,Contractor 117 LLC,Abu Dhabi,Where is my delivery PO 68975?,Logistics,Agent 40,Solved,8,2.9,No,Customer chased twice
+ZD-482503,2026-09-06 08:07,WhatsApp,Invoice dispute,Normal,Standard,Contractor 004 LLC,Abu Dhabi,Invoice 95957 charges transport twice,Billing,Agent 31,Solved,24,56.6,Yes,Escalated to supervisor
+ZD-482504,2026-09-10 16:51,Portal,Account update,Normal,Standard,Contractor 078 LLC,Riyadh,Change billing address,Billing,Agent 09,Pending,24,,No,
+ZD-482505,2026-09-28 07:53,Phone,Delivery delay,Normal,Standard,Contractor 161 LLC,Abu Dhabi,Where is my delivery PO 35023?,Logistics,Agent 06,Solved,24,15.3,No,Customer chased twice
+ZD-482506,2026-09-06 09:37,Email,Product enquiry,Low,Gold,Contractor 063 LLC,Dubai,Price for 500t rebar 16mm,Sales support,Agent 37,Open,48,,No,Escalated to supervisor
+ZD-482507,2026-09-14 13:18,Email,Delivery delay,Low,Standard,Contractor 010 LLC,Muscat,Cement order late again,Logistics,Agent 32,Solved,48,39.2,No,
+ZD-482508,2026-09-08 18:04,Phone,Warranty claim,High,Standard,Contractor 069 LLC,Riyadh,AC unit not cooling – 8 months old,Technical,Agent 31,Solved,8,5.4,No,
+ZD-482509,2026-09-14 07:14,WhatsApp,Damaged goods,Normal,Gold,Contractor 130 LLC,Muscat,Cement bags torn on delivery,Logistics,Agent 22,Solved,24,12.0,No,Agent used personal WhatsApp
+ZD-482510,2026-09-24 18:47,Phone,Account update,Low,Standard,Contractor 093 LLC,Sharjah,Add new site contact,Billing,Agent 40,Pending,48,,No,
+ZD-482511,2026-09-06 10:19,Phone,Invoice dispute,Normal,Standard,Contractor 061 LLC,Abu Dhabi,Invoice 82984 charges transport twice,Billing,Agent 04,Open,24,,Yes,Customer chased twice
+ZD-482512,2026-09-02 19:31,Email,Account update,High,Gold,Contractor 067 LLC,Jeddah,Add new site contact,Billing,Agent 03,Solved,8,12.8,Yes,
+ZD-482513,2026-09-20 17:29,Email,Invoice dispute,High,Standard,Contractor 029 LLC,Jeddah,Invoice 90028 charges transport twice,Billing,Agent 40,Solved,8,6.4,No,
+ZD-482514,2026-09-04 10:32,Email,Account update,Normal,Platinum,Contractor 128 LLC,Muscat,Update TRN on account,Billing,Agent 10,Solved,24,9.8,No,
+ZD-482515,2026-09-15 13:32,Phone,Invoice dispute,High,Platinum,Contractor 044 LLC,Abu Dhabi,Invoice 44867 charges transport twice,Billing,Agent 24,Solved,8,3.8,No,Escalated to supervisor
+ZD-482516,2026-09-14 19:57,Phone,Invoice dispute,Normal,Gold,Contractor 118 LLC,Jeddah,VAT amount incorrect,Billing,Agent 24,Open,24,,No,Escalated to supervisor
+ZD-482517,2026-09-03 12:25,Email,Delivery delay,Normal,Standard,Contractor 010 LLC,Dubai,Where is my delivery PO 94078?,Logistics,Agent 10,Solved,24,13.9,No,
+ZD-482518,2026-09-29 15:55,Phone,Delivery delay,Normal,Standard,Contractor 078 LLC,Muscat,Where is my delivery PO 51116?,Logistics,Agent 23,Pending,24,,No,
+ZD-482519,2026-09-23 13:39,WhatsApp,Account update,Low,Standard,Contractor 167 LLC,Abu Dhabi,Add new site contact,Billing,Agent 26,Pending,48,,No,
+ZD-482520,2026-09-24 18:32,Email,Account update,Normal,Standard,Contractor 142 LLC,Riyadh,Add new site contact,Billing,Agent 22,Solved,24,15.9,No,
+ZD-482521,2026-09-09 10:03,Email,Delivery delay,Normal,Standard,Contractor 096 LLC,Jeddah,Cement order late again,Logistics,Agent 33,Solved,24,19.4,No,Customer chased twice
+ZD-482522,2026-09-10 16:37,Phone,Delivery delay,High,Standard,Contractor 145 LLC,Riyadh,Where is my delivery PO 92279?,Logistics,Agent 35,Open,8,,No,
+ZD-482523,2026-09-19 17:20,Email,Delivery delay,Normal,Standard,Contractor 133 LLC,Muscat,Where is my delivery PO 35238?,Logistics,Agent 24,Solved,24,19.2,No,Escalated to supervisor
+ZD-482524,2026-09-03 07:23,Phone,Delivery delay,Low,Standard,Contractor 174 LLC,Dubai,Where is my delivery PO 62789?,Logistics,Agent 38,Solved,48,44.3,No,
+ZD-482525,2026-09-21 13:26,Email,Warranty claim,Low,Gold,Contractor 042 LLC,Riyadh,Generator fault under warranty,Technical,Agent 09,Pending,48,,No,Escalated to supervisor
+ZD-482526,2026-09-04 18:58,Email,Product enquiry,Normal,Standard,Contractor 031 LLC,Jeddah,Do you stock sulphate-resistant cement?,Sales support,Agent 08,Solved,24,34.4,Yes,
+ZD-482527,2026-09-12 11:09,Email,Invoice dispute,Normal,Standard,Contractor 151 LLC,Dubai,Wrong discount on invoice 16376,Billing,Agent 20,Pending,24,,No,
+ZD-482528,2026-09-12 08:57,Phone,Delivery delay,High,Platinum,Contractor 087 LLC,Jeddah,Cement order late again,Logistics,Agent 39,Solved,8,4.7,No,
+ZD-482529,2026-09-22 14:26,Email,Product enquiry,Normal,Standard,Contractor 100 LLC,Riyadh,Price for 500t rebar 16mm,Sales support,Agent 22,Pending,24,,Yes,
+ZD-482530,2026-09-21 08:45,Phone,Delivery delay,Normal,Gold,Contractor 080 LLC,Sharjah,Where is my delivery PO 94562?,Logistics,Agent 08,Pending,24,,No,
+ZD-482531,2026-09-25 07:42,Email,Warranty claim,Normal,Standard,Contractor 137 LLC,Jeddah,Generator fault under warranty,Technical,Agent 18,Solved,24,19.8,No,
+ZD-482532,2026-09-03 19:27,Phone,Invoice dispute,Normal,Standard,Contractor 047 LLC,Riyadh,Wrong discount on invoice 13153,Billing,Agent 34,Solved,24,75.9,Yes,Customer chased twice
+ZD-482533,2026-09-05 09:43,Portal,Delivery delay,Normal,Standard,Contractor 044 LLC,Sharjah,Rebar delivery not arrived – site waiting,Logistics,Agent 21,Open,24,,No,
+ZD-482534,2026-09-05 13:03,Email,Delivery delay,Normal,Gold,Contractor 052 LLC,Sharjah,Rebar delivery not arrived – site waiting,Logistics,Agent 38,Open,24,,No,
+ZD-482535,2026-09-09 07:26,Phone,Damaged goods,Normal,Gold,Contractor 163 LLC,Dubai,Cement bags torn on delivery,Logistics,Agent 18,Solved,24,15.0,No,
+ZD-482536,2026-09-21 19:40,Phone,Returns,Normal,Gold,Contractor 129 LLC,Jeddah,Return unused cement bags,Logistics,Agent 24,Solved,24,12.3,No,
+ZD-482537,2026-09-15 07:41,Email,Product enquiry,High,Gold,Contractor 043 LLC,Jeddah,Price for 500t rebar 16mm,Sales support,Agent 31,Pending,8,,No,Customer chased twice
+ZD-482538,2026-09-27 17:47,Phone,Warranty claim,Normal,Gold,Contractor 137 LLC,Sharjah,AC unit not cooling – 8 months old,Technical,Agent 20,Solved,24,17.0,No,
+ZD-482539,2026-09-09 13:43,Email,Damaged goods,Normal,Platinum,Contractor 088 LLC,Jeddah,Pallet damaged – 20 bags lost,Logistics,Agent 29,Solved,24,17.5,No,Customer chased twice
+ZD-482540,2026-09-20 12:00,Portal,Invoice dispute,High,Gold,Contractor 003 LLC,Riyadh,VAT amount incorrect,Billing,Agent 27,Pending,8,,Yes,
+ZD-482541,2026-09-21 08:07,Phone,Product enquiry,High,Standard,Contractor 091 LLC,Muscat,Availability of 250kVA generator,Sales support,Agent 23,Solved,8,7.4,No,Escalated to supervisor
+ZD-482542,2026-09-04 14:01,Phone,Delivery delay,Normal,Standard,Contractor 072 LLC,Dubai,Where is my delivery PO 56900?,Logistics,Agent 13,Solved,24,22.9,No,
+ZD-482543,2026-09-08 14:38,Phone,Product enquiry,Normal,Standard,Contractor 054 LLC,Abu Dhabi,Price for 500t rebar 16mm,Sales support,Agent 26,Pending,24,,No,
+ZD-482544,2026-09-07 17:36,Phone,Account update,Normal,Standard,Contractor 059 LLC,Jeddah,Update TRN on account,Billing,Agent 13,Solved,24,29.0,Yes,
+ZD-482545,2026-09-09 17:41,Portal,Delivery delay,Low,Standard,Contractor 014 LLC,Jeddah,Cement order late again,Logistics,Agent 27,Pending,48,,No,Customer chased twice
+ZD-482546,2026-09-25 07:20,Email,Delivery delay,Normal,Standard,Contractor 002 LLC,Jeddah,Cement order late again,Logistics,Agent 22,Solved,24,8.0,No,
+ZD-482547,2026-09-23 13:04,Phone,Account update,High,Standard,Contractor 161 LLC,Abu Dhabi,Update TRN on account,Billing,Agent 02,Solved,8,7.5,No,Escalated to supervisor
+ZD-482548,2026-09-27 11:03,Email,Damaged goods,Normal,Standard,Contractor 086 LLC,Sharjah,Pallet damaged – 20 bags lost,Logistics,Agent 05,Solved,24,9.0,No,
+ZD-482549,2026-09-04 08:44,Phone,Rental equipment breakdown,Urgent,Standard,Contractor 017 LLC,Jeddah,URGENT generator stopped on site,Rental,Agent 29,Open,8,,No,
+ZD-482550,2026-09-02 15:48,Phone,Invoice dispute,High,Platinum,Contractor 106 LLC,Muscat,Invoice 88587 charges transport twice,Billing,Agent 40,Solved,8,4.1,No,Escalated to supervisor
+ZD-482551,2026-09-11 17:06,Email,Damaged goods,High,Standard,Contractor 004 LLC,Dubai,Pallet damaged – 20 bags lost,Logistics,Agent 38,Solved,8,4.9,No,
+ZD-482552,2026-09-14 14:37,Email,Returns,Low,Standard,Contractor 112 LLC,Sharjah,Return 3 pallets of blocks,Logistics,Agent 23,Solved,48,55.6,Yes,
+ZD-482553,2026-09-10 12:15,Email,Product enquiry,High,Gold,Contractor 130 LLC,Sharjah,Do you stock sulphate-resistant cement?,Sales support,Agent 28,Solved,8,5.3,No,Customer chased twice
+ZD-482554,2026-09-11 10:21,Email,Delivery delay,Low,Standard,Contractor 149 LLC,Dubai,Where is my delivery PO 53995?,Logistics,Agent 40,Solved,48,37.7,No,Customer chased twice
+ZD-482555,2026-09-16 10:13,Email,Damaged goods,High,Standard,Contractor 062 LLC,Dubai,HVAC unit dented,Logistics,Agent 25,Solved,8,6.0,No,
+ZD-482556,2026-09-03 12:40,Phone,Damaged goods,High,Platinum,Contractor 150 LLC,Dubai,HVAC unit dented,Logistics,Agent 02,Solved,8,5.5,No,
+ZD-482557,2026-09-06 12:01,Email,Delivery delay,Normal,Standard,Contractor 174 LLC,Muscat,Rebar delivery not arrived – site waiting,Logistics,Agent 08,Open,24,,Yes,Customer chased twice
+ZD-482558,2026-09-22 09:50,Email,Returns,Low,Gold,Contractor 049 LLC,Sharjah,Return unused cement bags,Logistics,Agent 25,Open,48,,Yes,Customer chased twice
+ZD-482559,2026-09-25 16:15,Portal,Warranty claim,Normal,Gold,Contractor 014 LLC,Dubai,AC unit not cooling – 8 months old,Technical,Agent 09,Solved,24,21.6,No,
+ZD-482560,2026-09-26 14:48,WhatsApp,Returns,High,Gold,Contractor 131 LLC,Dubai,Return wrong HVAC model,Logistics,Agent 34,Open,8,,No,Customer chased twice
+ZD-482561,2026-09-16 11:13,Email,Product enquiry,Low,Standard,Contractor 057 LLC,Riyadh,Price for 500t rebar 16mm,Sales support,Agent 16,Pending,48,,No,Escalated to supervisor
+ZD-482562,2026-09-30 12:22,Email,Delivery delay,Normal,Gold,Contractor 059 LLC,Abu Dhabi,Where is my delivery PO 15392?,Logistics,Agent 30,Solved,24,30.1,Yes,
+ZD-482563,2026-09-12 19:14,Email,Rental equipment breakdown,Urgent,Standard,Contractor 068 LLC,Riyadh,Lighting tower not starting,Rental,Agent 23,Solved,8,4.2,No,
+ZD-482564,2026-09-26 11:12,Email,Invoice dispute,Normal,Standard,Contractor 173 LLC,Dubai,Wrong discount on invoice 42771,Billing,Agent 20,Solved,24,27.5,Yes,
+ZD-482565,2026-09-28 19:50,Email,Account update,Normal,Standard,Contractor 104 LLC,Abu Dhabi,Add new site contact,Billing,Agent 01,Open,24,,No,Escalated to supervisor
+ZD-482566,2026-09-08 10:48,Portal,Rental equipment breakdown,Urgent,Standard,Contractor 120 LLC,Riyadh,Lighting tower not starting,Rental,Agent 22,Pending,8,,No,
+ZD-482567,2026-09-14 10:36,Email,Invoice dispute,Low,Standard,Contractor 033 LLC,Muscat,Wrong discount on invoice 11268,Billing,Agent 32,Solved,48,29.5,No,Customer chased twice
+ZD-482568,2026-09-25 19:09,Email,Invoice dispute,Normal,Standard,Contractor 085 LLC,Riyadh,VAT amount incorrect,Billing,Agent 39,Open,24,,Yes,
+ZD-482569,2026-09-03 15:57,Portal,Account update,Low,Gold,Contractor 078 LLC,Riyadh,Change billing address,Billing,Agent 07,Solved,48,117.4,Yes,
+ZD-482570,2026-09-01 09:14,Email,Warranty claim,Normal,Standard,Contractor 075 LLC,Riyadh,AC unit not cooling – 8 months old,Technical,Agent 05,Solved,24,8.4,No,Escalated to supervisor
+ZD-482571,2026-09-13 09:24,Email,Delivery delay,High,Gold,Contractor 053 LLC,Riyadh,Rebar delivery not arrived – site waiting,Logistics,Agent 20,Pending,8,,No,Escalated to supervisor
+ZD-482572,2026-09-10 16:00,Phone,Product enquiry,Normal,Gold,Contractor 037 LLC,Jeddah,Availability of 250kVA generator,Sales support,Agent 26,Solved,24,15.6,No,
+ZD-482573,2026-09-15 14:44,Email,Product enquiry,High,Standard,Contractor 077 LLC,Riyadh,Availability of 250kVA generator,Sales support,Agent 12,Solved,8,25.7,Yes,Escalated to supervisor
+ZD-482574,2026-09-13 17:56,WhatsApp,Invoice dispute,Normal,Standard,Contractor 041 LLC,Riyadh,Wrong discount on invoice 92324,Billing,Agent 35,Solved,24,66.3,Yes,
+ZD-482575,2026-09-14 19:20,Phone,Rental equipment breakdown,Urgent,Gold,Contractor 105 LLC,Riyadh,Rental compressor broken – site stopped,Rental,Agent 17,Pending,8,,Yes,
+ZD-482576,2026-09-22 18:25,Email,Damaged goods,Low,Platinum,Contractor 010 LLC,Muscat,Cement bags torn on delivery,Logistics,Agent 08,Open,48,,No,
+ZD-482577,2026-09-15 08:52,Email,Returns,High,Standard,Contractor 072 LLC,Riyadh,Return unused cement bags,Logistics,Agent 02,Solved,8,27.0,Yes,
+ZD-482578,2026-09-22 19:13,Email,Invoice dispute,High,Gold,Contractor 009 LLC,Dubai,VAT amount incorrect,Billing,Agent 14,Solved,8,6.2,No,
+ZD-482579,2026-09-22 08:03,Phone,Account update,Low,Standard,Contractor 097 LLC,Muscat,Change billing address,Billing,Agent 24,Solved,48,37.6,No,
+ZD-482580,2026-09-11 10:53,Email,Delivery delay,High,Platinum,Contractor 171 LLC,Dubai,Rebar delivery not arrived – site waiting,Logistics,Agent 03,Pending,8,,No,Escalated to supervisor
+ZD-482581,2026-09-07 16:14,Phone,Warranty claim,Normal,Gold,Contractor 055 LLC,Muscat,Generator fault under warranty,Technical,Agent 21,Solved,24,22.9,No,
+ZD-482582,2026-09-15 10:02,Phone,Delivery delay,High,Platinum,Contractor 018 LLC,Abu Dhabi,Rebar delivery not arrived – site waiting,Logistics,Agent 20,Pending,8,,No,
+ZD-482583,2026-09-06 11:43,Portal,Damaged goods,High,Standard,Contractor 178 LLC,Jeddah,Cement bags torn on delivery,Logistics,Agent 12,Pending,8,,No,
+ZD-482584,2026-09-16 08:32,Phone,Product enquiry,Normal,Standard,Contractor 164 LLC,Muscat,Do you stock sulphate-resistant cement?,Sales support,Agent 33,Solved,24,7.5,No,
+ZD-482585,2026-09-10 10:23,Email,Product enquiry,Low,Platinum,Contractor 128 LLC,Dubai,Availability of 250kVA generator,Sales support,Agent 10,Solved,48,39.8,No,Escalated to supervisor
+ZD-482586,2026-09-15 18:50,Email,Delivery delay,Normal,Standard,Contractor 107 LLC,Jeddah,Where is my delivery PO 47808?,Logistics,Agent 02,Solved,24,71.5,Yes,
+ZD-482587,2026-09-02 17:55,Email,Account update,Normal,Gold,Contractor 098 LLC,Jeddah,Update TRN on account,Billing,Agent 12,Solved,24,20.7,No,Escalated to supervisor
+ZD-482588,2026-09-02 17:50,Email,Rental equipment breakdown,Urgent,Standard,Contractor 053 LLC,Abu Dhabi,URGENT generator stopped on site,Rental,Agent 06,Solved,8,11.8,Yes,Escalated to supervisor
+ZD-482589,2026-09-14 09:12,Email,Product enquiry,Normal,Standard,Contractor 070 LLC,Abu Dhabi,Availability of 250kVA generator,Sales support,Agent 24,Open,24,,No,Escalated to supervisor
+ZD-482590,2026-09-24 13:24,Email,Invoice dispute,Normal,Gold,Contractor 110 LLC,Jeddah,Invoice 49351 charges transport twice,Billing,Agent 39,Solved,24,21.0,No,
+ZD-482591,2026-09-10 13:12,Email,Product enquiry,Low,Standard,Contractor 002 LLC,Riyadh,Price for 500t rebar 16mm,Sales support,Agent 24,Solved,48,105.6,Yes,Escalated to supervisor
+ZD-482592,2026-09-12 13:56,Email,Damaged goods,Low,Gold,Contractor 010 LLC,Muscat,Cement bags torn on delivery,Logistics,Agent 37,Solved,48,24.7,No,
+ZD-482593,2026-09-12 15:24,Email,Delivery delay,Low,Gold,Contractor 109 LLC,Muscat,Where is my delivery PO 42347?,Logistics,Agent 16,Solved,48,35.7,No,Escalated to supervisor
+ZD-482594,2026-09-01 18:16,Phone,Delivery delay,Normal,Standard,Contractor 064 LLC,Muscat,Where is my delivery PO 85804?,Logistics,Agent 11,Pending,24,,No,
+ZD-482595,2026-09-13 18:16,Email,Delivery delay,High,Standard,Contractor 178 LLC,Riyadh,Cement order late again,Logistics,Agent 35,Open,8,,Yes,
+ZD-482596,2026-09-28 08:09,Phone,Account update,High,Standard,Contractor 069 LLC,Muscat,Update TRN on account,Billing,Agent 26,Solved,8,6.0,No,
+ZD-482597,2026-09-04 08:10,Portal,Invoice dispute,Low,Standard,Contractor 046 LLC,Dubai,Wrong discount on invoice 34431,Billing,Agent 09,Pending,48,,No,
+ZD-482598,2026-09-06 10:57,Email,Damaged goods,High,Standard,Contractor 105 LLC,Abu Dhabi,HVAC unit dented,Logistics,Agent 40,Solved,8,6.6,No,
+ZD-482599,2026-09-04 11:43,Email,Account update,High,Gold,Contractor 026 LLC,Riyadh,Change billing address,Billing,Agent 18,Solved,8,4.3,No,
+ZD-482600,2026-09-17 19:17,Phone,Rental equipment breakdown,Urgent,Platinum,Contractor 125 LLC,Abu Dhabi,Rental compressor broken – site stopped,Rental,Agent 39,Open,8,,No,Escalated to supervisor
+ZD-482601,2026-09-27 10:22,Phone,Invoice dispute,Normal,Gold,Contractor 085 LLC,Sharjah,Invoice 10404 charges transport twice,Billing,Agent 30,Solved,24,18.4,No,Escalated to supervisor
+ZD-482602,2026-09-04 15:28,WhatsApp,Product enquiry,Normal,Platinum,Contractor 159 LLC,Jeddah,Do you stock sulphate-resistant cement?,Sales support,Agent 31,Solved,24,23.2,No,Agent used personal WhatsApp
+ZD-482603,2026-09-01 17:43,Email,Damaged goods,Normal,Standard,Contractor 114 LLC,Sharjah,Cement bags torn on delivery,Logistics,Agent 32,Pending,24,,No,Escalated to supervisor
+ZD-482604,2026-09-22 18:33,Phone,Product enquiry,High,Gold,Contractor 147 LLC,Riyadh,Do you stock sulphate-resistant cement?,Sales support,Agent 03,Solved,8,12.2,Yes,
+ZD-482605,2026-09-28 14:34,Email,Damaged goods,Normal,Standard,Contractor 062 LLC,Jeddah,Cement bags torn on delivery,Logistics,Agent 11,Solved,24,22.3,No,
+ZD-482606,2026-09-06 12:30,Email,Rental equipment breakdown,Urgent,Standard,Contractor 172 LLC,Dubai,URGENT generator stopped on site,Rental,Agent 09,Solved,4,3.3,No,
+ZD-482607,2026-09-28 10:47,Email,Rental equipment breakdown,Urgent,Standard,Contractor 098 LLC,Sharjah,Lighting tower not starting,Rental,Agent 36,Pending,8,,No,Escalated to supervisor
+ZD-482608,2026-09-04 08:07,Email,Product enquiry,Normal,Platinum,Contractor 147 LLC,Dubai,Availability of 250kVA generator,Sales support,Agent 21,Pending,24,,No,Escalated to supervisor
+ZD-482609,2026-09-07 13:50,Email,Warranty claim,Low,Platinum,Contractor 033 LLC,Jeddah,AC unit not cooling – 8 months old,Technical,Agent 39,Pending,48,,No,
+ZD-482610,2026-09-11 09:38,Email,Delivery delay,Normal,Standard,Contractor 073 LLC,Riyadh,Rebar delivery not arrived – site waiting,Logistics,Agent 03,Solved,24,21.3,No,
+ZD-482611,2026-09-28 18:24,Email,Invoice dispute,Low,Standard,Contractor 016 LLC,Sharjah,Wrong discount on invoice 30014,Billing,Agent 14,Solved,48,35.6,No,
+ZD-482612,2026-09-28 14:10,Email,Product enquiry,Low,Standard,Contractor 006 LLC,Abu Dhabi,Do you stock sulphate-resistant cement?,Sales support,Agent 22,Open,48,,No,Escalated to supervisor
+ZD-482613,2026-09-03 15:35,Portal,Rental equipment breakdown,Urgent,Standard,Contractor 101 LLC,Riyadh,URGENT generator stopped on site,Rental,Agent 21,Pending,8,,No,
+ZD-482614,2026-09-15 17:57,Email,Account update,Normal,Standard,Contractor 038 LLC,Sharjah,Change billing address,Billing,Agent 13,Solved,24,16.9,No,
+ZD-482615,2026-09-22 19:10,Email,Rental equipment breakdown,Urgent,Standard,Contractor 015 LLC,Dubai,URGENT generator stopped on site,Rental,Agent 31,Pending,4,,No,
+ZD-482616,2026-09-19 13:15,Email,Returns,Normal,Standard,Contractor 102 LLC,Sharjah,Return wrong HVAC model,Logistics,Agent 39,Solved,24,17.7,No,
+ZD-482617,2026-09-22 08:41,Phone,Product enquiry,Low,Standard,Contractor 114 LLC,Muscat,Availability of 250kVA generator,Sales support,Agent 08,Solved,48,43.5,No,
+ZD-482618,2026-09-08 07:11,Email,Delivery delay,Low,Standard,Contractor 099 LLC,Jeddah,Cement order late again,Logistics,Agent 28,Pending,48,,No,Customer chased twice
+ZD-482619,2026-09-06 13:33,Email,Warranty claim,High,Platinum,Contractor 126 LLC,Jeddah,Generator fault under warranty,Technical,Agent 38,Pending,8,,No,
+ZD-482620,2026-09-22 08:28,Phone,Product enquiry,Normal,Platinum,Contractor 081 LLC,Abu Dhabi,Price for 500t rebar 16mm,Sales support,Agent 09,Solved,24,21.7,No,
+ZD-482621,2026-09-03 08:42,Email,Delivery delay,Normal,Standard,Contractor 001 LLC,Dubai,Rebar delivery not arrived – site waiting,Logistics,Agent 03,Solved,24,13.3,No,
+ZD-482622,2026-09-19 14:34,Email,Returns,Normal,Standard,Contractor 131 LLC,Abu Dhabi,Return unused cement bags,Logistics,Agent 03,Solved,24,16.0,No,
+ZD-482623,2026-09-20 15:27,WhatsApp,Delivery delay,Normal,Gold,Contractor 020 LLC,Abu Dhabi,Where is my delivery PO 43419?,Logistics,Agent 17,Pending,24,,No,Escalated to supervisor
+ZD-482624,2026-09-22 13:44,Email,Rental equipment breakdown,Urgent,Standard,Contractor 166 LLC,Sharjah,URGENT generator stopped on site,Rental,Agent 37,Open,8,,Yes,
+ZD-482625,2026-09-11 19:17,Email,Rental equipment breakdown,Urgent,Gold,Contractor 032 LLC,Abu Dhabi,Lighting tower not starting,Rental,Agent 36,Solved,8,4.5,No,Escalated to supervisor
+ZD-482626,2026-09-25 11:24,Phone,Delivery delay,Normal,Gold,Contractor 057 LLC,Sharjah,Cement order late again,Logistics,Agent 08,Solved,24,21.8,No,
+ZD-482627,2026-09-04 15:38,WhatsApp,Warranty claim,Normal,Standard,Contractor 026 LLC,Riyadh,Generator fault under warranty,Technical,Agent 21,Solved,24,19.0,No,Escalated to supervisor
+ZD-482628,2026-09-18 16:09,Phone,Delivery delay,Low,Standard,Contractor 169 LLC,Jeddah,Rebar delivery not arrived – site waiting,Logistics,Agent 25,Solved,48,51.5,Yes,
+ZD-482629,2026-09-23 19:28,Email,Product enquiry,Normal,Standard,Contractor 091 LLC,Sharjah,Availability of 250kVA generator,Sales support,Agent 19,Solved,24,18.6,No,Customer chased twice
+ZD-482630,2026-09-10 17:05,Email,Returns,High,Standard,Contractor 163 LLC,Abu Dhabi,Return unused cement bags,Logistics,Agent 16,Solved,8,7.7,No,
+ZD-482631,2026-09-26 07:31,Email,Warranty claim,Low,Gold,Contractor 132 LLC,Riyadh,AC unit not cooling – 8 months old,Technical,Agent 35,Solved,48,37.1,No,
+ZD-482632,2026-09-01 18:47,Email,Delivery delay,Low,Gold,Contractor 170 LLC,Muscat,Where is my delivery PO 99663?,Logistics,Agent 39,Solved,48,38.0,No,
+ZD-482633,2026-09-29 10:03,Portal,Warranty claim,Normal,Standard,Contractor 109 LLC,Jeddah,Chiller compressor failure,Technical,Agent 11,Solved,24,8.5,No,Customer chased twice
+ZD-482634,2026-09-28 19:00,Email,Returns,High,Standard,Contractor 162 LLC,Jeddah,Return 3 pallets of blocks,Logistics,Agent 14,Solved,8,4.0,No,
+ZD-482635,2026-09-28 14:22,WhatsApp,Warranty claim,High,Standard,Contractor 028 LLC,Jeddah,Generator fault under warranty,Technical,Agent 12,Solved,8,4.4,No,Escalated to supervisor
+ZD-482636,2026-09-17 15:49,Email,Invoice dispute,Normal,Standard,Contractor 169 LLC,Dubai,Wrong discount on invoice 39634,Billing,Agent 31,Solved,24,14.1,No,Customer chased twice
+ZD-482637,2026-09-04 14:22,WhatsApp,Invoice dispute,Low,Standard,Contractor 051 LLC,Sharjah,Invoice 34846 charges transport twice,Billing,Agent 19,Solved,48,19.8,No,Escalated to supervisor
+ZD-482638,2026-09-07 14:43,Email,Damaged goods,Normal,Platinum,Contractor 033 LLC,Muscat,HVAC unit dented,Logistics,Agent 33,Solved,24,9.2,No,
+ZD-482639,2026-09-04 19:43,Phone,Returns,High,Gold,Contractor 061 LLC,Dubai,Return unused cement bags,Logistics,Agent 22,Solved,8,3.1,No,
+ZD-482640,2026-09-03 19:49,Email,Product enquiry,Low,Gold,Contractor 030 LLC,Riyadh,Availability of 250kVA generator,Sales support,Agent 28,Solved,48,110.5,Yes,
+ZD-482641,2026-09-17 16:09,Phone,Damaged goods,Normal,Platinum,Contractor 059 LLC,Muscat,Cement bags torn on delivery,Logistics,Agent 26,Pending,24,,No,
+ZD-482642,2026-09-20 10:44,Email,Invoice dispute,High,Platinum,Contractor 163 LLC,Dubai,Invoice 39068 charges transport twice,Billing,Agent 22,Solved,8,7.2,No,
+ZD-482643,2026-09-12 11:11,Phone,Damaged goods,Normal,Gold,Contractor 011 LLC,Sharjah,Cement bags torn on delivery,Logistics,Agent 21,Open,24,,No,
+ZD-482644,2026-09-06 11:35,Email,Invoice dispute,Low,Standard,Contractor 034 LLC,Riyadh,Wrong discount on invoice 57260,Billing,Agent 24,Solved,48,61.8,Yes,
+ZD-482645,2026-09-19 13:37,Email,Warranty claim,High,Standard,Contractor 168 LLC,Abu Dhabi,Generator fault under warranty,Technical,Agent 29,Solved,8,23.0,Yes,
+ZD-482646,2026-09-16 19:26,Email,Delivery delay,Normal,Gold,Contractor 141 LLC,Muscat,Where is my delivery PO 43099?,Logistics,Agent 36,Solved,24,16.2,No,Customer chased twice
+ZD-482647,2026-09-03 14:10,Email,Account update,Low,Standard,Contractor 154 LLC,Riyadh,Add new site contact,Billing,Agent 19,Pending,48,,No,
+ZD-482648,2026-09-24 13:10,Email,Returns,Low,Standard,Contractor 113 LLC,Abu Dhabi,Return 3 pallets of blocks,Logistics,Agent 36,Open,48,,No,Escalated to supervisor
+ZD-482649,2026-09-07 16:45,Email,Warranty claim,High,Platinum,Contractor 135 LLC,Jeddah,Chiller compressor failure,Technical,Agent 15,Solved,8,7.3,No,Customer chased twice
+ZD-482650,2026-09-18 10:59,Phone,Product enquiry,Normal,Gold,Contractor 035 LLC,Dubai,Availability of 250kVA generator,Sales support,Agent 16,Open,24,,No,
+ZD-482651,2026-09-12 12:08,Email,Warranty claim,High,Gold,Contractor 105 LLC,Jeddah,AC unit not cooling – 8 months old,Technical,Agent 21,Solved,8,7.7,No,
+ZD-482652,2026-09-09 09:49,Email,Rental equipment breakdown,Urgent,Gold,Contractor 150 LLC,Muscat,URGENT generator stopped on site,Rental,Agent 17,Open,8,,No,
+ZD-482653,2026-09-11 11:09,Phone,Rental equipment breakdown,Urgent,Standard,Contractor 115 LLC,Abu Dhabi,URGENT generator stopped on site,Rental,Agent 24,Pending,8,,No,
+ZD-482654,2026-09-27 09:18,Email,Returns,Normal,Gold,Contractor 006 LLC,Abu Dhabi,Return wrong HVAC model,Logistics,Agent 12,Solved,24,16.8,No,
+ZD-482655,2026-09-15 17:51,Email,Warranty claim,Low,Platinum,Contractor 004 LLC,Abu Dhabi,AC unit not cooling – 8 months old,Technical,Agent 25,Pending,48,,No,Escalated to supervisor
+ZD-482656,2026-09-30 07:00,Phone,Delivery delay,Normal,Standard,Contractor 003 LLC,Muscat,Rebar delivery not arrived – site waiting,Logistics,Agent 22,Pending,24,,Yes,
+ZD-482657,2026-09-27 09:40,Email,Delivery delay,Normal,Standard,Contractor 140 LLC,Riyadh,Rebar delivery not arrived – site waiting,Logistics,Agent 03,Pending,24,,Yes,
+ZD-482658,2026-09-05 07:41,Email,Warranty claim,Normal,Standard,Contractor 074 LLC,Riyadh,Generator fault under warranty,Technical,Agent 25,Solved,24,7.6,No,
+ZD-482659,2026-09-04 10:21,Phone,Account update,High,Platinum,Contractor 031 LLC,Abu Dhabi,Add new site contact,Billing,Agent 03,Solved,8,7.8,No,
+ZD-482660,2026-09-22 13:18,Email,Delivery delay,Normal,Gold,Contractor 090 LLC,Abu Dhabi,Rebar delivery not arrived – site waiting,Logistics,Agent 32,Pending,24,,No,
+ZD-482661,2026-09-26 07:28,Email,Invoice dispute,Normal,Standard,Contractor 123 LLC,Dubai,Invoice 24832 charges transport twice,Billing,Agent 37,Solved,24,20.3,No,
+ZD-482662,2026-09-25 13:26,Email,Invoice dispute,Normal,Standard,Contractor 155 LLC,Abu Dhabi,VAT amount incorrect,Billing,Agent 09,Pending,24,,No,
+ZD-482663,2026-09-18 14:36,Email,Returns,Normal,Standard,Contractor 178 LLC,Jeddah,Return 3 pallets of blocks,Logistics,Agent 06,Solved,24,13.7,No,
+ZD-482664,2026-09-05 08:49,WhatsApp,Delivery delay,High,Gold,Contractor 036 LLC,Riyadh,Cement order late again,Logistics,Agent 10,Open,8,,No,Agent used personal WhatsApp
+ZD-482665,2026-09-02 18:46,WhatsApp,Returns,Normal,Gold,Contractor 007 LLC,Abu Dhabi,Return 3 pallets of blocks,Logistics,Agent 24,Solved,24,9.2,No,
+ZD-482666,2026-09-01 09:53,Email,Rental equipment breakdown,Urgent,Standard,Contractor 107 LLC,Abu Dhabi,URGENT generator stopped on site,Rental,Agent 31,Solved,8,3.2,No,
+ZD-482667,2026-09-14 18:07,Email,Delivery delay,Normal,Standard,Contractor 040 LLC,Riyadh,Rebar delivery not arrived – site waiting,Logistics,Agent 03,Solved,24,14.7,No,
+ZD-482668,2026-09-22 14:27,Email,Product enquiry,Normal,Platinum,Contractor 041 LLC,Riyadh,Availability of 250kVA generator,Sales support,Agent 34,Pending,24,,No,Escalated to supervisor
+ZD-482669,2026-09-02 10:53,Email,Returns,Low,Gold,Contractor 020 LLC,Jeddah,Return 3 pallets of blocks,Logistics,Agent 31,Solved,48,20.6,No,
+ZD-482670,2026-09-21 13:21,Email,Damaged goods,Normal,Platinum,Contractor 008 LLC,Sharjah,Cement bags torn on delivery,Logistics,Agent 11,Pending,24,,Yes,
+ZD-482671,2026-09-07 15:36,Email,Delivery delay,Normal,Platinum,Contractor 012 LLC,Sharjah,Where is my delivery PO 73413?,Logistics,Agent 03,Open,24,,Yes,
+ZD-482672,2026-09-25 11:22,WhatsApp,Invoice dispute,Low,Platinum,Contractor 034 LLC,Sharjah,VAT amount incorrect,Billing,Agent 07,Solved,48,31.2,No,
+ZD-482673,2026-09-19 19:10,Email,Damaged goods,Low,Standard,Contractor 039 LLC,Dubai,Pallet damaged – 20 bags lost,Logistics,Agent 06,Solved,48,30.4,No,
+ZD-482674,2026-09-21 09:38,Phone,Delivery delay,Normal,Standard,Contractor 167 LLC,Muscat,Where is my delivery PO 54749?,Logistics,Agent 29,Open,24,,No,
+ZD-482675,2026-09-02 18:09,Email,Invoice dispute,Low,Standard,Contractor 146 LLC,Riyadh,VAT amount incorrect,Billing,Agent 07,Pending,48,,No,
+ZD-482676,2026-09-16 08:17,Email,Product enquiry,Low,Standard,Contractor 148 LLC,Dubai,Availability of 250kVA generator,Sales support,Agent 06,Solved,48,24.9,No,
+ZD-482677,2026-09-09 19:02,Phone,Delivery delay,Low,Gold,Contractor 094 LLC,Riyadh,Cement order late again,Logistics,Agent 27,Solved,48,65.0,Yes,
+ZD-482678,2026-09-11 12:56,Email,Returns,High,Gold,Contractor 175 LLC,Jeddah,Return unused cement bags,Logistics,Agent 04,Solved,8,6.2,No,
+ZD-482679,2026-09-10 13:55,Phone,Rental equipment breakdown,Urgent,Gold,Contractor 119 LLC,Dubai,Lighting tower not starting,Rental,Agent 23,Solved,4,2.8,No,Escalated to supervisor
+ZD-482680,2026-09-03 09:12,Email,Damaged goods,High,Standard,Contractor 103 LLC,Dubai,HVAC unit dented,Logistics,Agent 21,Pending,8,,No,Customer chased twice
+ZD-482681,2026-09-04 11:20,Email,Returns,Low,Standard,Contractor 146 LLC,Riyadh,Return unused cement bags,Logistics,Agent 25,Pending,48,,Yes,Customer chased twice
+ZD-482682,2026-09-28 07:04,Portal,Product enquiry,Low,Gold,Contractor 071 LLC,Abu Dhabi,Availability of 250kVA generator,Sales support,Agent 20,Solved,48,23.5,No,
+ZD-482683,2026-09-06 07:19,Email,Damaged goods,High,Gold,Contractor 043 LLC,Sharjah,Cement bags torn on delivery,Logistics,Agent 27,Open,8,,No,Escalated to supervisor
+ZD-482684,2026-09-14 12:12,Phone,Damaged goods,Low,Gold,Contractor 020 LLC,Muscat,Pallet damaged – 20 bags lost,Logistics,Agent 38,Open,48,,No,
+ZD-482685,2026-09-24 18:31,Phone,Delivery delay,Normal,Standard,Contractor 082 LLC,Muscat,Rebar delivery not arrived – site waiting,Logistics,Agent 27,Open,24,,No,Customer chased twice
+ZD-482686,2026-09-21 14:44,Email,Warranty claim,High,Standard,Contractor 140 LLC,Abu Dhabi,Generator fault under warranty,Technical,Agent 25,Solved,8,2.6,No,
+ZD-482687,2026-09-01 12:55,Portal,Invoice dispute,Normal,Standard,Contractor 032 LLC,Jeddah,VAT amount incorrect,Billing,Agent 30,Solved,24,7.5,No,Customer chased twice
+ZD-482688,2026-09-04 09:34,Email,Invoice dispute,Low,Standard,Contractor 112 LLC,Sharjah,Wrong discount on invoice 47359,Billing,Agent 28,Solved,48,28.8,No,
+ZD-482689,2026-09-26 08:31,WhatsApp,Rental equipment breakdown,Urgent,Standard,Contractor 160 LLC,Dubai,Lighting tower not starting,Rental,Agent 29,Solved,4,3.0,No,Agent used personal WhatsApp
+ZD-482690,2026-09-07 10:22,Email,Warranty claim,Low,Gold,Contractor 119 LLC,Riyadh,Chiller compressor failure,Technical,Agent 26,Open,48,,Yes,
+ZD-482691,2026-09-29 17:43,Phone,Returns,Normal,Standard,Contractor 062 LLC,Sharjah,Return unused cement bags,Logistics,Agent 03,Open,24,,No,
+ZD-482692,2026-09-20 12:35,Phone,Product enquiry,Normal,Standard,Contractor 101 LLC,Muscat,Price for 500t rebar 16mm,Sales support,Agent 26,Solved,24,10.1,No,
+ZD-482693,2026-09-13 18:14,Phone,Product enquiry,Normal,Platinum,Contractor 026 LLC,Muscat,Do you stock sulphate-resistant cement?,Sales support,Agent 33,Solved,24,14.0,No,
+ZD-482694,2026-09-30 11:27,Phone,Rental equipment breakdown,Urgent,Standard,Contractor 003 LLC,Muscat,Lighting tower not starting,Rental,Agent 10,Solved,8,7.7,No,
+ZD-482695,2026-09-13 07:11,Email,Rental equipment breakdown,Urgent,Standard,Contractor 062 LLC,Jeddah,Lighting tower not starting,Rental,Agent 20,Pending,8,,No,
+ZD-482696,2026-09-25 11:40,Email,Warranty claim,High,Standard,Contractor 149 LLC,Riyadh,Generator fault under warranty,Technical,Agent 30,Pending,8,,No,
+ZD-482697,2026-09-03 08:06,Email,Delivery delay,Low,Gold,Contractor 126 LLC,Abu Dhabi,Rebar delivery not arrived – site waiting,Logistics,Agent 05,Solved,48,42.8,No,Escalated to supervisor
+ZD-482698,2026-09-29 12:36,Email,Returns,Low,Standard,Contractor 162 LLC,Riyadh,Return 3 pallets of blocks,Logistics,Agent 08,Solved,48,51.6,Yes,Customer chased twice
+ZD-482699,2026-09-17 18:01,Phone,Damaged goods,Normal,Standard,Contractor 133 LLC,Abu Dhabi,Pallet damaged – 20 bags lost,Logistics,Agent 14,Solved,24,22.8,No,Customer chased twice
+ZD-482700,2026-09-03 18:22,Email,Delivery delay,Normal,Gold,Contractor 142 LLC,Abu Dhabi,Where is my delivery PO 48577?,Logistics,Agent 30,Open,24,,No,
+ZD-482701,2026-09-09 09:25,Email,Product enquiry,Normal,Standard,Contractor 027 LLC,Abu Dhabi,Do you stock sulphate-resistant cement?,Sales support,Agent 20,Solved,24,18.7,No,
+ZD-482702,2026-09-14 16:27,Portal,Product enquiry,Normal,Standard,Contractor 052 LLC,Riyadh,Do you stock sulphate-resistant cement?,Sales support,Agent 24,Pending,24,,No,
+ZD-482703,2026-09-09 16:33,Email,Product enquiry,Low,Standard,Contractor 091 LLC,Jeddah,Availability of 250kVA generator,Sales support,Agent 08,Pending,48,,No,
+ZD-482704,2026-09-03 10:20,Email,Product enquiry,Normal,Gold,Contractor 177 LLC,Abu Dhabi,Price for 500t rebar 16mm,Sales support,Agent 14,Solved,24,13.4,No,Escalated to supervisor
+ZD-482705,2026-09-13 11:56,Email,Warranty claim,Normal,Gold,Contractor 172 LLC,Dubai,Generator fault under warranty,Technical,Agent 27,Pending,24,,Yes,
+ZD-482706,2026-09-02 19:07,Email,Product enquiry,Low,Gold,Contractor 116 LLC,Abu Dhabi,Price for 500t rebar 16mm,Sales support,Agent 21,Solved,48,31.2,No,
+ZD-482707,2026-09-26 16:25,Phone,Invoice dispute,High,Gold,Contractor 010 LLC,Muscat,VAT amount incorrect,Billing,Agent 03,Open,8,,No,
+ZD-482708,2026-09-10 11:20,Email,Delivery delay,Normal,Standard,Contractor 127 LLC,Muscat,Where is my delivery PO 16169?,Logistics,Agent 26,Solved,24,19.9,No,Customer chased twice
+ZD-482709,2026-09-27 12:20,Email,Rental equipment breakdown,Urgent,Standard,Contractor 177 LLC,Dubai,Lighting tower not starting,Rental,Agent 15,Solved,4,4.3,Yes,
+ZD-482710,2026-09-01 18:19,Phone,Delivery delay,High,Standard,Contractor 020 LLC,Jeddah,Cement order late again,Logistics,Agent 40,Solved,8,3.9,No,Escalated to supervisor
+ZD-482711,2026-09-04 09:57,Email,Invoice dispute,Normal,Platinum,Contractor 106 LLC,Riyadh,VAT amount incorrect,Billing,Agent 08,Open,24,,No,
+ZD-482712,2026-09-25 18:05,Phone,Warranty claim,Low,Standard,Contractor 091 LLC,Sharjah,AC unit not cooling – 8 months old,Technical,Agent 14,Solved,48,22.0,No,
+ZD-482713,2026-09-22 10:13,Portal,Delivery delay,Low,Platinum,Contractor 152 LLC,Dubai,Where is my delivery PO 77361?,Logistics,Agent 21,Solved,48,41.9,No,Customer chased twice
+ZD-482714,2026-09-30 09:39,Phone,Product enquiry,Normal,Standard,Contractor 132 LLC,Dubai,Price for 500t rebar 16mm,Sales support,Agent 13,Solved,24,22.6,No,
+ZD-482715,2026-09-21 08:29,Email,Invoice dispute,Normal,Gold,Contractor 048 LLC,Jeddah,Wrong discount on invoice 13746,Billing,Agent 31,Solved,24,31.7,Yes,Escalated to supervisor
+ZD-482716,2026-09-14 10:28,Email,Invoice dispute,Normal,Standard,Contractor 070 LLC,Sharjah,Wrong discount on invoice 22820,Billing,Agent 04,Solved,24,13.9,No,
+ZD-482717,2026-09-20 11:07,Email,Returns,Low,Gold,Contractor 057 LLC,Abu Dhabi,Return unused cement bags,Logistics,Agent 03,Solved,48,56.3,Yes,
+ZD-482718,2026-09-23 18:17,Email,Delivery delay,Low,Gold,Contractor 127 LLC,Jeddah,Rebar delivery not arrived – site waiting,Logistics,Agent 14,Open,48,,Yes,Customer chased twice
+ZD-482719,2026-09-04 09:10,Phone,Rental equipment breakdown,Urgent,Gold,Contractor 081 LLC,Dubai,Lighting tower not starting,Rental,Agent 11,Pending,4,,No,
+ZD-482720,2026-09-16 13:10,Email,Invoice dispute,Normal,Standard,Contractor 174 LLC,Muscat,Invoice 87857 charges transport twice,Billing,Agent 23,Open,24,,No,
+ZD-482721,2026-09-27 07:09,WhatsApp,Delivery delay,Normal,Standard,Contractor 025 LLC,Dubai,Rebar delivery not arrived – site waiting,Logistics,Agent 22,Solved,24,21.2,No,Escalated to supervisor
+ZD-482722,2026-09-16 11:21,Email,Damaged goods,Normal,Standard,Contractor 133 LLC,Muscat,Pallet damaged – 20 bags lost,Logistics,Agent 31,Solved,24,14.9,No,
+ZD-482723,2026-09-14 10:27,Email,Invoice dispute,Normal,Standard,Contractor 093 LLC,Abu Dhabi,Invoice 21701 charges transport twice,Billing,Agent 13,Pending,24,,Yes,Escalated to supervisor
+ZD-482724,2026-09-18 14:25,Portal,Rental equipment breakdown,Urgent,Standard,Contractor 151 LLC,Muscat,Rental compressor broken – site stopped,Rental,Agent 20,Open,8,,No,
+ZD-482725,2026-09-04 13:07,Email,Delivery delay,Low,Gold,Contractor 003 LLC,Jeddah,Cement order late again,Logistics,Agent 10,Solved,48,33.4,No,Escalated to supervisor
+ZD-482726,2026-09-22 09:13,Email,Rental equipment breakdown,Urgent,Gold,Contractor 073 LLC,Jeddah,Lighting tower not starting,Rental,Agent 04,Solved,8,14.2,Yes,Escalated to supervisor
+ZD-482727,2026-09-02 11:42,Email,Invoice dispute,Normal,Standard,Contractor 144 LLC,Dubai,Invoice 21272 charges transport twice,Billing,Agent 18,Open,24,,No,Refund promised by agent
+ZD-482728,2026-09-02 14:25,Phone,Delivery delay,Normal,Platinum,Contractor 026 LLC,Abu Dhabi,Cement order late again,Logistics,Agent 39,Solved,24,11.4,No,Customer chased twice
+ZD-482729,2026-09-05 17:19,Email,Delivery delay,Normal,Standard,Contractor 022 LLC,Jeddah,Cement order late again,Logistics,Agent 30,Solved,24,11.4,No,
+ZD-482730,2026-09-05 15:22,Phone,Delivery delay,Low,Standard,Contractor 120 LLC,Dubai,Cement order late again,Logistics,Agent 30,Pending,48,,No,Escalated to supervisor
+ZD-482731,2026-09-25 13:15,Email,Returns,High,Standard,Contractor 149 LLC,Dubai,Return 3 pallets of blocks,Logistics,Agent 09,Solved,8,6.6,No,
+ZD-482732,2026-09-13 17:53,Email,Account update,High,Standard,Contractor 014 LLC,Abu Dhabi,Change billing address,Billing,Agent 18,Solved,8,5.0,No,
+ZD-482733,2026-09-16 18:45,Phone,Delivery delay,Normal,Standard,Contractor 014 LLC,Jeddah,Where is my delivery PO 36878?,Logistics,Agent 34,Solved,24,59.6,Yes,
+ZD-482734,2026-09-21 09:51,Portal,Warranty claim,Normal,Platinum,Contractor 125 LLC,Muscat,AC unit not cooling – 8 months old,Technical,Agent 08,Open,24,,No,
+ZD-482735,2026-09-08 10:03,Phone,Delivery delay,High,Platinum,Contractor 032 LLC,Dubai,Cement order late again,Logistics,Agent 31,Solved,8,5.1,No,
+ZD-482736,2026-09-22 14:52,Phone,Account update,High,Standard,Contractor 169 LLC,Jeddah,Change billing address,Billing,Agent 33,Solved,8,4.8,No,
+ZD-482737,2026-09-22 08:51,Email,Rental equipment breakdown,Urgent,Standard,Contractor 028 LLC,Sharjah,Rental compressor broken – site stopped,Rental,Agent 28,Solved,8,4.5,No,
+ZD-482738,2026-09-19 11:02,Email,Delivery delay,High,Standard,Contractor 091 LLC,Dubai,Rebar delivery not arrived – site waiting,Logistics,Agent 30,Pending,8,,No,Customer chased twice
+ZD-482739,2026-09-07 12:36,Email,Delivery delay,Low,Standard,Contractor 087 LLC,Jeddah,Cement order late again,Logistics,Agent 18,Pending,48,,Yes,
+ZD-482740,2026-09-16 13:32,Email,Invoice dispute,Low,Standard,Contractor 169 LLC,Muscat,VAT amount incorrect,Billing,Agent 09,Pending,48,,No,
+ZD-482741,2026-09-03 07:59,Email,Returns,High,Standard,Contractor 174 LLC,Riyadh,Return wrong HVAC model,Logistics,Agent 15,Solved,8,10.3,Yes,
+ZD-482742,2026-09-29 13:47,Email,Product enquiry,Low,Standard,Contractor 019 LLC,Muscat,Availability of 250kVA generator,Sales support,Agent 39,Solved,48,79.9,Yes,
+ZD-482743,2026-09-15 13:16,WhatsApp,Account update,Normal,Gold,Contractor 126 LLC,Muscat,Add new site contact,Billing,Agent 19,Solved,24,23.8,No,
+ZD-482744,2026-09-03 16:51,Email,Delivery delay,High,Standard,Contractor 036 LLC,Abu Dhabi,Rebar delivery not arrived – site waiting,Logistics,Agent 27,Solved,8,5.9,No,
+ZD-482745,2026-09-30 18:32,Email,Warranty claim,Low,Gold,Contractor 091 LLC,Muscat,Chiller compressor failure,Technical,Agent 36,Open,48,,No,
+ZD-482746,2026-09-19 08:14,Email,Product enquiry,Normal,Standard,Contractor 014 LLC,Dubai,Do you stock sulphate-resistant cement?,Sales support,Agent 22,Solved,24,20.3,No,
+ZD-482747,2026-09-13 18:04,WhatsApp,Delivery delay,Normal,Standard,Contractor 137 LLC,Sharjah,Where is my delivery PO 41640?,Logistics,Agent 34,Open,24,,No,Agent used personal WhatsApp
+ZD-482748,2026-09-29 08:02,Email,Damaged goods,Low,Platinum,Contractor 087 LLC,Muscat,HVAC unit dented,Logistics,Agent 13,Pending,48,,No,Customer chased twice
+ZD-482749,2026-09-11 19:44,Email,Account update,High,Gold,Contractor 010 LLC,Muscat,Add new site contact,Billing,Agent 27,Open,8,,Yes,
+ZD-482750,2026-09-05 11:22,WhatsApp,Product enquiry,High,Standard,Contractor 111 LLC,Riyadh,Availability of 250kVA generator,Sales support,Agent 15,Solved,8,3.0,No,
+ZD-482751,2026-09-18 16:03,Email,Returns,Low,Standard,Contractor 100 LLC,Abu Dhabi,Return wrong HVAC model,Logistics,Agent 28,Solved,48,37.3,No,
+ZD-482752,2026-09-12 10:14,Email,Delivery delay,Normal,Standard,Contractor 106 LLC,Sharjah,Where is my delivery PO 80283?,Logistics,Agent 37,Solved,24,38.8,Yes,
+ZD-482753,2026-09-03 07:38,Email,Returns,Normal,Standard,Contractor 168 LLC,Dubai,Return unused cement bags,Logistics,Agent 09,Solved,24,14.6,No,Escalated to supervisor
+ZD-482754,2026-09-07 14:19,Phone,Rental equipment breakdown,Urgent,Platinum,Contractor 094 LLC,Jeddah,Lighting tower not starting,Rental,Agent 16,Solved,8,7.4,No,
+ZD-482755,2026-09-02 12:13,Email,Account update,Low,Standard,Contractor 036 LLC,Dubai,Update TRN on account,Billing,Agent 20,Solved,48,38.1,No,
+ZD-482756,2026-09-02 10:31,Email,Warranty claim,Low,Standard,Contractor 009 LLC,Abu Dhabi,Chiller compressor failure,Technical,Agent 38,Solved,48,36.2,No,Escalated to supervisor
+ZD-482757,2026-09-13 14:13,Portal,Invoice dispute,High,Platinum,Contractor 098 LLC,Jeddah,Invoice 96497 charges transport twice,Billing,Agent 28,Solved,8,7.2,No,
+ZD-482758,2026-09-30 16:37,Email,Invoice dispute,Normal,Gold,Contractor 056 LLC,Dubai,Invoice 54688 charges transport twice,Billing,Agent 40,Open,24,,No,Escalated to supervisor
+ZD-482759,2026-09-18 13:36,WhatsApp,Product enquiry,Normal,Standard,Contractor 146 LLC,Dubai,Do you stock sulphate-resistant cement?,Sales support,Agent 11,Solved,24,21.6,No,Escalated to supervisor
+ZD-482760,2026-09-09 19:21,Portal,Damaged goods,Normal,Gold,Contractor 147 LLC,Dubai,HVAC unit dented,Logistics,Agent 40,Solved,24,8.6,No,Customer chased twice
+ZD-482761,2026-09-01 08:29,Phone,Invoice dispute,Normal,Standard,Contractor 005 LLC,Jeddah,Wrong discount on invoice 11162,Billing,Agent 30,Solved,24,40.8,Yes,Customer chased twice
+ZD-482762,2026-09-19 08:28,Phone,Damaged goods,Normal,Gold,Contractor 047 LLC,Dubai,HVAC unit dented,Logistics,Agent 17,Open,24,,No,Escalated to supervisor
+ZD-482763,2026-09-21 07:37,Phone,Delivery delay,Normal,Platinum,Contractor 082 LLC,Jeddah,Rebar delivery not arrived – site waiting,Logistics,Agent 15,Open,24,,Yes,
+ZD-482764,2026-09-22 12:28,Portal,Returns,High,Standard,Contractor 029 LLC,Dubai,Return 3 pallets of blocks,Logistics,Agent 16,Solved,8,5.8,No,
+ZD-482765,2026-09-14 11:26,Phone,Invoice dispute,Normal,Gold,Contractor 167 LLC,Muscat,Wrong discount on invoice 71693,Billing,Agent 19,Solved,24,7.6,No,
+ZD-482766,2026-09-01 08:32,Email,Invoice dispute,Normal,Gold,Contractor 149 LLC,Jeddah,VAT amount incorrect,Billing,Agent 14,Pending,24,,No,
+ZD-482767,2026-09-03 08:46,Phone,Delivery delay,Normal,Gold,Contractor 108 LLC,Muscat,Where is my delivery PO 25891?,Logistics,Agent 34,Pending,24,,No,
+ZD-482768,2026-09-09 10:23,Phone,Warranty claim,Normal,Standard,Contractor 060 LLC,Sharjah,Chiller compressor failure,Technical,Agent 08,Pending,24,,No,
+ZD-482769,2026-09-03 12:28,Phone,Invoice dispute,High,Standard,Contractor 108 LLC,Sharjah,Invoice 84624 charges transport twice,Billing,Agent 09,Pending,8,,No,
+ZD-482770,2026-09-20 11:09,Email,Product enquiry,Normal,Standard,Contractor 148 LLC,Abu Dhabi,Availability of 250kVA generator,Sales support,Agent 13,Solved,24,49.2,Yes,
+ZD-482771,2026-09-25 15:44,Email,Account update,Low,Platinum,Contractor 043 LLC,Sharjah,Change billing address,Billing,Agent 33,Solved,48,54.4,Yes,
+ZD-482772,2026-09-23 15:37,WhatsApp,Returns,Normal,Gold,Contractor 156 LLC,Riyadh,Return 3 pallets of blocks,Logistics,Agent 03,Open,24,,Yes,Customer chased twice
+ZD-482773,2026-09-27 13:46,WhatsApp,Returns,Normal,Standard,Contractor 151 LLC,Muscat,Return 3 pallets of blocks,Logistics,Agent 10,Pending,24,,No,Agent used personal WhatsApp
+ZD-482774,2026-09-15 09:36,Phone,Warranty claim,Normal,Standard,Contractor 133 LLC,Sharjah,AC unit not cooling – 8 months old,Technical,Agent 33,Solved,24,42.7,Yes,Escalated to supervisor
+ZD-482775,2026-09-02 18:20,Email,Invoice dispute,Normal,Standard,Contractor 026 LLC,Abu Dhabi,Wrong discount on invoice 47328,Billing,Agent 11,Open,24,,No,Customer chased twice
+ZD-482776,2026-09-20 19:13,Email,Damaged goods,High,Gold,Contractor 142 LLC,Sharjah,Pallet damaged – 20 bags lost,Logistics,Agent 02,Solved,8,7.6,No,
+ZD-482777,2026-09-01 14:27,Portal,Returns,High,Standard,Contractor 114 LLC,Abu Dhabi,Return 3 pallets of blocks,Logistics,Agent 30,Open,8,,No,
+ZD-482778,2026-09-16 11:07,WhatsApp,Product enquiry,High,Platinum,Contractor 091 LLC,Riyadh,Price for 500t rebar 16mm,Sales support,Agent 05,Pending,8,,No,Customer chased twice
+ZD-482779,2026-09-17 17:27,Email,Delivery delay,High,Standard,Contractor 026 LLC,Muscat,Where is my delivery PO 78327?,Logistics,Agent 21,Open,8,,No,
+ZD-482780,2026-09-21 17:14,Phone,Account update,High,Standard,Contractor 173 LLC,Dubai,Change billing address,Billing,Agent 31,Open,8,,No,
+ZD-482781,2026-09-07 17:00,Email,Damaged goods,High,Standard,Contractor 112 LLC,Abu Dhabi,Cement bags torn on delivery,Logistics,Agent 36,Pending,8,,No,
+ZD-482782,2026-09-20 13:11,Email,Delivery delay,Normal,Gold,Contractor 077 LLC,Sharjah,Rebar delivery not arrived – site waiting,Logistics,Agent 32,Pending,24,,No,Escalated to supervisor
+ZD-482783,2026-09-10 08:18,Email,Product enquiry,Normal,Gold,Contractor 108 LLC,Riyadh,Availability of 250kVA generator,Sales support,Agent 16,Pending,24,,No,
+ZD-482784,2026-09-04 12:51,Email,Damaged goods,Low,Standard,Contractor 126 LLC,Muscat,Pallet damaged – 20 bags lost,Logistics,Agent 16,Solved,48,38.1,No,
+ZD-482785,2026-09-02 15:25,Email,Invoice dispute,Normal,Standard,Contractor 067 LLC,Riyadh,Invoice 45168 charges transport twice,Billing,Agent 32,Solved,24,48.2,Yes,Customer chased twice
+ZD-482786,2026-09-19 09:08,Email,Rental equipment breakdown,Urgent,Gold,Contractor 155 LLC,Abu Dhabi,Lighting tower not starting,Rental,Agent 02,Pending,8,,Yes,Escalated to supervisor
+ZD-482787,2026-09-03 17:10,Phone,Delivery delay,High,Standard,Contractor 138 LLC,Jeddah,Cement order late again,Logistics,Agent 19,Solved,8,5.3,No,
+ZD-482788,2026-09-08 07:32,Email,Returns,High,Gold,Contractor 102 LLC,Muscat,Return wrong HVAC model,Logistics,Agent 11,Solved,8,7.1,No,
+ZD-482789,2026-09-24 08:05,Phone,Delivery delay,Low,Gold,Contractor 020 LLC,Sharjah,Rebar delivery not arrived – site waiting,Logistics,Agent 27,Solved,48,137.5,Yes,
+ZD-482790,2026-09-04 18:20,Phone,Delivery delay,Low,Standard,Contractor 109 LLC,Abu Dhabi,Where is my delivery PO 13071?,Logistics,Agent 20,Solved,48,20.9,No,Customer chased twice
+ZD-482791,2026-09-16 13:18,Email,Damaged goods,Normal,Standard,Contractor 180 LLC,Jeddah,Pallet damaged – 20 bags lost,Logistics,Agent 16,Solved,24,49.1,Yes,Escalated to supervisor
+ZD-482792,2026-09-25 15:49,Email,Delivery delay,High,Gold,Contractor 060 LLC,Sharjah,Cement order late again,Logistics,Agent 31,Solved,8,4.9,No,
+ZD-482793,2026-09-03 08:05,Email,Delivery delay,Normal,Platinum,Contractor 037 LLC,Muscat,Cement order late again,Logistics,Agent 31,Solved,24,10.7,No,
+ZD-482794,2026-09-09 13:44,Phone,Product enquiry,Normal,Gold,Contractor 145 LLC,Riyadh,Do you stock sulphate-resistant cement?,Sales support,Agent 01,Solved,24,19.6,No,Customer chased twice
+ZD-482795,2026-09-16 12:54,Phone,Rental equipment breakdown,Urgent,Standard,Contractor 021 LLC,Jeddah,URGENT generator stopped on site,Rental,Agent 05,Solved,8,4.2,No,Escalated to supervisor
+ZD-482796,2026-09-06 10:40,Email,Delivery delay,Low,Standard,Contractor 135 LLC,Dubai,Cement order late again,Logistics,Agent 36,Solved,48,154.5,Yes,Escalated to supervisor
+ZD-482797,2026-09-24 17:41,Email,Damaged goods,Normal,Gold,Contractor 043 LLC,Sharjah,Cement bags torn on delivery,Logistics,Agent 34,Solved,24,16.0,No,
+ZD-482798,2026-09-20 11:46,Phone,Delivery delay,Low,Standard,Contractor 035 LLC,Jeddah,Rebar delivery not arrived – site waiting,Logistics,Agent 31,Open,48,,No,
+ZD-482799,2026-09-10 18:39,Email,Invoice dispute,Normal,Standard,Contractor 120 LLC,Dubai,VAT amount incorrect,Billing,Agent 05,Solved,24,52.2,Yes,
+ZD-482800,2026-09-09 11:25,Email,Account update,Low,Platinum,Contractor 066 LLC,Abu Dhabi,Update TRN on account,Billing,Agent 13,Pending,48,,No,

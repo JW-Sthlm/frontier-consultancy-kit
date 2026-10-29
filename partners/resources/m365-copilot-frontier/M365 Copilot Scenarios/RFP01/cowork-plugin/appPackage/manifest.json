@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.29/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.29",
+  "version": "1.0.0",
+  "id": "35f0d560-1f47-4e70-b115-980f61cb1734",
+  "developer": {
+    "name": "Frontier Consultancy",
+    "websiteUrl": "https://github.com/JW-Sthlm/frontier-consultancy-kit",
+    "privacyUrl": "https://github.com/JW-Sthlm/frontier-consultancy-kit/blob/main/SECURITY.md",
+    "termsOfUseUrl": "https://github.com/JW-Sthlm/frontier-consultancy-kit/blob/main/LICENSE.md"
+  },
+  "name": {
+    "short": "FC RFP Processing",
+    "full": "Frontier Consultancy RFP Processing for Copilot Cowork"
+  },
+  "description": {
+    "short": "Build and review a shared, traceable RFP response wiki",
+    "full": "Turns RFP source files into a shared, traceable response wiki in OneDrive or SharePoint, grounds Microsoft product claims in Microsoft Learn, coordinates human review, and blocks export until every answer is approved."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#124A79",
+  "agentSkills": [
+    {
+      "folder": "./skills/rfp-processing"
+    }
+  ],
+  "agentConnectors": [
+    {
+      "id": "microsoft-learn",
+      "displayName": "Microsoft Learn",
+      "description": "Search and retrieve current first-party Microsoft product documentation through the public Microsoft Learn MCP server.",
+      "toolSource": {
+        "remoteMcpServer": {
+          "mcpServerUrl": "https://learn.microsoft.com/api/mcp",
+          "authorization": {
+            "type": "None"
+          }
+        }
+      }
+    }
+  ]
+}

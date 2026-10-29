@@ -1,0 +1,36 @@
+From: Yusuf Ibrahim <yusuf.ibrahim@zava.example>
+To: Omar Khalil <omar.khalil@frontierconsulting.example>
+Cc: Lorette Roos <lorette.roos@frontierconsulting.example>
+Subject: Integration and infrastructure details for your design
+Date: Fri, 16 Oct 2026 15:15:00 +0400
+X-Test-Scenario: SA 01
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hello Omar,
+
+Following yesterday's IT session:
+
+- Identity: Entra ID (Azure AD) with MFA. All new apps must use SSO.
+- Data residency: production data must stay in the UAE. Backups too.
+- Rental app: in-house .NET app on SQL Server 2017, on-premises. About 2,300 =
+rental contracts are active. It has a REST API, but it isn't documented.
+- Logistics partner: they push delivery status every 15 minutes through their=
+ API (JSON over HTTPS).
+- Banks: UAE bank host-to-host (SFTP, MT940 statements daily) and a KSA bank.
+- Data warehouse: on-premises SQL Server, nightly ETL from SAP B1 and Sage. P=
+ower BI Pro, 35 users.
+- WhatsApp Business API through a local provider. No contract details yet.
+- ZATCA: Sage 300 in KSA uses a third-party add-on for Phase 2 e-invoicing.
+
+Our concern: we have 2 people in IT. Anything you build, we must be able to s=
+upport.
+
+Regards,
+Yusuf Ibrahim
+IT Infrastructure Manager
+
+--
+Fictitious test data =E2=80=93 Copilot for Frontier Consultancy scenario test=
+ing
