@@ -1,0 +1,25 @@
+Product code,Product name,Category,Unit,List price AED,Price valid until,Notes
+CEM-OPC-50,Ordinary Portland Cement 50kg bag,Cement & aggregates,Bag,19.5,2026-12-31,
+CEM-SRC-50,Sulphate Resisting Cement 50kg,Cement & aggregates,Bag,23,2026-12-31,
+AGG-10MM,Aggregate 10mm,Cement & aggregates,Tonne,62,2026-12-31,
+AGG-20MM,Aggregate 20mm,Cement & aggregates,Tonne,58,2026-12-31,
+RB-10,Steel rebar 10mm B500B,Steel rebar,Tonne,2650,2026-10-25,Price changes weekly
+RB-12,Steel rebar 12mm B500B,Steel rebar,Tonne,2620,2026-10-25,Price changes weekly
+RB-16,Steel rebar 16mm B500B,Steel rebar,Tonne,2600,2026-10-25,Price changes weekly
+RB-25,Steel rebar 25mm B500B,Steel rebar,Tonne,2590,2026-10-25,Price changes weekly
+HV-SPL-24,Split AC 24k BTU,HVAC equipment,Unit,3100,2026-12-31,
+HV-PKG-10T,Packaged unit 10TR,HVAC equipment,Unit,38500,2026-12-31,
+HV-CHL-200,Air-cooled chiller 200TR,HVAC equipment,Unit,412000,2026-12-31,
+HV-AHU-05,"Air handling unit 5,000 CFM",HVAC equipment,Unit,46000,2026-12-31,
+GEN-100,Diesel generator 100kVA,Generators,Unit,78000,2026-12-31,
+GEN-250,Diesel generator 250kVA,Generators,Unit,145000,2026-12-31,
+GEN-500,Diesel generator 500kVA,Generators,Unit,265000,2026-12-31,
+RNT-GEN-100-D,Rental generator 100kVA – daily,Equipment rental,Day,450,2026-12-31,
+RNT-GEN-100-M,Rental generator 100kVA – monthly (min 1 month),Equipment rental,Month,8900,2026-12-31,Minimum hire period applies
+RNT-GEN-500-M,Rental generator 500kVA – monthly (min 3 months),Equipment rental,Month,29500,2026-12-31,Minimum hire period applies
+RNT-LT-D,Rental lighting tower – daily,Equipment rental,Day,180,2026-12-31,
+RNT-CMP-D,Rental air compressor 185CFM – daily,Equipment rental,Day,320,2026-12-31,
+SVC-SURV,Site survey,Services,Each,0,2026-12-31,
+SVC-MNT-GEN,Generator maintenance contract – annual,Services,Year,9600,2026-12-31,
+SVC-TRN-DXB,Transport within Dubai,Services,Trip,650,2026-12-31,
+SVC-TRN-AUH,Transport to Abu Dhabi,Services,Trip,1400,2026-12-31,

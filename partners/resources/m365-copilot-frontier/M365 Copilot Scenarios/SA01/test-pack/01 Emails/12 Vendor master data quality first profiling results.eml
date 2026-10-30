@@ -1,0 +1,34 @@
+From: Noura Al Hashimi <noura.al.hashimi@frontierconsulting.example>
+To: Priya Nair <priya.nair@frontierconsulting.example>
+Cc: James Okafor <james.okafor@frontierconsulting.example>
+Subject: Vendor master data quality =?utf-8?b?4oCT?= first profiling results
+Date: Fri, 16 Oct 2026 10:48:00 +0400
+X-Test-Scenario: PM 01, BLD 04
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hi Priya,
+
+First profiling of the GP vendor master (UAE, Oman, Qatar) and the Tally vend=
+or list (KSA):
+- 3,412 vendor records in total
+- About 14% are likely duplicates (same TRN or bank account under different n=
+ames)
+- 9% have no tax registration number
+- 211 vendors have had no transactions since 2023 and should be archived, not=
+ migrated
+
+I need Hassan's team to own the cleansing. At the current pace, mock load 2 i=
+n December will fail its quality gate.
+
+Raw extracts are attached.
+
+Noura
+
+Attachments (in the test pack): Zava_GP_Vendors_Extract.csv; Zava_Tally_KSA_V=
+endors_Extract.csv
+
+--
+Fictitious test data =E2=80=93 Copilot for Frontier Consultancy scenario test=
+ing

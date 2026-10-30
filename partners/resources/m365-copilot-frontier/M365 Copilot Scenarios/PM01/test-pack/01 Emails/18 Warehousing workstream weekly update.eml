@@ -1,0 +1,23 @@
+From: Rahul Verma <rahul.verma@frontierconsulting.example>
+To: Priya Nair <priya.nair@frontierconsulting.example>
+Subject: Warehousing workstream =?utf-8?b?4oCT?= weekly update
+Date: Thu, 15 Oct 2026 16:40:00 +0400
+X-Test-Scenario: PM 01
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hi Priya,
+
+Warehousing this week:
+- Done: wave templates for Jebel Ali DC1, location directives configured
+- In progress: cross-docking setup, label layouts
+- Risk: no mobile devices yet (see Grace's email). I can test with the emulat=
+or, but not with real scanners.
+- Overall I'd call it Amber.
+
+Rahul
+
+--
+Fictitious test data =E2=80=93 Copilot for Frontier Consultancy scenario test=
+ing

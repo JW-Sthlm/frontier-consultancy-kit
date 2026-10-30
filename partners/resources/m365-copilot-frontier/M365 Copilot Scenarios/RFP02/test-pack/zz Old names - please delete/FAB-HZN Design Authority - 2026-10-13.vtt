@@ -1,0 +1,57 @@
+WEBVTT
+
+NOTE Fabrikam Horizon – Design Authority
+NOTE Tue 13 Oct 2026 14:00–15:00 GST. Attendees: Priya Nair, James Okafor, Arjun Mehta, Lina Mansour, Rahul Verma, Ravi Kumar
+NOTE Fictitious test data – Copilot for Frontier Consultancy scenario testing
+
+1
+00:00:05.000 --> 00:00:12.000
+<v Priya Nair>Three topics today: CargoWise integration pattern, the rate-card engine, and ZATCA.</v>
+
+2
+00:00:14.000 --> 00:00:30.000
+<v Arjun Mehta>CargoWise. Without the eAdapter spec we can't finalise mapping. I propose we build against the old XML sample and refactor later. Risk is rework of about eight days.</v>
+
+3
+00:00:32.000 --> 00:00:41.000
+<v Ravi Kumar>I'd rather not waste effort. But the timeline matters more. Go ahead with the sample.</v>
+
+4
+00:00:43.000 --> 00:00:54.000
+<v Priya Nair>Decision: build against the sample XML, accept up to eight days rework. Arjun, please log that in the RAID.</v>
+
+5
+00:00:56.000 --> 00:01:10.000
+<v Lina Mansour>Rate cards. Samir's team uses the bespoke engine for about three thousand lanes. Standard trade agreements can cover most, but not the fuel surcharge logic.</v>
+
+6
+00:01:12.000 --> 00:01:24.000
+<v Arjun Mehta>The fuel surcharge X++ class is nearly done, so we could combine trade agreements with that class. That's what CR-009 proposes.</v>
+
+7
+00:01:26.000 --> 00:01:31.000
+<v Ravi Kumar>What's the risk to pricing accuracy?</v>
+
+8
+00:01:33.000 --> 00:01:43.000
+<v Lina Mansour>Maybe two percent of lanes have special rules. We'd need a reconciliation test of all lanes.</v>
+
+9
+00:01:45.000 --> 00:01:53.000
+<v Priya Nair>Action: Lina to produce a lane reconciliation approach before SteerCo. Due 22 October.</v>
+
+10
+00:01:55.000 --> 00:02:05.000
+<v James Okafor>ZATCA. Two ISVs. I recommend Option B with the Riyadh team. Decision is needed by 6 November.</v>
+
+11
+00:02:07.000 --> 00:02:15.000
+<v Priya Nair>Action: James to prepare a one-page decision paper for SteerCo. Due 23 October.</v>
+
+12
+00:02:17.000 --> 00:02:25.000
+<v Rahul Verma>Quick one: I still have no devices for warehouse testing. Can I escalate?</v>
+
+13
+00:02:27.000 --> 00:02:37.000
+<v Priya Nair>Yes, I'll add it to the SteerCo risks. Action on me to chase Grace this week.</v>

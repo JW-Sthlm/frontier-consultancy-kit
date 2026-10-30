@@ -1,0 +1,85 @@
+WEBVTT
+
+NOTE Tailspin Trading – Discovery Workshop 2: Customer Service
+NOTE Thu 15 Oct 2026 10:00–11:30 GST, Teams. Attendees: Mariam Saeed, Yusuf Ibrahim (Tailspin); Lina Mansour, Omar Khalil (Frontier)
+NOTE Fictitious test data – Copilot for Frontier Consultancy scenario testing
+
+1
+00:00:05.000 --> 00:00:12.000
+<v Lina Mansour>Mariam, thanks for joining. Can you describe your team and channels?</v>
+
+2
+00:00:14.000 --> 00:00:29.000
+<v Mariam Saeed>Thirty-two agents in Dubai, eight in Riyadh. About 4,200 tickets a month. Email is more than half, phone about a third, then WhatsApp and the portal.</v>
+
+3
+00:00:31.000 --> 00:00:35.000
+<v Omar Khalil>Is phone integrated with Zendesk?</v>
+
+4
+00:00:37.000 --> 00:00:45.000
+<v Mariam Saeed>No. Agents create the ticket manually after the call, if they remember.</v>
+
+5
+00:00:47.000 --> 00:00:51.000
+<v Lina Mansour>What are your biggest categories?</v>
+
+6
+00:00:53.000 --> 00:01:09.000
+<v Mariam Saeed>Delivery delays, especially Riyadh. Then invoice disputes, damaged goods, warranty claims, and rental breakdowns. Rental breakdowns are the most urgent. If a generator fails, the whole site stops.</v>
+
+7
+00:01:11.000 --> 00:01:16.000
+<v Lina Mansour>What's the SLA for rental breakdowns?</v>
+
+8
+00:01:18.000 --> 00:01:32.000
+<v Mariam Saeed>Four hours to get an engineer on site in Dubai, eight hours for other emirates. Riyadh it's eight hours too but we often miss it.</v>
+
+9
+00:01:34.000 --> 00:01:39.000
+<v Omar Khalil>How does the engineer get dispatched today?</v>
+
+10
+00:01:41.000 --> 00:01:49.000
+<v Mariam Saeed>The agent calls the rental coordinator, who checks a whiteboard. Seriously, a whiteboard.</v>
+
+11
+00:01:51.000 --> 00:01:55.000
+<v Lina Mansour>And SLA breaches overall?</v>
+
+12
+00:01:57.000 --> 00:02:05.000
+<v Mariam Saeed>Eighteen percent. Platinum customers get angry, and they are the top forty contractors.</v>
+
+13
+00:02:07.000 --> 00:02:21.000
+<v Yusuf Ibrahim>From IT, WhatsApp is the issue. Some agents use personal phones. We have the Business API through a local provider but it's not connected.</v>
+
+14
+00:02:23.000 --> 00:02:28.000
+<v Lina Mansour>Knowledge – how do agents find answers?</v>
+
+15
+00:02:30.000 --> 00:02:45.000
+<v Mariam Saeed>There's a FAQ document. It's old and every agent answers differently. Returns, for example: some say seven days, policy is fourteen with a ten percent restocking fee.</v>
+
+16
+00:02:47.000 --> 00:02:54.000
+<v Lina Mansour>What would success look like in a proof of concept?</v>
+
+17
+00:02:56.000 --> 00:03:14.000
+<v Mariam Saeed>Tickets routed to the right team automatically, a breakdown case that gets an engineer within four hours, and one place for answers. And a supervisor dashboard showing SLA risk before it breaches.</v>
+
+18
+00:03:16.000 --> 00:03:21.000
+<v Omar Khalil>Do you want Copilot to draft replies?</v>
+
+19
+00:03:23.000 --> 00:03:33.000
+<v Mariam Saeed>Yes, but in our tone and in Arabic for KSA. And it must not promise refunds.</v>
+
+20
+00:03:35.000 --> 00:03:42.000
+<v Lina Mansour>Great. We'll take the September export and the policy document.</v>

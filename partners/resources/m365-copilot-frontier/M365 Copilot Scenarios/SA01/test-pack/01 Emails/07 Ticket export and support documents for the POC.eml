@@ -1,0 +1,39 @@
+From: Mariam Saeed <mariam.saeed@zava.example>
+To: Lina Mansour <lina.mansour@frontierconsulting.example>
+Cc: Lorette Roos <lorette.roos@frontierconsulting.example>
+Subject: Ticket export and support documents for the POC
+Date: Thu, 15 Oct 2026 16:05:00 +0400
+X-Test-Scenario: BLD 02
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hi Lina,
+
+As promised, here are:
+- Our Zendesk ticket export for September 2026 (anonymised)
+- Our customer service policies and FAQ document
+
+Some context:
+- We handle about 4,200 tickets a month. September was busy because of the Ri=
+yadh delivery issues.
+- 18% of tickets breach SLA. Rental equipment breakdowns are the worst becaus=
+e the customer's site stops.
+- The FAQ is out of date. Each agent answers differently.
+- WhatsApp is growing fast, but we don't track it properly in Zendesk. Some a=
+gents use their own phones.
+
+For the POC, I want to see: the right ticket going to the right team automati=
+cally, a breakdown case that gets an engineer in 4 hours, and agents getting =
+the answer from one place.
+
+Regards,
+Mariam Saeed
+Head of Customer Service
+
+Attachments (in the test pack): Zava_Zendesk_Ticket_Export_Sep2026.csv; Zava =
+Customer Service Policies and FAQ.docx
+
+--
+Fictitious test data =E2=80=93 Copilot for Frontier Consultancy scenario test=
+ing

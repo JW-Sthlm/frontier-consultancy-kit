@@ -1,0 +1,61 @@
+Account ID,Account name,Segment,City,Tier,Credit limit AED,On credit hold,Primary contact,Phone,Email
+TTL-A0001,Contractor 001 LLC,Facility management,Abu Dhabi,Platinum,700000,No,Site manager 1,+971533934411,contact1@contractor001.example
+TTL-A0002,Contractor 002 LLC,Consultant,Jeddah,Platinum,450000,No,Site manager 2,+971554313350,contact2@contractor002.example
+TTL-A0003,Contractor 003 LLC,Facility management,Jeddah,Standard,900000,No,Site manager 3,+971538092671,contact3@contractor003.example
+TTL-A0004,Contractor 004 LLC,MEP contractor,Dubai,Standard,750000,No,Site manager 4,+971522259214,contact4@contractor004.example
+TTL-A0005,Contractor 005 LLC,Facility management,Abu Dhabi,Gold,550000,No,Site manager 5,+971510033134,contact5@contractor005.example
+TTL-A0006,Contractor 006 LLC,Consultant,Dubai,Platinum,450000,No,Site manager 6,+971567096991,contact6@contractor006.example
+TTL-A0007,Contractor 007 LLC,Developer,Sharjah,Gold,1650000,Yes,Site manager 7,+971542315990,contact7@contractor007.example
+TTL-A0008,Contractor 008 LLC,Facility management,Riyadh,Standard,1250000,No,Site manager 8,+971557646170,contact8@contractor008.example
+TTL-A0009,Contractor 009 LLC,Consultant,Jeddah,Gold,1700000,Yes,Site manager 9,+971591252861,contact9@contractor009.example
+TTL-A0010,Contractor 010 LLC,MEP contractor,Abu Dhabi,Standard,900000,No,Site manager 10,+971568685794,contact10@contractor010.example
+TTL-A0011,Contractor 011 LLC,Facility management,Riyadh,Standard,850000,Yes,Site manager 11,+971584880752,contact11@contractor011.example
+TTL-A0012,Contractor 012 LLC,Developer,Muscat,Gold,600000,Yes,Site manager 12,+971559081701,contact12@contractor012.example
+TTL-A0013,Contractor 013 LLC,Developer,Muscat,Gold,1400000,No,Site manager 13,+971592808874,contact13@contractor013.example
+TTL-A0014,Contractor 014 LLC,Facility management,Abu Dhabi,Standard,1200000,No,Site manager 14,+971511432428,contact14@contractor014.example
+TTL-A0015,Contractor 015 LLC,MEP contractor,Riyadh,Gold,1700000,No,Site manager 15,+971510753570,contact15@contractor015.example
+TTL-A0016,Contractor 016 LLC,Facility management,Sharjah,Gold,350000,No,Site manager 16,+971544059134,contact16@contractor016.example
+TTL-A0017,Contractor 017 LLC,Facility management,Dubai,Standard,900000,Yes,Site manager 17,+971596868145,contact17@contractor017.example
+TTL-A0018,Contractor 018 LLC,Consultant,Muscat,Standard,1300000,Yes,Site manager 18,+971543962179,contact18@contractor018.example
+TTL-A0019,Contractor 019 LLC,Consultant,Muscat,Platinum,1850000,Yes,Site manager 19,+971573190952,contact19@contractor019.example
+TTL-A0020,Contractor 020 LLC,Facility management,Muscat,Standard,1600000,No,Site manager 20,+971573545170,contact20@contractor020.example
+TTL-A0021,Contractor 021 LLC,Facility management,Dubai,Platinum,1200000,Yes,Site manager 21,+971592264795,contact21@contractor021.example
+TTL-A0022,Contractor 022 LLC,MEP contractor,Muscat,Standard,600000,No,Site manager 22,+971521116532,contact22@contractor022.example
+TTL-A0023,Contractor 023 LLC,Developer,Dubai,Platinum,1450000,Yes,Site manager 23,+971552176116,contact23@contractor023.example
+TTL-A0024,Contractor 024 LLC,Main contractor,Jeddah,Gold,650000,Yes,Site manager 24,+971554649538,contact24@contractor024.example
+TTL-A0025,Contractor 025 LLC,Consultant,Muscat,Gold,1900000,No,Site manager 25,+971579302042,contact25@contractor025.example
+TTL-A0026,Contractor 026 LLC,Main contractor,Muscat,Standard,1350000,Yes,Site manager 26,+971518718099,contact26@contractor026.example
+TTL-A0027,Contractor 027 LLC,MEP contractor,Jeddah,Gold,900000,Yes,Site manager 27,+971533163997,contact27@contractor027.example
+TTL-A0028,Contractor 028 LLC,Developer,Dubai,Gold,1950000,No,Site manager 28,+971577842475,contact28@contractor028.example
+TTL-A0029,Contractor 029 LLC,Developer,Abu Dhabi,Standard,50000,No,Site manager 29,+971546743866,contact29@contractor029.example
+TTL-A0030,Contractor 030 LLC,Facility management,Sharjah,Platinum,1100000,No,Site manager 30,+971586258924,contact30@contractor030.example
+TTL-A0031,Contractor 031 LLC,Main contractor,Jeddah,Standard,300000,Yes,Site manager 31,+971522154988,contact31@contractor031.example
+TTL-A0032,Contractor 032 LLC,MEP contractor,Muscat,Platinum,600000,No,Site manager 32,+971589342612,contact32@contractor032.example
+TTL-A0033,Contractor 033 LLC,Main contractor,Abu Dhabi,Standard,50000,No,Site manager 33,+971595623611,contact33@contractor033.example
+TTL-A0034,Contractor 034 LLC,Consultant,Riyadh,Platinum,800000,No,Site manager 34,+971596210380,contact34@contractor034.example
+TTL-A0035,Contractor 035 LLC,MEP contractor,Muscat,Standard,450000,No,Site manager 35,+971517158543,contact35@contractor035.example
+TTL-A0036,Contractor 036 LLC,Developer,Muscat,Gold,600000,No,Site manager 36,+971528847668,contact36@contractor036.example
+TTL-A0037,Contractor 037 LLC,Facility management,Sharjah,Standard,750000,No,Site manager 37,+971546614518,contact37@contractor037.example
+TTL-A0038,Contractor 038 LLC,MEP contractor,Abu Dhabi,Gold,850000,No,Site manager 38,+971545506648,contact38@contractor038.example
+TTL-A0039,Contractor 039 LLC,Main contractor,Riyadh,Gold,1900000,No,Site manager 39,+971556823088,contact39@contractor039.example
+TTL-A0040,Contractor 040 LLC,Facility management,Riyadh,Standard,550000,Yes,Site manager 40,+971588547299,contact40@contractor040.example
+TTL-A0041,Contractor 041 LLC,Developer,Abu Dhabi,Standard,1850000,No,Site manager 41,+971568230817,contact41@contractor041.example
+TTL-A0042,Contractor 042 LLC,Consultant,Muscat,Standard,950000,No,Site manager 42,+971555926778,contact42@contractor042.example
+TTL-A0043,Contractor 043 LLC,Facility management,Jeddah,Standard,900000,Yes,Site manager 43,+971578890262,contact43@contractor043.example
+TTL-A0044,Contractor 044 LLC,MEP contractor,Sharjah,Gold,1500000,No,Site manager 44,+971514220885,contact44@contractor044.example
+TTL-A0045,Contractor 045 LLC,Main contractor,Jeddah,Standard,600000,No,Site manager 45,+971528765689,contact45@contractor045.example
+TTL-A0046,Contractor 046 LLC,Developer,Jeddah,Gold,1200000,No,Site manager 46,+971598356175,contact46@contractor046.example
+TTL-A0047,Contractor 047 LLC,Facility management,Dubai,Gold,350000,No,Site manager 47,+971511060092,contact47@contractor047.example
+TTL-A0048,Contractor 048 LLC,MEP contractor,Riyadh,Standard,1100000,No,Site manager 48,+971596957157,contact48@contractor048.example
+TTL-A0049,Contractor 049 LLC,Main contractor,Abu Dhabi,Gold,1000000,No,Site manager 49,+971572658369,contact49@contractor049.example
+TTL-A0050,Contractor 050 LLC,Facility management,Abu Dhabi,Standard,100000,No,Site manager 50,+971592760305,contact50@contractor050.example
+TTL-A0051,Contractor 051 LLC,Developer,Jeddah,Standard,1400000,No,Site manager 51,+971573561767,contact51@contractor051.example
+TTL-A0052,Contractor 052 LLC,MEP contractor,Sharjah,Standard,1200000,No,Site manager 52,+971574767783,contact52@contractor052.example
+TTL-A0053,Contractor 053 LLC,Developer,Sharjah,Platinum,750000,Yes,Site manager 53,+971566503782,contact53@contractor053.example
+TTL-A0054,Contractor 054 LLC,Developer,Sharjah,Standard,1300000,Yes,Site manager 54,+971532015192,contact54@contractor054.example
+TTL-A0055,Contractor 055 LLC,Facility management,Abu Dhabi,Gold,1950000,No,Site manager 55,+971586234095,contact55@contractor055.example
+TTL-A0056,Contractor 056 LLC,MEP contractor,Abu Dhabi,Standard,1100000,Yes,Site manager 56,+971522133101,contact56@contractor056.example
+TTL-A0057,Contractor 057 LLC,Consultant,Abu Dhabi,Standard,1150000,No,Site manager 57,+971563149397,contact57@contractor057.example
+TTL-A0058,Contractor 058 LLC,MEP contractor,Riyadh,Platinum,500000,No,Site manager 58,+971533094634,contact58@contractor058.example
+TTL-A0059,Contractor 059 LLC,Consultant,Sharjah,Platinum,600000,No,Site manager 59,+971537289414,contact59@contractor059.example
+TTL-A0060,Contractor 060 LLC,Developer,Dubai,Standard,800000,No,Site manager 60,+971584537577,contact60@contractor060.example

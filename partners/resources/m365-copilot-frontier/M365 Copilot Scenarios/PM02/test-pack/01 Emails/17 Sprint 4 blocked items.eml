@@ -1,0 +1,26 @@
+From: Arjun Mehta <arjun.mehta@frontierconsulting.example>
+To: Priya Nair <priya.nair@frontierconsulting.example>
+Subject: Sprint 4 =?utf-8?b?4oCT?= blocked items
+Date: Fri, 16 Oct 2026 17:30:00 +0400
+X-Test-Scenario: PM 01, PM 03
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Priya,
+
+Sprint 4 status (ends Friday 23 October):
+- 6 stories are blocked on the CargoWise spec (shipment events, invoice push,=
+ rate sync)
+- The fuel surcharge X++ class is done and in code review
+- The ZATCA QR extension is on hold pending the ISV decision
+- Velocity is 34 points against a plan of 42
+
+I suggest we pull 2 reporting stories forward from Sprint 5 to keep the team =
+busy.
+
+Arjun
+
+--
+Fictitious test data =E2=80=93 Copilot for Frontier Consultancy scenario test=
+ing
