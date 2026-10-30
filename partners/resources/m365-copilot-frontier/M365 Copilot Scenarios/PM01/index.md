@@ -42,7 +42,7 @@ Open Copilot Cowork ([Open Copilot Cowork](https://m365.cloud.microsoft/chat/)) 
 
 **Repo locations:**
 
-- Test pack folder: <https://github.com/JW-Sthlm/frontier-consultancy/tree/main/shared/m365-copilot-frontier/M365%20Copilot%20Scenarios/PM01/test-pack>
+- Test pack folder: <https://github.com/JW-Sthlm/frontier-consultancy-kit/tree/main/partners/resources/m365-copilot-frontier/M365%20Copilot%20Scenarios/PM01/test-pack>
 - Skill source: <https://github.com/JW-Sthlm/frontier-consultancy-kit/blob/main/partners/resources/m365-copilot-frontier/M365%20Copilot%20Scenarios/PM01/skill/pm-01-weekly-status-raid.md>
 
 ~~~text
