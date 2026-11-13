@@ -33,10 +33,15 @@ Ready-to-use AI prompts for every phase of an implementation workshop. Covers me
 
 
 
+### Copilot Studio agent-authoring MCP exercise
+
+Extend the [Dataverse Schema MCP](dynamics/exercise/Create%20Dataverse%20Schema%20MCP.md) to create and revise a Copilot Studio agent with an inline skill. The advanced section adds a workflow-backed tool. This is an experimental sandbox lab with compatibility checks, manual publishing, and runtime verification.
+
+[Start the agent-authoring MCP exercise](dynamics/exercise/copilot-studio-authoring-mcp.md)
+
 ## Track leads
 
 
 
 [Giel Cuijpers](mailto:gielcuijpers@microsoft.com) and [Marvin Heilemann](mailto:Marvin.Heilemann@microsoft.com). For cross-track or program-level questions, reach [Johan Wallquist](mailto:jwallquist@microsoft.com).
-
 

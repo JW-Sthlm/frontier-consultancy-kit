@@ -44,6 +44,8 @@ You will do it in three phases.
 
 ## What you will do
 
+**Next exercise:** after completing this lab, [extend your schema MCP to create Copilot Studio agents](copilot-studio-authoring-mcp.md). That experimental sandbox lab adds agent instructions, an inline skill, validation, and an advanced workflow-backed tool.
+
 ### Scope for this exercise
 
 Use this scope split to avoid ambiguity:
