@@ -6,7 +6,7 @@ For custom apps, automations, agents, portals, or analytics, use the separate [P
 
 ## Dynamics 365 exercises
 
-Two pages. Read them in order.
+Choose an exercise below. For ERP, read the setup page before the workshop page.
 
 | When | File | What it covers |
 |---|---|---|
@@ -15,6 +15,8 @@ Two pages. Read them in order.
 | **RFP track - day before** | [rfp-setup-overview.md](rfp-setup-overview.md) | Prereq checks for the RFP exercise: install Scout, the `rfp-processing` skill, and Microsoft Learn grounding. Allow 15 minutes. |
 | **RFP track - in the workshop** | [rfp-exercise.md](rfp-exercise.md) | Turn a raw multi-file RFP into a structured, traceable, export-ready response, entirely in Microsoft Scout Co-create with the RFP processing skill. |
 | **Contact Centre track** | [contact-center-business-skills.md](contact-center-business-skills.md) | Step-by-step guide, prompts, and reusable Business Skill templates for Copilot Studio with Dynamics 365 Contact Centre scenarios. |
+| **CE tool building** | [Create Dataverse Schema MCP](Create%20Dataverse%20Schema%20MCP.md) | Build a custom MCP for Dataverse schema and form authoring. |
+| **Copilot Studio tool building** | [Build an agent-authoring MCP](copilot-studio-authoring-mcp.md) | Extend the schema MCP to create and revise an agent with an inline skill. Includes an advanced workflow-backed tool section. Experimental sandbox lab. |
 
 ## Track
 
