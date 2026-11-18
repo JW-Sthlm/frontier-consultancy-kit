@@ -11,7 +11,7 @@ The information can also be used to keep your project on track, by using prompts
 
 **Prerequisite:** An active M365 Copilot licence. All prompts below are designed to be used in Microsoft Copilot with your workshop transcript attached or referenced.
 
-**Tip:** Enable the [Facilitator agent](https://learn.microsoft.com/en-us/microsoftteams/facilitator-in-meetings) in your Teams meetings to keep workshops on track in real time.
+**Tip:** Enable the [Facilitator agent](https://learn.microsoft.com/en-us/microsoftteams/facilitator-teams) in your Teams meetings to keep workshops on track in real time.
 
 ---
 
@@ -130,7 +130,7 @@ Mark which ones are 'fit' vs 'gap' if indicated.
 
 ## 3. Fit-to-standard / Fit-gap specific prompts
 
-Fit/gap analysis is a core phase in every standard Line of Business implementation. For Dynamics 365, Microsoft recommends using the [business process catalog](https://learn.microsoft.com/en-us/dynamics365/guidance/business-process-catalog/overview) to guide and organise evaluations in workshops.
+Fit/gap analysis is a core phase in every standard Line of Business implementation. For Dynamics 365, Microsoft recommends using the [business process catalog](https://learn.microsoft.com/en-us/dynamics365/guidance/business-processes/about) to guide and organise evaluations in workshops.
 
 ### 3.1 Fit/gap summary
 
@@ -231,5 +231,4 @@ Draft a cutover runbook skeleton based on this workshop: phases, checkpoints, ow
 Create a go-live readiness scoreboard with categories: Data, Integrations, Security, Testing, Training, Support model, Performance, Operations.
 For each: status (Green/Amber/Red) based on transcript evidence + key actions to move to Green.
 ```
-
 
