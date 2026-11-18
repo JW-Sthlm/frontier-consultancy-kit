@@ -42,10 +42,10 @@ Open VS Code. In the Copilot Chat sidebar, look for the agent mode toggle (the m
 Two MCP servers are needed for this exercise:
 
 - **D365 ERP MCP** - enables Copilot to read and write Dynamics 365 configuration data directly. Required for Phase 2.
-  Setup guide: [Connect to the Dynamics 365 ERP MCP server by using Visual Studio Code](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/mcp-server-vscode)
+  Setup guide: [Connect to the Dynamics 365 ERP MCP server by using Visual Studio Code](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/mcp/mcp-vscode)
 
 - **MS Learn MCP** - enables Copilot to look up D365 configuration steps from Microsoft Learn during runbook generation. Required for Phase 1.
-  Setup guide: [Microsoft Learn MCP Server overview](https://learn.microsoft.com/en-us/microsoftlearn-mcp/overview)
+  Setup guide: [Microsoft Learn MCP Server overview](https://learn.microsoft.com/en-us/training/support/mcp)
 
 To verify both are configured: open VS Code, go to Copilot Chat (agent mode), and check the tool picker for both servers. If either is missing, follow its setup guide above or ask your facilitator.
 
@@ -107,8 +107,8 @@ If Python is not installed, download it from [python.org](https://www.python.org
 |---|---|
 | No Copilot seat | Sign up for a 30-day Pro trial at [github.com/copilot](https://github.com/copilot), or check D365 Premium / M365 Copilot licensing |
 | No qualifying D365 environment | Ask your facilitator - a shared Tier 2 environment is provided for workshop attendees |
-| D365 ERP MCP not configured | Follow the [ERP MCP setup guide](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/mcp-server-vscode) or ask your facilitator |
-| MS Learn MCP not configured | Follow the [MS Learn MCP setup guide](https://learn.microsoft.com/en-us/microsoftlearn-mcp/overview) or ask your facilitator |
+| D365 ERP MCP not configured | Follow the [ERP MCP setup guide](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/mcp/mcp-vscode) or ask your facilitator |
+| MS Learn MCP not configured | Follow the [MS Learn MCP setup guide](https://learn.microsoft.com/en-us/training/support/mcp) or ask your facilitator |
 | Copilot instructions or skill files missing | Download from the `implementation-ip/` folder in this repo and place them at the paths shown in check 5 |
 | Business Process Catalog missing | Download from [https://aka.ms/BusinessProcessCatalog](https://aka.ms/BusinessProcessCatalog) (use **Download raw file**) and place it in your workspace as shown in check 5 |
 | Python not installed | Download from [python.org](https://www.python.org/downloads/) |
@@ -122,7 +122,7 @@ If Python is not installed, download it from [python.org](https://www.python.org
   1. The user has a **D365 Finance or SCM Premium license** assigned.
   2. The MCP server is called from **Copilot Studio** - cost is then included in the Copilot Studio *Agent Action* cost.
 
-**Official documentation:** [MCP Server Licensing](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/mcp-server-licensing), [Copilot Studio licensing](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-licensing-subscriptions), [Copilot Studio Billing rates and management](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management)
+**Official documentation:** [MCP Server Licensing](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-mcp#licensing), [Copilot Studio licensing](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-licensing-subscriptions), [Copilot Studio Billing rates and management](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management)
 
 ---
 
